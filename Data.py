@@ -5,6 +5,7 @@ from typing import List, NoReturn, Iterable
 from cv2 import VariationalRefinement
 import numpy as np
 import cv2
+import utils.vid as utv
 
 EXCEPT_DIR = ['.DS_Store','a', '_all']
 DEFAULT_VID_ROOT = '/Users/0hyun/Desktop/vid'
@@ -19,9 +20,11 @@ class VidData():
         self.verbose = verbose
         self.class_list = [l for l in os.listdir(self.data_root) if l not in EXCEPT_DIR]
         
+        # self._count_all_vid()
+        
 
-    def _count_all_vid(self) -> NoReturn:
-        self.cnt_vid = 0
+    def _count_all_vid(self):
+        self.cnt_vid: int = 0
         dir_class = [os.path.join(self.data_root, l) for l in self.class_list]
 
         for d in dir_class:
@@ -31,7 +34,7 @@ class VidData():
 
     def load_video(self, save = True) -> Iterable[np.array]:
         for l in self.class_list:
-            
+
             class_dir = os.path.join(self.data_root, l)
             for d in [c for c in os.listdir(class_dir) if '.mp4' in c]:
                 d = os.path.join(class_dir, d) #abs_path
@@ -55,20 +58,16 @@ class VidData():
             vArr.append(frame)
         
         vArr = np.array(vArr)
-        if self.verbose: self._show_vid(vArr)
+        if self.verbose: ut.show_vid(vArr)
         
         return vArr
 
-    def _show_vid(self, vArr):
-        for a in vArr:
-            cv2.imshow("Image", cv2.cvtColor(a, cv2.COLOR_RGB2BGR))
-            cv2.waitKey(10)
 
     def exists(self, file) -> bool:
         return os.path.exists(file)
 
     
-    def _save_vid2pkl(self,vArr,class_dir, name) -> NoReturn:
+    def _save_vid2pkl(self,vArr,class_dir, name):
         name = name.replace('.mp4','.pkl')
         pickle.dump(vArr, open(os.path.join(self.data_root, class_dir, name), 'wb'))
         
