@@ -22,6 +22,9 @@ class AbsAnimatedScatter(metaclass=ABCMeta):
 
     def __init__(self,bodypoints):
         self.bodypoints = bodypoints
+        self.fig = plt.figure()
+        self.ani = animation.FuncAnimation(self.fig, self.update, interval=10, frames=bodypoints, 
+                                                init_func=self.setup_plot, blit=False, repeat=False)
     
     @abstractclassmethod
     def setup_plot(self):
@@ -41,12 +44,10 @@ class AbsAnimatedScatter(metaclass=ABCMeta):
 class AnimatedScatter2D(AbsAnimatedScatter):
     def __init__(self,bodypoints,title=''):
         super().__init__(bodypoints)
-        self.fig = plt.figure()
         self.ax = plt.axes(xlim=(0,2), ylim=(-2,2))
         self.ax.set_title(title)
 
-        self.ani = animation.FuncAnimation(self.fig, self.update, interval=10, frames=bodypoints, 
-                                                init_func=self.setup_plot, blit=False, repeat=False)      
+              
         self.kstream = self.ani.new_frame_seq()
 
     def setup_plot(self):
@@ -92,12 +93,9 @@ class AnimatedScatter3D(AbsAnimatedScatter):
     
     def __init__(self, bodypoints, title = ""):
         super().__init__(self,bodypoints)
-
-        self.fig = plt.figure()
         self.ax = self.fig.add_subplot(111,projection='3d')
         self.ax.set_title(title)
-        self.ani = animation.FuncAnimation(self.fig, self.update3d, interval=10, frames=bodypoints, 
-                                            init_func=self.setup, blit=False, repeat=False)   
+        
         self.kstream = self.ani.new_frame_seq()
             
 
