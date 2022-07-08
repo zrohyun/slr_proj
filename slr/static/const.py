@@ -1,0 +1,5 @@
+FACE_FEATURES = 468
+POSE_FEATURES = 33
+HAND_FEATURES = 21
+DEFAULT_VID_ROOT = '/Users/0hyun/Desktop/vid'
+EXCEPT_DIR = ['.DS_Store','a', '_all']
