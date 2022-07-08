@@ -1,1 +1,1 @@
-__all__ = ['plt','vid']
+__all__ = ['plt','vid','utils']
