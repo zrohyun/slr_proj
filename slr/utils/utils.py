@@ -1,6 +1,16 @@
 import os,sys
 
 import numpy as np
+from sys import platform
+import pytest
+
+
+def only_test_on_windows(func):
+
+    def wrapper(*args):
+        return pytest.mark.skipif(platform != "win32", reason="only available windows desktop")(func)
+    
+    return wrapper
 
 def get_tensorboard_callback():
     import datetime

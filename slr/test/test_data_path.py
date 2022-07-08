@@ -5,17 +5,9 @@ from sys import platform
 import numpy as np
 
 from slr.data.ksl.datapath import DataPath
-from slr.utils.utils import zero_pad_keypoint_seq
+from slr.utils.utils import only_test_on_windows, zero_pad_keypoint_seq
 
-import pytest
 
-# @pytest.fixture("function")
-def only_test_on_windows(func):
-
-    def wrapper(*args):
-        return pytest.mark.skipif(platform != "win32", reason="only available windows desktop")(func)
-    
-    return wrapper
 
 @only_test_on_windows
 def test_datapath():
