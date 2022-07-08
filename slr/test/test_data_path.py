@@ -1,4 +1,9 @@
 from slr.data.ksl.datapath import *
+from sys import platform
 
 def test_datapath():
-    DataPath(class_limit=10)
+
+    if platform == "win32":
+        DataPath(class_limit=10)
+    else:
+        pass
