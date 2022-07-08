@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import os, sys
 import re
-from static.const import *
+from slr.static.const import *
 from abc import *
 
 class AbsAnimatedScatter(metaclass=ABCMeta):

@@ -1,9 +1,9 @@
 from matplotlib import pyplot as plt
 
-from data.asl.BodyPoint import BodyPoint
+from slr.data.asl.BodyPoint import BodyPoint
 import os,sys
-from utils.plt import *
-import utils.vid as utv
+from slr.utils.plt import *
+import slr.utils.vid as utv
 import time
 sys.path.append(os.pardir)
 

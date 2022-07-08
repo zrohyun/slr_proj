@@ -7,9 +7,9 @@ import mediapipe as mp
 import cv2
 import sys
 sys.path.append("..")
-import utils.vid as utv
+import slr.utils.vid as utv
 import time
-from static.const import *
+from slr.static.const import *
 
 @dataclass
 class BodyPoint():

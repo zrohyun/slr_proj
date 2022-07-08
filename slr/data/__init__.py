@@ -1,1 +1,1 @@
-__all__ = ['ksl','BodyPoint']
+__all__ = ['ksl','asl']

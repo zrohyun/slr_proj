@@ -6,8 +6,8 @@ from typing import List, NoReturn, Iterable, Tuple
 from cv2 import VariationalRefinement
 import numpy as np
 import cv2
-import utils.vid as utv
-from static.const import *
+import slr.utils.vid as utv
+from slr.static.const import *
 
 
 
