@@ -1,1 +1,1 @@
-__all__ = ['data','static','utils','main']
+__all__ = ['data','static','utils','main','model']
