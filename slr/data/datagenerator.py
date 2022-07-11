@@ -8,6 +8,7 @@ from typing import List
 
 from tensorflow.keras.utils import Sequence, to_categorical
 from slr.data.ksl.keypoint_json_parser import KeypointSeq
+from sklearn.preprocessing import MinMaxScaler as MMS
 
 # Here, `x_set` is list of path to the images
 # and `y_set` are the associated classes.
@@ -52,6 +53,12 @@ class KeyDataGenerator(Sequence):
     def _get_data_with_zero_pad(self, indexes) -> np.ndarray:
         X = [KeypointSeq(self.x_set[k]).key_arr for k in indexes]
         X = np.array([zp(x,self.seq_len) for x in X])
+        
+        #MinMaxScaling on 4dim
+        eps = 1e-10 #Cover divide error
+        Xmin , Xmax = X.max(axis=(1,2))[:,np.newaxis,np.newaxis,:] + eps , X.min(axis=(1,2))[:,np.newaxis,np.newaxis,:]
+        X = np.array(((X - Xmin) / (Xmax - Xmin)))
+
         return X.reshape(*X.shape[:-2],-1)
 
 if __name__ == '__main__':
