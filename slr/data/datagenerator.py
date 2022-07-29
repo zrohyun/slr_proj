@@ -14,13 +14,14 @@ from sklearn.preprocessing import MinMaxScaler as MMS
 # and `y_set` are the associated classes.
 class KeyDataGenerator(Sequence):
     'Generates data for Keras'
-    def __init__(self, x_set, y_set, batch_size=32, seq_len = 200, shuffle=True):
+    def __init__(self, x_set, y_set, batch_size=32, seq_len = 200, shuffle=True, scale=False):
         'Initialization'
         self.x_set, self.y_set = x_set, y_set
         self.batch_size = batch_size
         self.n_classes = len(set(y_set))
         self.shuffle = shuffle
         self.seq_len = seq_len
+        self.scale = scale
         self.cls_map = {x: i for i,x in enumerate(list(set(self.y_set)))}
         self.on_epoch_end()
 
@@ -49,17 +50,24 @@ class KeyDataGenerator(Sequence):
     def _label_encode(self, indexes):
         labels = [self.y_set[k] for k in indexes]
         return [self.cls_map[l] for l in labels]
+
+    def _minmax4dim(self,X,eps = 1e-10):
+        #MinMaxScaling on 4dim
+        #Cover divide error by add eps
+        Xmax , Xmin = X.max(axis=(1,2))[:,np.newaxis,np.newaxis,:] + eps , X.min(axis=(1,2))[:,np.newaxis,np.newaxis,:]
+        X = np.array(((X - Xmin) / (Xmax - Xmin)))
+        return X
     
     def _get_data_with_zero_pad(self, indexes) -> np.ndarray:
         X = [KeypointSeq(self.x_set[k]).key_arr for k in indexes]
         X = np.array([zp(x,self.seq_len) for x in X])
         
-        #MinMaxScaling on 4dim
-        eps = 1e-10 #Cover divide error
-        Xmin , Xmax = X.max(axis=(1,2))[:,np.newaxis,np.newaxis,:] + eps , X.min(axis=(1,2))[:,np.newaxis,np.newaxis,:]
-        X = np.array(((X - Xmin) / (Xmax - Xmin)))
+        if self.scale:
+            X = self._minmax4dim(X)
+        X = X.reshape(*X.shape[:-2],-1) #flatten feature
+        # X.shape = (batch_size, seq_len, 137s)
 
-        return X.reshape(*X.shape[:-2],-1)
+        return X
 
 if __name__ == '__main__':
 
