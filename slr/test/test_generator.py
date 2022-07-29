@@ -12,7 +12,7 @@ from slr.utils.utils import only_test_on_windows
 def gen_random_params():
     return [(rnd.randint(1,100), rnd.randint(1,64)) for i in range(rnd.randint(1,10))]
 
-@only_test_on_windows
+# @only_test_on_windows
 @pytest.mark.parametrize("n_cls, batch_size",gen_random_params())
 def test_generator(n_cls:int, batch_size:int):
     x,y = DataPath(class_limit=n_cls).data
