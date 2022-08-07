@@ -26,5 +26,5 @@ def test_zero_pad():
 def test_data_path_case_cnt(lim = 10):
     tmp = sum([len(v) for k,v in DataPath(lim).class_dict.items()])
     angle = 5
-    people = 9
+    people = len(list(filter(lambda x: ".zip" not in x, os.listdir(Path(r'D:\ksl\ksl\수어 영상\1.Training')))))
     assert tmp == (lim*angle*people)

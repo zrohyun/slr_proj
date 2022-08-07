@@ -1,3 +1,5 @@
+from sklearn.model_selection import train_test_split
+from slr.data.graphdatagenerator import GraphDataGenerator
 from slr.data.ksl.datapath import DataPath
 import slr.data.datagenerator as dg
 import os, sys
@@ -18,3 +20,14 @@ def test_generator(n_cls:int, batch_size:int):
     x,y = DataPath(class_limit=n_cls).data
     a = dg.KeyDataGenerator(x,y,batch_size=batch_size)
     assert (len(a)*batch_size <= len(y))
+
+def test_graphgenerator():
+    batch_size = 32
+    class_lim = 100
+    x,y = DataPath(class_limit= class_lim).data
+
+    x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=66, test_size=0.3)
+
+    gtrain = GraphDataGenerator(x_train, y_train, batch_size=batch_size,)
+    X,_ =gtrain[0]
+    assert X.shape[-2:] == (137,137)
