@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from pickle import DICT
 import numpy as np
 import os,sys
-from pathlib import Path
+from pathlib import Path, WindowsPath
 
 # sys.path.append(Path(".."))
 # from ...static.const import *
@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import List, Dict
 from slr.static.const import ROOT
 
+tmp_removal_path = WindowsPath('D:/ksl/ksl/수어 영상/1.Training/수어 영상/1.Training')
 
 @dataclass
 class DataPath():
@@ -20,6 +21,9 @@ class DataPath():
 
     def __init__(self, class_limit = 1e10):
         self._users_dir = [next(i.iterdir()) for i in ROOT.iterdir() if i.is_dir()]
+        if tmp_removal_path in self._users_dir:
+            self._users_dir.remove(tmp_removal_path)
+            print(self._users_dir)
         self.cls_limit = class_limit
         self.class_dict = self._set_class_dir()
         # for k,v in self.class_dir.items():
