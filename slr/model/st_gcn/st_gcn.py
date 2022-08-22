@@ -7,7 +7,8 @@ import math
 from .net import Unit2D, conv_init, import_class
 from .unit_gcn import unit_gcn
 
-default_backbone = [(64, 64, 1), (64, 64, 1), (64, 64, 1), (64, 128, 2), (128, 128, 1),
+default_backbone = [(64, 64, 1), (64, 64, 1), (64, 64, 1), (64, 128,
+                                                            2), (128, 128, 1),
                     (128, 128, 1), (128, 256, 2), (256, 256, 1), (256, 256, 1)]
 
 
@@ -62,12 +63,15 @@ class Model(nn.Module):
                  dropout=0.5):
         super(Model, self).__init__()
 
-        if graph is None:
-            raise ValueError()
-        else:
-            Graph = import_class(graph)
-            self.graph = Graph(**graph_args)
-            self.A = torch.from_numpy(self.graph.A).float()#.cuda(0)
+        # if graph is None:
+        #     raise ValueError()
+        # else:
+        #     Graph = import_class(graph)
+        #     self.graph = Graph(**graph_args)
+        #     self.A = torch.from_numpy(self.graph.A).float().cuda(0)
+        self.graph = graph
+        self.A = torch.from_numpy(self.graph.A).float()#.cuda(0)
+        self.A.to(torch.device('cuda'))
 
         self.num_class = num_class
         self.use_data_bn = use_data_bn
@@ -125,10 +129,11 @@ class Model(nn.Module):
         self.person_bn = nn.BatchNorm1d(backbone_out_c)
         self.gap_size = backbone_out_t
         self.fcn = nn.Conv1d(backbone_out_c, num_class, kernel_size=1)
-        conv_init(self.fcn) 
+        conv_init(self.fcn)
 
     def forward(self, x):
         N, C, T, V, M = x.size()
+
         # data bn
         if self.use_data_bn:
             if self.M_dim_bn:
@@ -146,27 +151,24 @@ class Model(nn.Module):
 
         # model
         x = self.gcn0(x)
-        
         x = self.tcn0(x)
-        
         for m in self.backbone:
             x = m(x)
 
         # V pooling
         x = F.avg_pool2d(x, kernel_size=(1, V))
+
         # M pooling
         x = x.view(N, M, x.size(1), x.size(2))
         x = x.mean(dim=1)
+
         # T pooling
         x = F.avg_pool1d(x, kernel_size=x.size()[2])
 
         # C fcn
         x = self.fcn(x)
-
         x = F.avg_pool1d(x, x.size()[2:])
-
         x = x.view(N, self.num_class)
-
 
         return x
 
@@ -210,12 +212,6 @@ class TCN_GCN_unit(nn.Module):
         x = self.tcn1(self.gcn1(x)) + (x if
                                        (self.down1 is None) else self.down1(x))
         return x
-        # print('in tcn_gcn backbone unit')
-        # x = self.tcn1(self.gcn1(x)) 
-        # print('x shape after tcn(gcn)')
-        # x = x + (x if (self.down1 is None) else self.down1(x))
-        # print('x shape after self.down')
-        # return x
 
 
 class TCN_GCN_unit_multiscale(nn.Module):

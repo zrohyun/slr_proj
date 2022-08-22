@@ -67,12 +67,15 @@ class unit_gcn(nn.Module):
 
     def forward(self, x):
         N, C, T, V = x.size()
-        self.A = self.A#.cuda(x.get_device())
+        # print(x.size)
+        self.A = self.A.cuda(x.get_device())
+        # print(self.A)
         A = self.A
 
         # reweight adjacency matrix
         if self.mask_learning:
             A = A * self.mask
+
         # graph convolution
         for i, a in enumerate(A):
             xa = x.view(-1, V).mm(a).view(N, C, T, V)
