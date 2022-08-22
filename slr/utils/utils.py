@@ -2,11 +2,11 @@ import os,sys
 
 import numpy as np
 from sys import platform
-import pytest
+
 
 
 def only_test_on_windows(func):
-
+    import pytest
     def wrapper(*args,**kwargs):
         return pytest.mark.skipif(platform != "win32", reason="only available windows desktop")(func(*args,**kwargs))
     
