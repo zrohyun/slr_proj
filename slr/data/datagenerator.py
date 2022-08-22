@@ -57,8 +57,8 @@ class KeyDataGenerator(Sequence):
         # MinMaxScaling on 4dim
         # Cover divide error by add eps
         Xmax, Xmin = (
-            X.max(axis=(0, 1))[:, np.newaxis, np.newaxis, :] + eps,
-            X.min(axis=(0, 1))[:, np.newaxis, np.newaxis, :],
+            X.max(axis=(0, 1))[None,None, :] + eps,
+            X.min(axis=(0, 1))[None,None, :],
         )
         X = np.array(((X - Xmin) / (Xmax - Xmin)))
         return X
