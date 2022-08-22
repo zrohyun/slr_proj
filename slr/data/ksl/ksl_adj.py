@@ -1,6 +1,6 @@
-from fixed_neighbors import *
+from slr.data.ksl.fixed_neighbors import skeleton
 import numpy as np
-import tools as tools
+import slr.data.ksl.tools as tools
 
 num_vertex = 137
 self_link = [(i,i) for i in range(num_vertex)]
