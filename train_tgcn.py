@@ -8,6 +8,7 @@ import torch
 import torch.nn as nn
 import torch.optim as optim
 from tqdm import tqdm
+from torchsummary import summary
 
 import tensorflow as tf
 import numpy as np
@@ -73,7 +74,7 @@ def train_tgcn(
               in_out_channels = gtcn_inout_channels,
               num_class=class_lim,
               dev = dev).to(dev)
-
+  summary(model,(150,137,137),device='cuda')
   # x,y = train_generator[0]
   criterion = nn.CrossEntropyLoss().float().to(dev)
   optimizer = optim.Adam(model.parameters())
@@ -95,7 +96,8 @@ def train_tgcn(
       x,y = data
       x = torch.from_numpy(x).float().to(dev)
       y = torch.from_numpy(y).type(torch.LongTensor).to(dev)
-
+      print(x.shape)
+      print(y)
       # 변화도(Gradient) 매개변수를 0으로 만들고
       optimizer.zero_grad()
 
@@ -130,6 +132,7 @@ def train_tgcn(
           inputs, outputs = data
           inputs = torch.from_numpy(inputs).float().to(dev)
           outputs = torch.from_numpy(outputs).type(torch.LongTensor).to(dev)
+          
 
           predicted_outputs = model(inputs) 
           loss = criterion(predicted_outputs, outputs) 
