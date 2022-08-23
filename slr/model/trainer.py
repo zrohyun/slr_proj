@@ -1,22 +1,30 @@
+from pathlib import Path
+from typing import Iterator
 import torch
+from torch.nn import nn
 from itertools import tee
 from tqdm import tqdm
 import time
 
 
 class TorchTrainer:
+    """
+    Torch model trainer class
+    """
+
     def __init__(
         self,
-        model,
-        epochs,
-        train_loader,
-        test_loader,
+        model: nn.Module,
+        epochs: int,
+        train_loader: Iterator,
+        test_loader: Iterator,
         optim,
         criterion,
-        name="torch_trainer",
-        log=True,
-        log_file="./log.txt",
-        dev="cpu",
+        name: str = "torch_trainer",
+        log: bool = True,
+        log_file: Path = Path("./log.txt"),
+        dev: torch.device = torch.device("cpu"),
+        save_history: bool = True,
     ):
 
         self.model = model.to(dev)
@@ -26,12 +34,13 @@ class TorchTrainer:
         self.train_loader = train_loader
         self.test_loader = test_loader
 
-        self.optim = optim
-        self.criterion = criterion
+        self.optim = optim.to(dev)
+        self.criterion = criterion(self.model.parameters())
 
         self.dev = dev
 
         self.log_file = log_file
+        self.save_history = save_history
 
         if log:
             self._print_log(f"\n Training {name}")
@@ -70,12 +79,16 @@ class TorchTrainer:
                 f"[{epoch + 1}, {iteration :5d}] val_loss: {loss:.3f} val_acc: {acc:.3f}"
             )
 
-        return {
+        history = {
             "training_acc": training_acc,
             "training_loss": training_loss,
             "val_acc": val_acc,
             "val_loss": val_loss,
         }
+        if self.save_history:
+            self._save_history(history)
+
+        return history
 
     def train_step(self, train_loader):
 
@@ -134,8 +147,16 @@ class TorchTrainer:
             localtime = time.asctime(time.localtime(time.time()))
             message = "[ " + localtime + " ] " + message
         print(message)
-        with open("./log.txt", "a") as f:
+        with open(self.log_file, "a") as f:
             print(message, file=f)
+
+    def _save_history(self, history):
+        file_name = Path(
+            f'./{time.localtime(time.time()).replace(" ","_")}_{self.name}_history'
+        )
+
+        with open(file_name, "r") as f:
+            f.write(str(history))
 
 
 class STGCNTrainer(TorchTrainer):
