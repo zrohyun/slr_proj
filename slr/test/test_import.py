@@ -1,10 +1,8 @@
-
-from unittest.main import MODULE_EXAMPLES
-
-from slr.utils.utils import only_test_on_windows
+import pytest
+from sys import platform
 
 
-@only_test_on_windows
+@pytest.mark.skipif(platform != 'win32', reason="requires python3.10 or higher")
 def test_import_submodule():
     try:
         import slr

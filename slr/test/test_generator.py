@@ -1,13 +1,6 @@
-from sklearn.model_selection import train_test_split
-from slr.data.datagenerator import GraphDataGenerator
-from slr.data.ksl.datapath import DataPath
-import slr.data.datagenerator as dg
-import os, sys
 import random as rnd
 import pytest
-
-from slr.utils.utils import only_test_on_windows
-
+from sys import platform
 
 # testing random numbercase
 def gen_random_params():
@@ -16,15 +9,23 @@ def gen_random_params():
     ]
 
 
-# @only_test_on_windows
+@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
 @pytest.mark.parametrize("n_cls, batch_size", gen_random_params())
 def test_generator(n_cls: int, batch_size: int):
+    from slr.data.datagenerator import KeyDataGenerator
+    from slr.data.ksl.datapath import DataPath
+
     x, y = DataPath(class_limit=n_cls).data
-    a = dg.KeyDataGenerator(x, y, batch_size=batch_size)
+    a = KeyDataGenerator(x, y, batch_size=batch_size)
     assert len(a) * batch_size <= len(y)
 
 
+@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
 def test_graphgenerator():
+    from sklearn.model_selection import train_test_split
+    from slr.data.ksl.datapath import DataPath
+    from slr.data.datagenerator import GraphDataGenerator
+
     batch_size = 32
     class_lim = 100
     x, y = DataPath(class_limit=class_lim).data
