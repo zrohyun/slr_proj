@@ -1,6 +1,6 @@
 from matplotlib.pyplot import cla
 from sklearn.model_selection import train_test_split
-from slr.data.graphdatagenerator import GraphDataGenerator
+from slr.data.datagenerator import GraphDataGenerator
 from slr.data.ksl.datapath import DataPath
 import time
 from slr.model.tgcn import TGCN
