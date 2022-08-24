@@ -44,6 +44,7 @@ class TorchTrainer:
 
         if log:
             self._print_log(f"\n Training {name}")
+            self._print_log(f"{self}")
 
     def _cvt_tensor(self, d):
         x, y = d
