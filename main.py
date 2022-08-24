@@ -1,17 +1,36 @@
 from matplotlib import pyplot as plt
+from sklearn.model_selection import train_test_split
 
-from slr.data.asl.BodyPoint import BodyPoint
+# from slr.data.asl.BodyPoint import BodyPoint
 import os,sys
-from slr.utils.plt import *
-import slr.utils.vid as utv
-import time
+from slr.data.datagenerator import KeyDataGenerator
+from slr.data.ksl.datapath import DataPath
+# from slr.model.convnet import mobileNetV2, resnet50
+# from slr.utils.plt import *
+# from slr.utils.utils import get_tensorboard_callback
+# import tensorflow as tf
+# from tensorflow.keras.callbacks import TensorBoard
+# from slr.utils import AbsAnimatedScatter
+
+
+
 sys.path.append(os.pardir)
 
 def main():
+    x,y = DataPath(class_limit=10).data
+
+    x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=66, test_size=0.3)
+
+    train_generator = KeyDataGenerator(x_train,y_train,64)
+    print(train_generator[0][0].shape)
+    # print(np.array(train_generator[0][0] / train_generator[0][0].max(axis=(1,2))[:,np.newaxis,np.newaxis,:]).shape)
+
     pass
 
 if __name__ == '__main__':
     main()
+    # model = mobileNetV2()
+    
     # a = VidData()
     # print(a)
      

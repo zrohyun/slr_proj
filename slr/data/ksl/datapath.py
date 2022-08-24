@@ -72,4 +72,4 @@ def main():
 # main()
 
 if __name__ == "__main__":
-    print(DataPath(class_limit=10))
+    print(DataPath(class_limit=10).split_data)
