@@ -10,8 +10,10 @@ from scipy.spatial.distance import cdist
 import tensorflow as tf
 from tensorflow.keras.utils import Sequence, to_categorical
 
+
 import time
-from typing import List
+from typing import Iterator, List, Optional
+from functools import partial
 
 
 # Here, `x_set` is list of path to the images
@@ -61,8 +63,8 @@ class KeyDataGenerator(Sequence):
         # MinMaxScaling on 4dim
         # Cover divide error by add eps
         Xmax, Xmin = (
-            X.max(axis=(0, 1))[None,None, :] + eps,
-            X.min(axis=(0, 1))[None,None, :],
+            X.max(axis=(0, 1))[None, None, :] + eps,
+            X.min(axis=(0, 1))[None, None, :],
         )
         X = np.array(((X - Xmin) / (Xmax - Xmin)))
         return X
@@ -204,6 +206,28 @@ class TFRecDataGenerator:
         parsed_dataset = tfrec_Dset.map(_parse_image_function).batch(batch_size)
         parsed_dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
         return parsed_dataset
+
+
+class TestDataGenerator:
+    """Data Iterator(Generator) for Model debugging"""
+
+    def __init__(self, input_shape: tuple, batch_size: int, iteration: int = 1):
+        """using partial for fetching data when user needs"""
+        self.x = [
+            partial(np.random.random, (batch_size, *input_shape))
+            for _ in range(iteration)
+        ]
+        self.x = iter(self.x)
+
+        self.y = iter(
+            [partial(np.random.randint, 10, size=batch_size) for _ in range(iteration)]
+        )
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return next(self.x)(), next(self.y)()
 
 
 if __name__ == "__main__":
