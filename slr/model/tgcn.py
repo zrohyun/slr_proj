@@ -1,11 +1,18 @@
 import torch
 import torch.nn as nn
 from torchsummary import summary
-import sys
 
 from scipy.spatial.distance import cdist
 
-sys.path.append(".")
+
+default_in_out_channels = [
+    (128, 128, 1),
+    (128, 128, 2),
+    (128, 256, 1),
+    (256, 256, 2),
+    (256, 256, 1),
+    (256, 128, 1),
+]
 
 
 class TGCN(nn.Module):
@@ -13,9 +20,9 @@ class TGCN(nn.Module):
         self,
         in_channel,
         num_keypoints,
-        in_out_channels,
         num_class,
         dev,
+        in_out_channels=None,
         dropout=0.3,
         kernel_size=9,
         stride=1,
@@ -24,8 +31,12 @@ class TGCN(nn.Module):
         self.k = kernel_size  # window size(temporal step)
         self.s = stride
         self.d = dev
+        if in_out_channels is not None:
+            self.in_out_channels = in_out_channels
+        else:
+            self.in_out_channels = default_in_out_channels
 
-        out_c = in_out_channels[0][0]
+        out_c = self.in_out_channels[0][0]
         self.gtcn0 = nn.Conv2d(
             in_channel,
             out_c,
@@ -43,14 +54,14 @@ class TGCN(nn.Module):
                     padding=(int((self.k - 1) / 2), 0),
                     stride=(s, 1),
                 ).to(dev)
-                for in_channel, out_channel, s in in_out_channels
+                for in_channel, out_channel, s in self.in_out_channels
             ]
         )
 
         self.relu = nn.ReLU()
         self.dropout = nn.Dropout(dropout)
 
-        gtcn_out_c = in_out_channels[-1][1]
+        gtcn_out_c = self.in_out_channels[-1][1]
 
         if num_class >= 100:
             self.fcl = nn.ModuleList([nn.Linear(gtcn_out_c, num_class)])
@@ -115,10 +126,10 @@ class TGCN_v2(TGCN):
         self,
         in_channel,
         num_keypoints,
-        in_out_channels,
         num_class,
         dev,
         cfg,
+        in_out_channels=None,
         dropout=0.3,
         kernel_size=9,
         stride=1,
@@ -126,9 +137,9 @@ class TGCN_v2(TGCN):
         super().__init__(
             in_channel,
             num_keypoints,
-            in_out_channels,
             num_class,
             dev,
+            in_out_channels,
             dropout,
             kernel_size,
             stride,
@@ -181,14 +192,15 @@ class TGCN_v2(TGCN):
     def _adj_mat(self, X: torch.Tensor, delta=0.5):
         """get sequential Adjacency(affinity) Matrix"""
         batch_A = []
+        batch_size, window_size = X.shape[:2]
 
         def _gaussian_kernel(X, delta=delta):
             """exp( dist(x,y) / 2 * (delta^2) )"""
             return torch.exp(torch.tensor(-cdist(X, X) / (2.0 * delta**2)))
 
-        for b in range(self.cfg.batch_size):
+        for b in range(batch_size):
             A = []
-            for w in range(self.cfg.model_args["window_size"]):
+            for w in range(window_size):
                 A.append(_gaussian_kernel(X[b, w]))
             batch_A.append(torch.stack(A))
 
@@ -202,43 +214,22 @@ class TGCN_v2(TGCN):
         return A
 
 
-class CFG:
-    debug = True
-    model_name = "st_gcn.Model"
-    test_file = "gzip_test_with_preprocess.tfrec"
-    train_file = "gzip_train_with_preprocess.tfrec"
-    model_args = {
-        "channel": 3,
-        "num_class": 100,
-        "window_size": 150,
-        "num_point": 137,
-    }
-    epochs = 100
-    batch_size = 2
-    seed = 42
-    T_max = 3
-    lr = 1e-4
-    min_lr = 1e-7
-    weight_decay = 1e-3
+def get_device() -> torch.device:
+    return torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-
-if CFG.debug:
-    CFG.epochs = 1
 
 if __name__ == "__main__":
-    import slr.static.const as const
+    import sys
 
-    model = TGCN(
-        137, 137, const.TGCN_INOUT_CHANNELS_ver1, num_class=10, dev=torch.device("cpu")
-    )
+    sys.path.append(".")
 
-    model = TGCN_v2(
-        3,
-        137,
-        const.TGCN_INOUT_CHANNELS_ver1,
-        num_class=10,
-        dev=torch.device("cpu"),
-        cfg=CFG,
-    )
+    from slr.model.configs.tgcn_config import CFG_TGCN_v1, CFG_TGCN_v2
 
-    summary(model, (150, 137, 3))
+    cfg = CFG_TGCN_v1
+    cfg.model_args["dev"] = get_device()
+
+    summary(TGCN(**cfg.model_args), (150, 137, 137))
+
+    cfg = CFG_TGCN_v2
+    cfg.model_args["dev"] = get_device()
+    summary(TGCN_v2(**cfg.model_args, cfg=cfg), (150, 137, 3))
