@@ -1,6 +1,6 @@
+from functools import partial
 import torch
-from torch.nn import nn
-
+import torch.nn as nn
 import numpy as np
 
 from pathlib import Path
@@ -43,12 +43,13 @@ class TorchTrainer:
 
         self.dev = dev
         self.cfg = cfg
+        self.name = name
 
         self.log_file = log_file
         self.save_history = save_history
 
         if log:
-            self._print_log(f"\n Training {name}\n")
+            self._print_log(f"\n Training {self.name}\n")
             self._print_log(f"{self.model}", print_time=False)
 
     def _cvt_tensor(self, d):
@@ -138,7 +139,7 @@ class TorchTrainer:
             for i, d in loop:
                 x, y = self._cvt_tensor(d)
 
-                v_acc, v_loss = self._calculate_loss(x, y, v_acc, v_loss, train=False)
+                v_acc, v_loss = self._inference_step(x, y, v_acc, v_loss, train=False)
 
         # Calculate accuracy as the number of correct predictions in the batch
         # divided by the total number of predictions done.
@@ -154,6 +155,10 @@ class TorchTrainer:
         calcaulate accumulate acc, loss
         return (acc, loss)
         """
+        if train:
+            # 변화도(Gradient) 매개변수를 0으로 만들고
+            self.optim.zero_grad()
+
         outputs = self.model(x)
         step_loss = self.criterion(outputs, y)
 
@@ -180,7 +185,7 @@ class TorchTrainer:
     def _save_history(self, history):
         """save acc, loss history"""
         file_name = Path(
-            f'./{time.localtime(time.time()).replace(" ","_")}_{self.name}_history'
+            f'./{str(time.asctime(time.localtime(time.time(())))).replace(" ","_")}_{self.name}_history'
         )
 
         with open(file_name, "r") as f:
@@ -192,7 +197,7 @@ class TorchTrainer:
         return train_generator, test_generator
         """
         train, self.train_loader = tee(self.train_loader)
-        test, self.test_loader = tee(self.train_loader)
+        test, self.test_loader = tee(self.test_loader)
         return train, test
 
     def _get_iteration(self) -> Tuple[int, int]:
@@ -216,6 +221,7 @@ class STGCNTrainer(TorchTrainer):
         test_loader,
         optim,
         criterion,
+        cfg,
         name="torch_trainer",
         log=True,
         log_file="./log.txt",
@@ -228,6 +234,7 @@ class STGCNTrainer(TorchTrainer):
             test_loader,
             optim,
             criterion,
+            cfg,
             name,
             log,
             log_file,
@@ -240,3 +247,63 @@ class STGCNTrainer(TorchTrainer):
         x = torch.einsum("ntvcm->nctvm", x)
         y = torch.from_numpy(y).type(torch.LongTensor).to(self.dev)
         return x, y
+
+
+class TestDataGenerator:
+    """Data Iterator(Generator) for Model debugging"""
+
+    def __init__(self, input_shape: tuple, batch_size: int, iteration: int = 1):
+        """using partial for fetching data when user needs"""
+        self.x = [
+            partial(np.random.random, (batch_size, *input_shape))
+            for _ in range(iteration)
+        ]
+        self.x = iter(self.x)
+
+        self.y = iter(
+            [partial(np.random.randint, 10, size=batch_size) for _ in range(iteration)]
+        )
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return next(self.x)(), next(self.y)()
+
+
+if __name__ == "__main__":
+    import sys, os
+    import torch.optim as optim
+
+    print(os.getcwd())
+    sys.path.append(".")
+    from slr.model.tgcn import TGCN_v2
+    from slr.static.const import TGCN_INOUT_CHANNELS_ver1
+    from slr.model.configs.tgcn_config import CFG_100
+
+    device = torch.device("cpu")
+    CFG = CFG_100
+    model = TGCN_v2(
+        3,
+        137,
+        num_class=100,
+        dev=device,
+        cfg=CFG,
+        in_out_channels=TGCN_INOUT_CHANNELS_ver1,
+    ).to(torch.device("cpu"))
+    test_trainer = TorchTrainer(
+        model=model,
+        epochs=CFG.epochs,
+        train_loader=TestDataGenerator(
+            (150, 137, 3), 16
+        ),  # KSLTFRecDataGenerator(CFG.test_file,comp='GZIP',batch_size=CFG.batch_size,channel=CFG.model_args['channel']),
+        test_loader=TestDataGenerator(
+            (150, 137, 3), 16
+        ),  # KSLTFRecDataGenerator(CFG.test_file,comp='GZIP',batch_size=CFG.batch_size,channel=CFG.model_args['channel']),
+        optim=optim.Adam,
+        criterion=nn.CrossEntropyLoss().float().to(device),
+        name="test_trainer",
+        dev=device,
+        cfg=CFG,
+    )
+    test_trainer.train()
