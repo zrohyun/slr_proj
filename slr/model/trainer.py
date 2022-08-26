@@ -185,10 +185,10 @@ class TorchTrainer:
     def _save_history(self, history):
         """save acc, loss history"""
         file_name = Path(
-            f'./{str(time.asctime(time.localtime(time.time(())))).replace(" ","_")}_{self.name}_history'
+            f'./{str(time.asctime(time.localtime(time.time()))).replace(" ","_")}_{self.name}_history'
         )
 
-        with open(file_name, "r") as f:
+        with open(file_name, "w") as f:
             f.write(str(history))
 
     def _copy_iter(self) -> Tuple[Iterator, Iterator]:
