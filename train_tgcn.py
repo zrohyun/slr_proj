@@ -63,5 +63,5 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
 
 if __name__ == "__main__":
     epochs = 100
-    for cls in [100, 30, 10]:
+    for cls in [100]:
         train_tgcn(class_lim=cls, epochs=epochs)

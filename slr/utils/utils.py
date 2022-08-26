@@ -67,3 +67,10 @@ def fix_seed(my_seed=42):
         my_seed_everywhere_tf(my_seed)
     except ImportError:
         pass
+
+
+def get_device():
+    """get torch device"""
+    import torch
+
+    return torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
