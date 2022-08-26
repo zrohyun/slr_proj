@@ -3,7 +3,7 @@ from dataclasses import dataclass, field
 from pickle import DICT
 import numpy as np
 import os, sys
-from pathlib import Path, WindowsPath
+from pathlib import Path
 
 # sys.path.append(Path(".."))
 # from ...static.const import *
@@ -13,7 +13,7 @@ from typing import List, Dict
 from slr.static.const import ROOT
 from sklearn.model_selection import train_test_split
 
-tmp_removal_path = WindowsPath("D:/ksl/ksl/수어 영상/1.Training/수어 영상/1.Training")
+tmp_removal_path = Path("D:/ksl/ksl/수어 영상/1.Training/수어 영상/1.Training")
 
 
 @dataclass
