@@ -7,8 +7,11 @@ from slr.utils.utils import zero_pad_keypoint_seq as zp
 import numpy as np
 from scipy.spatial.distance import cdist
 
-import tensorflow as tf
-from tensorflow.keras.utils import Sequence, to_categorical
+try:
+    import tensorflow as tf
+    from tensorflow.keras.utils import Sequence, to_categorical
+except Exception:
+    pass
 
 
 import time
@@ -152,18 +155,15 @@ class GraphDataGenerator(KeyDataGenerator):
         return DAD
 
 
-class TFRecDataGenerator:
-    def __init__(self, tfrec_file, comp=None, batch_size=32):
-        self.dataset = self._get_ksl_dataset_from_tfrec(tfrec_file, comp, batch_size)
+class KSLTFRecDataGenerator:
+    def __init__(self, tfrec_file, comp=None, batch_size=32, channel=2):
+        self.dataset = self._get_ksl_dataset_from_tfrec(
+            tfrec_file, comp, batch_size, channel
+        )
         self._iterator = self.dataset
 
     def __iter__(self):
-        if self._iterator is None:
-            self._iterator = iter(self.dataset)
-        else:
-            self._reset()
-
-        return self._iterator
+        return self
 
     def _reset(self):
         self._iterator = iter(self.dataset)
@@ -175,10 +175,11 @@ class TFRecDataGenerator:
         return batch["raw_data"], batch["label"]
 
     def _parse_batch(self, batch):
+        # print(batch[0])
         batch["label"] = np.array(list(map(lambda x: int(x.decode()), batch["label"])))
         return batch
 
-    def _get_ksl_dataset_from_tfrec(self, file, comp, batch_size, channel=2):
+    def _get_ksl_dataset_from_tfrec(self, file, comp, batch_size, channel):
         dataset = tf.data.TFRecordDataset(file, comp)
         parsed_dataset = self._get_parsed_dataset(dataset, batch_size, channel)
         parsed_dataset = parsed_dataset.as_numpy_iterator()
@@ -186,7 +187,7 @@ class TFRecDataGenerator:
         return parsed_dataset
 
     def _get_parsed_dataset(
-        self, tfrec_Dset: tf.data.TFRecordDataset, batch_size, channel
+        self, dataset: tf.data.TFRecordDataset, batch_size, channel
     ):
         image_feature_description = {
             "raw_data": tf.io.FixedLenFeature([], tf.string),
@@ -194,16 +195,17 @@ class TFRecDataGenerator:
             "label": tf.io.FixedLenFeature([], tf.string),
         }
 
-        def _parse_image_function(example):
+        def _parse_function(example):
             example = tf.io.parse_single_example(example, image_feature_description)
-            # example['label'] = tf.cast(example['label'],tf.string)
-            # raise Exception(f'{tf.io.decode_raw(example["label"],tf.int16)}')
+
             example["raw_data"] = tf.reshape(
                 tf.io.decode_raw(example["raw_data"], tf.float32), (-1, 137, channel)
             )
-            return example
 
-        parsed_dataset = tfrec_Dset.map(_parse_image_function).batch(batch_size)
+            return {"raw_data": example["raw_data"], "label": example["label"]}
+
+        # session.run(my_example, feed_dict={serialized: my_example_str})
+        parsed_dataset = dataset.map(_parse_function).batch(batch_size)
         parsed_dataset.prefetch(buffer_size=tf.data.experimental.AUTOTUNE)
         return parsed_dataset
 
