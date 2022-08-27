@@ -196,8 +196,7 @@ class TGCN_v2(TGCN):
 
         def _gaussian_kernel(X, delta=delta):
             """exp( dist(x,y) / 2 * (delta^2) )"""
-            return torch.exp(torch.tensor(-cdist(X, X) / (2.0 * delta**2)))
-
+            return torch.exp(torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2)))
         for b in range(batch_size):
             A = []
             for w in range(window_size):
@@ -211,7 +210,7 @@ class TGCN_v2(TGCN):
         for i in range(0, A.shape[1], stride):
             a.append(A[:, i : i + stride, :, :].mean(axis=1))
         A = torch.stack(a, axis=1)
-        return A
+        return A.float().to(self.d)
 
 
 def get_device() -> torch.device:

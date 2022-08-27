@@ -20,6 +20,7 @@ class CFG_TGCN_v2:
     epochs = 100
     batch_size = 32
     seed = 42
+    window_size=150
 
 
 class CFG_TGCN_v1:
