@@ -1,3 +1,4 @@
+from pathlib import Path
 from slr.model.trainer import TorchTrainer
 from slr.data.ksl.datapath import DataPath
 from slr.model.configs.tgcn_config import CFG_TGCN_v1, CFG_TGCN_v2
@@ -5,8 +6,9 @@ from slr.model.tgcn import TGCN, TGCN_v2
 
 from slr.data.datagenerator import (
     GraphDataGenerator,
+    KSLTFRecDataGenerator,
     KeyDataGenerator,
-    TFRecDataGenerator,
+    # TFRecDataGenerator,
     TestDataGenerator,
 )
 
@@ -42,7 +44,7 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
     dev = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
     cfg = CFG_TGCN_v1
-    cfg.model_args["device"] = dev
+    cfg.model_args["dev"] = dev
     cfg.model_args["num_class"] = class_lim
     cfg.epochs = epochs
     cfg.batch_size = batch_size
@@ -58,10 +60,10 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
     # train_generator = TestDataGenerator((150,137,137),1,1)
     test_generator = TestDataGenerator((150, 137, 137), 1, 1)
 
-    model = TGCN(**cfg.model_args).to(cfg.model_args["device"])
+    model = TGCN(**cfg.model_args).to(cfg.model_args["dev"])
     summary(model, (150, 137, 137), device="cuda")
 
-    criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["device"])
+    criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["dev"])
     optimizer = optim.Adam
 
     trainer = TorchTrainer(
@@ -72,7 +74,7 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
         optim=optimizer,
         criterion=criterion,
         name="TGCN_trainer",
-        dev=cfg.model_args["device"],
+        dev=cfg.model_args["dev"],
         cfg=cfg,
     )
 
@@ -80,20 +82,15 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
 
 
 def summary_model(model, cfg):
-    summary(
-        model,
-        (
-            cfg.model_args["window_size"],
-            cfg.model_args["num_keypoints"],
-            cfg.model_args["channel"],
-        ),
-    )
-
+    input_size = ( cfg.window_size, cfg.model_args['num_keypoints'], cfg.model_args['in_channel'])
+    print(torch.cuda.is_available())
+    summary(model,input_size, device='cuda')
 
 def set_config_tgcn_v2():
     if sys.platform == "win32":
         cfg = CFG_TGCN_v2
         cfg.model_args["dev"] = get_device()
+        cfg.batch_size=8
 
     elif sys.platform == "linux":
         cfg = CFG_TGCN_v2
@@ -118,13 +115,13 @@ def get_loader():
             x_train,
             y_train,
             batch_size=cfg.batch_size,
-            seq_len=cfg.model_args["window_size"],
+            seq_len=150,
         )
         test_loader = KeyDataGenerator(
             x_test,
             y_test,
             batch_size=cfg.batch_size,
-            seq_len=cfg.model_args["window_size"],
+            seq_len=150,
         )
 
     elif sys.platform == "linux":
@@ -135,9 +132,7 @@ def get_loader():
             cfg.test_file, comp="GZIP", batch_size=cfg.batch_size
         )
     else:
-        input_shape = (
-            cfg.model_args[i] for i in ["window_size", "num_keypoints", "in_channel"]
-        )
+        input_shape = ( cfg.window_size, cfg.model_args['num_keypoints'], cfg.model_args['in_channel'])
         train_loader = TestDataGenerator((input_shape), 1)
         test_loader = TestDataGenerator((input_shape), 1)
 
@@ -147,17 +142,19 @@ def get_loader():
 def train_tgcn_v2():
 
     cfg = set_config_tgcn_v2()
-
-    model = TGCN_v2(**cfg.model_args, cfg=cfg)
-    summary(model, cfg)
-
+    print(cfg.model_args['dev'])
+    model = TGCN_v2(**cfg.model_args, cfg=cfg).to(torch.device('cuda:0'))
+    summary_model(model, cfg)
+    
     train_loader, test_loader = get_loader()
 
     # just check working
     train_loader = test_loader
+    test_path = Path(r"C:\Users\user\Documents\GitHub\slr_proj\slr\data\gzip_test_with_preprocess.tfrec")
+    train_loader = KSLTFRecDataGenerator(test_path, "GZIP",batch_size=cfg.batch_size,channel = cfg.model_args['in_channel'])
     test_loader = TestDataGenerator((150, 137, 3), 1)
 
-    criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["device"])
+    criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["dev"])
     optimizer = optim.Adam
 
     trainer = TorchTrainer(
@@ -168,7 +165,7 @@ def train_tgcn_v2():
         optim=optimizer,
         criterion=criterion,
         name="TGCN_v2_trainer",
-        dev=cfg.model_args["device"],
+        dev=cfg.model_args["dev"],
         cfg=cfg,
     )
     history = trainer.train()
@@ -177,6 +174,6 @@ def train_tgcn_v2():
 if __name__ == "__main__":
 
     # training tgcn_v1
-    train_tgcn(class_lim=100, epochs=100, batch_size=2)
+    # train_tgcn(class_lim=100, epochs=100, batch_size=2)
 
     train_tgcn_v2()
