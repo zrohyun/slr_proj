@@ -1,5 +1,6 @@
-from slr.data.datagenerator import GraphDataGenerator
+from slr.data.datagenerator import GraphDataGenerator, TestDataGenerator
 from slr.data.ksl.datapath import DataPath
+from slr.model.configs.tgcn_config import CFG_TGCN_v1, CFG_TGCN_v2
 from slr.model.tgcn import TGCN
 from slr.model.trainer import TorchTrainer
 
@@ -27,14 +28,16 @@ def print_log(str, print_time=True):
 
 def train_tgcn(class_lim=30, batch_size=8, epochs=500):
     dev = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
-    x_train, x_test, y_train, y_test = DataPath(10).split_data
+    x_train, x_test, y_train, y_test = DataPath(class_lim).split_data
 
     train_generator = GraphDataGenerator(
-        x_train, y_train, batch_size=batch_size, seq_len=150
-    )
-    test_generator = GraphDataGenerator(
         x_test, y_test, batch_size=batch_size, seq_len=150
     )
+    # test_generator = GraphDataGenerator(
+    #     x_test, y_test, batch_size=batch_size, seq_len=150
+    # )
+    # train_generator = TestDataGenerator((150,137,137),1,1)
+    test_generator = TestDataGenerator((150,137,137),1,1)
 
     model = TGCN(
         in_channel=137,
@@ -47,7 +50,8 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
 
     criterion = nn.CrossEntropyLoss().float().to(dev)
     optimizer = optim.Adam
-
+    cfg = CFG_TGCN_v1
+    cfg.model_args['device'] =dev
     trainer = TorchTrainer(
         model,
         epochs=epochs,
@@ -56,6 +60,8 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
         optim=optimizer,
         criterion=criterion,
         name="TGCN_trainer",
+        dev=dev,
+        cfg= cfg
     )
 
     history = trainer.train()
@@ -63,5 +69,5 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
 
 if __name__ == "__main__":
     epochs = 100
-    for cls in [100]:
-        train_tgcn(class_lim=cls, epochs=epochs)
+    for cls in [100,]:
+        train_tgcn(class_lim=cls, epochs=epochs,batch_size=2)
