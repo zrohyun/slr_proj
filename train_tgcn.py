@@ -128,14 +128,20 @@ def get_loader():
         #     batch_size=cfg.batch_size,
         #     seq_len=150,
         # )
-        test_loader = KeyDataGenerator(
-            x_test,
-            y_test,
-            batch_size=cfg.batch_size,
-            seq_len=150,
-        )
+        # test_loader = KeyDataGenerator(
+        #     x_test,
+        #     y_test,
+        #     batch_size=cfg.batch_size,
+        #     seq_len=150,
+        # )
         train_loader = KSLTFRecDataGenerator(
-            cfg.test_path,
+            cfg.train_file,
+            "GZIP",
+            batch_size=cfg.batch_size,
+            channel=cfg.model_args["in_channel"],
+        )
+        test_loader = KSLTFRecDataGenerator(
+            cfg.test_file,
             "GZIP",
             batch_size=cfg.batch_size,
             channel=cfg.model_args["in_channel"],
@@ -167,7 +173,6 @@ def train_tgcn_v2():
 
     summary_model(model, cfg)
 
-    return
     # train_loader, test_loader = get_loader()
 
     # just check working
