@@ -82,15 +82,19 @@ def train_tgcn(class_lim=30, batch_size=8, epochs=500):
 
 
 def summary_model(model, cfg):
-    input_size = ( cfg.window_size, cfg.model_args['num_keypoints'], cfg.model_args['in_channel'])
-    print(torch.cuda.is_available())
-    summary(model,input_size, device='cuda')
+    input_shape = (
+        cfg.window_size,
+        cfg.model_args["num_keypoints"],
+        cfg.model_args["in_channel"],
+    )
+    summary(model, input_shape)
+
 
 def set_config_tgcn_v2():
     if sys.platform == "win32":
         cfg = CFG_TGCN_v2
         cfg.model_args["dev"] = get_device()
-        cfg.batch_size=8
+        cfg.batch_size = 8
 
     elif sys.platform == "linux":
         cfg = CFG_TGCN_v2
@@ -108,20 +112,33 @@ def get_loader():
     cfg = CFG_TGCN_v2
     if sys.platform == "win32":
         cfg.model_args["dev"] = get_device()
+        cfg.train_file = Path(
+            r"C:\Users\user\Documents\GitHub\slr_proj\slr\data\gzip_train_with_preprocess.tfrec"
+        )
+        cfg.test_file = Path(
+            r"C:\Users\user\Documents\GitHub\slr_proj\slr\data\gzip_test_with_preprocess.tfrec"
+        )
+
         x_train, x_test, y_train, y_test = DataPath(
             cfg.model_args["num_class"]
         ).split_data
-        train_loader = KeyDataGenerator(
-            x_train,
-            y_train,
-            batch_size=cfg.batch_size,
-            seq_len=150,
-        )
+        # train_loader = KeyDataGenerator(
+        #     x_train,
+        #     y_train,
+        #     batch_size=cfg.batch_size,
+        #     seq_len=150,
+        # )
         test_loader = KeyDataGenerator(
             x_test,
             y_test,
             batch_size=cfg.batch_size,
             seq_len=150,
+        )
+        train_loader = KSLTFRecDataGenerator(
+            cfg.test_path,
+            "GZIP",
+            batch_size=cfg.batch_size,
+            channel=cfg.model_args["in_channel"],
         )
 
     elif sys.platform == "linux":
@@ -132,7 +149,11 @@ def get_loader():
             cfg.test_file, comp="GZIP", batch_size=cfg.batch_size
         )
     else:
-        input_shape = ( cfg.window_size, cfg.model_args['num_keypoints'], cfg.model_args['in_channel'])
+        input_shape = (
+            cfg.window_size,
+            cfg.model_args["num_keypoints"],
+            cfg.model_args["in_channel"],
+        )
         train_loader = TestDataGenerator((input_shape), 1)
         test_loader = TestDataGenerator((input_shape), 1)
 
@@ -142,16 +163,16 @@ def get_loader():
 def train_tgcn_v2():
 
     cfg = set_config_tgcn_v2()
-    print(cfg.model_args['dev'])
-    model = TGCN_v2(**cfg.model_args, cfg=cfg).to(torch.device('cuda:0'))
+    model = TGCN_v2(**cfg.model_args, cfg=cfg).to(cfg.model_args["dev"])
+
     summary_model(model, cfg)
-    
-    train_loader, test_loader = get_loader()
+
+    return
+    # train_loader, test_loader = get_loader()
 
     # just check working
-    train_loader = test_loader
-    test_path = Path(r"C:\Users\user\Documents\GitHub\slr_proj\slr\data\gzip_test_with_preprocess.tfrec")
-    train_loader = KSLTFRecDataGenerator(test_path, "GZIP",batch_size=cfg.batch_size,channel = cfg.model_args['in_channel'])
+    _, train_loader = get_loader()
+
     test_loader = TestDataGenerator((150, 137, 3), 1)
 
     criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["dev"])

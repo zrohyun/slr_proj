@@ -1,13 +1,9 @@
 from collections import defaultdict
 from dataclasses import dataclass, field
-from pickle import DICT
-import numpy as np
-import os, sys
 from pathlib import Path
+import sys
 
-# sys.path.append(Path(".."))
-# from ...static.const import *
-# from BodyPoint import BodyPoint
+from slr.static.const import *
 from pathlib import Path
 from typing import List, Dict
 from slr.static.const import ROOT

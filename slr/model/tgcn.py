@@ -162,8 +162,7 @@ class TGCN_v2(TGCN):
 
         # first layer
         # rotate axis for considering F(feature) as T(Window_size)
-        X = self.gtcn0(X)  # swap F and C axis
-
+        X = self.relu(self.gtcn0(X))  # swap F and C axis
         stride = self.gtcn0.stride[0]
         for layer in self.gtcn_layers:
             if stride != 1:
@@ -196,7 +195,10 @@ class TGCN_v2(TGCN):
 
         def _gaussian_kernel(X, delta=delta):
             """exp( dist(x,y) / 2 * (delta^2) )"""
-            return torch.exp(torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2)))
+            return torch.exp(
+                torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2))
+            )
+
         for b in range(batch_size):
             A = []
             for w in range(window_size):
