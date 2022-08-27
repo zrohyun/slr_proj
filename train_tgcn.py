@@ -91,11 +91,13 @@ def summary_model(model, cfg):
 
 
 def set_config_tgcn_v2():
-    if sys.platform == "linux":
+    if sys.platform == "win32":
         cfg = CFG_TGCN_v2
         cfg.model_args["dev"] = get_device()
         cfg.batch_size = 32
-        x_train, x_test, y_train, y_test = DataPath(10).split_data
+        x_train, x_test, y_train, y_test = DataPath(
+            cfg.model_args["num_class"]
+        ).split_data
 
     elif sys.platform == "linux":
         cfg = CFG_TGCN_v2
