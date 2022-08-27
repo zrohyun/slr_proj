@@ -94,15 +94,40 @@ def set_config_tgcn_v2():
     if sys.platform == "win32":
         cfg = CFG_TGCN_v2
         cfg.model_args["dev"] = get_device()
-        cfg.batch_size = 32
-        x_train, x_test, y_train, y_test = DataPath(
-            cfg.model_args["num_class"]
-        ).split_data
 
     elif sys.platform == "linux":
         cfg = CFG_TGCN_v2
         cfg.model_args["dev"] = cfg.model_args["dev"] = get_device()
+
+    else:
+        cfg = CFG_TGCN_v2
+        cfg.model_args["dev"] = cfg.model_args["dev"] = get_device()
         cfg.batch_size = 2
+
+    return cfg
+
+
+def get_loader():
+    cfg = CFG_TGCN_v2
+    if sys.platform == "win32":
+        cfg.model_args["dev"] = get_device()
+        x_train, x_test, y_train, y_test = DataPath(
+            cfg.model_args["num_class"]
+        ).split_data
+        train_loader = KeyDataGenerator(
+            x_train,
+            y_train,
+            batch_size=cfg.batch_size,
+            seq_len=cfg.model_args["window_size"],
+        )
+        test_loader = KeyDataGenerator(
+            x_test,
+            y_test,
+            batch_size=cfg.batch_size,
+            seq_len=cfg.model_args["window_size"],
+        )
+
+    elif sys.platform == "linux":
         train_loader = TFRecDataGenerator(
             cfg.train_file, comp="GZIP", batch_size=cfg.batch_size
         )
@@ -110,11 +135,13 @@ def set_config_tgcn_v2():
             cfg.test_file, comp="GZIP", batch_size=cfg.batch_size
         )
     else:
-        cfg = CFG_TGCN_v2
-        cfg.model_args["dev"] = cfg.model_args["dev"] = get_device()
-        cfg.batch_size = 2
+        input_shape = (
+            cfg.model_args[i] for i in ["window_size", "num_keypoints", "in_channel"]
+        )
+        train_loader = TestDataGenerator((input_shape), 1)
+        test_loader = TestDataGenerator((input_shape), 1)
 
-    return cfg
+    return train_loader, test_loader
 
 
 def train_tgcn_v2():
@@ -124,15 +151,11 @@ def train_tgcn_v2():
     model = TGCN_v2(**cfg.model_args, cfg=cfg)
     summary(model, cfg)
 
-    x_train, x_test, y_train, y_test = DataPath(cfg.model_args["num_class"]).split_data
+    train_loader, test_loader = get_loader()
 
-    train_generator = KeyDataGenerator(
-        x_test, y_test, batch_size=cfg.batch_size, seq_len=150
-    )
-    test_generator = TestDataGenerator((150, 137, 3), 1)
-    # test_generator = KeyDataGenerator(
-    #     x_test, y_test, batch_size=cfg.batch_size, seq_len=150
-    # )
+    # just check working
+    train_loader = test_loader
+    test_loader = TestDataGenerator((150, 137, 3), 1)
 
     criterion = nn.CrossEntropyLoss().float().to(cfg.model_args["device"])
     optimizer = optim.Adam
@@ -140,11 +163,11 @@ def train_tgcn_v2():
     trainer = TorchTrainer(
         model,
         epochs=cfg.epochs,
-        train_loader=train_generator,
-        test_loader=test_generator,
+        train_loader=train_loader,
+        test_loader=test_loader,
         optim=optimizer,
         criterion=criterion,
-        name="TGCN_trainer",
+        name="TGCN_v2_trainer",
         dev=cfg.model_args["device"],
         cfg=cfg,
     )
