@@ -9,7 +9,7 @@ def gen_random_params():
     ]
 
 
-@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != "win32", reason="test only on windows")
 @pytest.mark.parametrize("n_cls, batch_size", gen_random_params())
 def test_generator(n_cls: int, batch_size: int):
     from slr.data.datagenerator import KeyDataGenerator
@@ -20,7 +20,7 @@ def test_generator(n_cls: int, batch_size: int):
     assert len(a) * batch_size <= len(y)
 
 
-@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != "win32", reason="test only on windows")
 def test_graphgenerator():
     from sklearn.model_selection import train_test_split
     from slr.data.ksl.datapath import DataPath

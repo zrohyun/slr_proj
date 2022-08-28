@@ -7,14 +7,14 @@ import numpy as np
 import pytest
 
 
-@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != "win32", reason="test only on windows")
 def test_data_path_class_test(k=10):
     from slr.data.ksl.datapath import DataPath
 
     assert len(DataPath(k).class_dict) == k
 
 
-@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != "win32", reason="test only on windows")
 def test_zero_pad():
     from slr.utils.utils import zero_pad_keypoint_seq
 
@@ -24,7 +24,7 @@ def test_zero_pad():
     )
 
 
-@pytest.mark.skipif(platform != "win32", reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != "win32", reason="test only on windows")
 def test_data_path_case_cnt(lim=10):
     from slr.data.ksl.datapath import DataPath
 

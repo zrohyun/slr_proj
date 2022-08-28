@@ -2,7 +2,7 @@ import pytest
 from sys import platform
 
 
-@pytest.mark.skipif(platform != 'win32', reason="requires python3.10 or higher")
+@pytest.mark.skipif(platform != 'win32', reason="test only on windows")
 def test_import_submodule():
     try:
         import slr
