@@ -85,7 +85,7 @@ class TGCN(nn.Module):
         G = G.permute(0, 2, 1, 3).contiguous()
 
         # first layer
-        x = self.gtcn0(G)
+        x = self.relu(self.gtcn0(G))
 
         for layer in self.gtcn_layers:
             B, C, F, V = x.shape
