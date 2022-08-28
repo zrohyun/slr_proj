@@ -1,0 +1,2556 @@
+[ Thu Aug  4 23:01:15 2022 ] [1,   101] loss: 0.235 acc: 0.018
+[ Thu Aug  4 23:11:55 2022 ] val_loss: 4.637674420674642, val_accuracy: 1.75
+[ Thu Aug  4 23:14:27 2022 ] [2,   101] loss: 0.219 acc: 0.041
+[ Thu Aug  4 23:26:23 2022 ] val_loss: 4.499160049756368, val_accuracy: 2.75
+[ Thu Aug  4 23:28:45 2022 ] [3,   101] loss: 0.209 acc: 0.045
+[ Thu Aug  4 23:39:18 2022 ] val_loss: 4.441699116230011, val_accuracy: 3.875
+[ Thu Aug  4 23:41:40 2022 ] [4,   101] loss: 0.201 acc: 0.068
+[ Thu Aug  4 23:52:14 2022 ] val_loss: 4.422806836764018, val_accuracy: 4.375
+[ Thu Aug  4 23:54:36 2022 ] [5,   101] loss: 0.194 acc: 0.077
+[ Fri Aug  5 00:05:05 2022 ] val_loss: 4.381747999191284, val_accuracy: 4.583333333333333
+[ Fri Aug  5 00:07:30 2022 ] [6,   101] loss: 0.188 acc: 0.091
+[ Fri Aug  5 00:18:14 2022 ] val_loss: 4.3597009285291035, val_accuracy: 5.416666666666667
+[ Fri Aug  5 00:20:36 2022 ] [7,   101] loss: 0.182 acc: 0.113
+[ Fri Aug  5 00:31:09 2022 ] val_loss: 4.343343552748363, val_accuracy: 5.75
+[ Fri Aug  5 00:33:29 2022 ] [8,   101] loss: 0.176 acc: 0.134
+[ Fri Aug  5 00:44:00 2022 ] val_loss: 4.313690332571666, val_accuracy: 5.25
+[ Fri Aug  5 00:46:22 2022 ] [9,   101] loss: 0.171 acc: 0.140
+[ Fri Aug  5 00:56:58 2022 ] val_loss: 4.298410437107086, val_accuracy: 5.375
+[ Fri Aug  5 00:59:21 2022 ] [10,   101] loss: 0.167 acc: 0.152
+[ Fri Aug  5 01:09:52 2022 ] val_loss: 4.256666874090831, val_accuracy: 5.833333333333333
+[ Fri Aug  5 01:12:21 2022 ] [11,   101] loss: 0.162 acc: 0.175
+[ Fri Aug  5 01:23:02 2022 ] val_loss: 4.244903833866119, val_accuracy: 6.5
+[ Fri Aug  5 01:25:23 2022 ] [12,   101] loss: 0.157 acc: 0.196
+[ Fri Aug  5 01:35:57 2022 ] val_loss: 4.2395373368263245, val_accuracy: 7.041666666666667
+[ Fri Aug  5 01:38:18 2022 ] [13,   101] loss: 0.153 acc: 0.211
+[ Fri Aug  5 01:48:49 2022 ] val_loss: 4.227704133192698, val_accuracy: 7.291666666666667
+[ Fri Aug  5 01:51:10 2022 ] [14,   101] loss: 0.148 acc: 0.231
+[ Fri Aug  5 02:01:43 2022 ] val_loss: 4.224456362724304, val_accuracy: 7.416666666666667
+[ Fri Aug  5 02:04:05 2022 ] [15,   101] loss: 0.144 acc: 0.266
+[ Fri Aug  5 02:14:34 2022 ] val_loss: 4.222135736942291, val_accuracy: 7.541666666666667
+[ Fri Aug  5 02:16:56 2022 ] [16,   101] loss: 0.142 acc: 0.269
+[ Fri Aug  5 02:27:40 2022 ] val_loss: 4.2357147614161175, val_accuracy: 8.083333333333334
+[ Fri Aug  5 02:30:01 2022 ] [17,   101] loss: 0.137 acc: 0.279
+[ Fri Aug  5 02:40:34 2022 ] val_loss: 4.247587936719259, val_accuracy: 8.166666666666666
+[ Fri Aug  5 02:42:54 2022 ] [18,   101] loss: 0.134 acc: 0.314
+[ Fri Aug  5 02:53:25 2022 ] val_loss: 4.281479521592458, val_accuracy: 8.791666666666666
+[ Fri Aug  5 02:55:46 2022 ] [19,   101] loss: 0.129 acc: 0.333
+[ Fri Aug  5 03:06:20 2022 ] val_loss: 4.279959342479706, val_accuracy: 9.083333333333334
+[ Fri Aug  5 03:08:42 2022 ] [20,   101] loss: 0.126 acc: 0.346
+[ Fri Aug  5 03:19:11 2022 ] val_loss: 4.283501988252004, val_accuracy: 9.583333333333334
+[ Fri Aug  5 03:21:34 2022 ] [21,   101] loss: 0.123 acc: 0.370
+[ Fri Aug  5 03:32:17 2022 ] val_loss: 4.286671669483185, val_accuracy: 9.708333333333334
+[ Fri Aug  5 03:34:39 2022 ] [22,   101] loss: 0.119 acc: 0.391
+[ Fri Aug  5 03:45:15 2022 ] val_loss: 4.309820597966512, val_accuracy: 9.791666666666666
+[ Fri Aug  5 03:47:34 2022 ] [23,   101] loss: 0.114 acc: 0.421
+[ Fri Aug  5 03:58:19 2022 ] val_loss: 4.335891151428223, val_accuracy: 9.958333333333334
+[ Fri Aug  5 04:00:59 2022 ] [24,   101] loss: 0.109 acc: 0.439
+[ Fri Aug  5 04:12:34 2022 ] val_loss: 4.364273504416148, val_accuracy: 10.25
+[ Fri Aug  5 04:14:55 2022 ] [25,   101] loss: 0.104 acc: 0.475
+[ Fri Aug  5 04:25:24 2022 ] val_loss: 4.366427088578542, val_accuracy: 10.75
+[ Fri Aug  5 04:27:46 2022 ] [26,   101] loss: 0.099 acc: 0.504
+[ Fri Aug  5 04:38:29 2022 ] val_loss: 4.386283716360728, val_accuracy: 11.25
+[ Fri Aug  5 04:40:49 2022 ] [27,   101] loss: 0.093 acc: 0.529
+[ Fri Aug  5 04:51:20 2022 ] val_loss: 4.423728414376577, val_accuracy: 10.666666666666666
+[ Fri Aug  5 04:53:41 2022 ] [28,   101] loss: 0.088 acc: 0.580
+[ Fri Aug  5 05:04:10 2022 ] val_loss: 4.4627279869715375, val_accuracy: 10.583333333333334
+[ Fri Aug  5 05:06:30 2022 ] [29,   101] loss: 0.083 acc: 0.604
+[ Fri Aug  5 05:17:03 2022 ] val_loss: 4.412044129371643, val_accuracy: 10.833333333333334
+[ Fri Aug  5 05:19:23 2022 ] [30,   101] loss: 0.079 acc: 0.627
+[ Fri Aug  5 05:29:51 2022 ] val_loss: 4.4170888264973955, val_accuracy: 11.291666666666666
+[ Fri Aug  5 05:32:12 2022 ] [31,   101] loss: 0.076 acc: 0.645
+[ Fri Aug  5 05:42:57 2022 ] val_loss: 4.4101545898119605, val_accuracy: 12.083333333333334
+[ Fri Aug  5 05:45:18 2022 ] [32,   101] loss: 0.072 acc: 0.676
+[ Fri Aug  5 05:55:49 2022 ] val_loss: 4.350013699531555, val_accuracy: 13.291666666666666
+[ Fri Aug  5 05:58:09 2022 ] [33,   101] loss: 0.068 acc: 0.713
+[ Fri Aug  5 06:08:37 2022 ] val_loss: 4.361385867595673, val_accuracy: 12.875
+[ Fri Aug  5 06:10:59 2022 ] [34,   101] loss: 0.064 acc: 0.750
+[ Fri Aug  5 06:21:28 2022 ] val_loss: 4.355962200959524, val_accuracy: 13.25
+[ Fri Aug  5 06:23:50 2022 ] [35,   101] loss: 0.059 acc: 0.784
+[ Fri Aug  5 06:34:15 2022 ] val_loss: 4.350133069356283, val_accuracy: 15.0
+[ Fri Aug  5 06:36:42 2022 ] [36,   101] loss: 0.053 acc: 0.823
+[ Fri Aug  5 06:47:17 2022 ] val_loss: 4.358195315202077, val_accuracy: 15.416666666666666
+[ Fri Aug  5 06:49:37 2022 ] [37,   101] loss: 0.048 acc: 0.846
+[ Fri Aug  5 07:00:05 2022 ] val_loss: 4.389155078728994, val_accuracy: 15.083333333333334
+[ Fri Aug  5 07:02:25 2022 ] [38,   101] loss: 0.045 acc: 0.861
+[ Fri Aug  5 07:12:51 2022 ] val_loss: 4.4017600107193, val_accuracy: 14.958333333333334
+[ Fri Aug  5 07:15:11 2022 ] [39,   101] loss: 0.041 acc: 0.899
+[ Fri Aug  5 07:25:39 2022 ] val_loss: 4.419543538093567, val_accuracy: 15.208333333333334
+[ Fri Aug  5 07:27:59 2022 ] [40,   101] loss: 0.037 acc: 0.917
+
+[ Fri Aug  5 07:48:10 2022 ] [1,   101] loss: 0.236 acc: 0.014
+[ Fri Aug  5 07:49:14 2022 ] val_loss: 0.7996010669072469, val_accuracy: 1.5
+[ Fri Aug  5 07:51:38 2022 ] [2,   101] loss: 0.226 acc: 0.036
+[ Fri Aug  5 07:52:41 2022 ] val_loss: 0.7866831572850546, val_accuracy: 1.25
+[ Fri Aug  5 07:55:01 2022 ] [3,   101] loss: 0.217 acc: 0.043
+[ Fri Aug  5 07:56:05 2022 ] val_loss: 0.7665656240781148, val_accuracy: 1.7500000000000002
+[ Fri Aug  5 07:58:24 2022 ] [4,   101] loss: 0.208 acc: 0.062
+[ Fri Aug  5 07:59:26 2022 ] val_loss: 0.7591158533096314, val_accuracy: 2.75
+[ Fri Aug  5 08:01:46 2022 ] [5,   101] loss: 0.202 acc: 0.071
+[ Fri Aug  5 08:02:49 2022 ] val_loss: 0.7546231190363566, val_accuracy: 4.0
+[ Fri Aug  5 08:05:09 2022 ] [6,   101] loss: 0.196 acc: 0.080
+[ Fri Aug  5 08:06:12 2022 ] val_loss: 0.7524464631080627, val_accuracy: 3.5000000000000004
+[ Fri Aug  5 08:08:31 2022 ] [7,   101] loss: 0.190 acc: 0.095
+[ Fri Aug  5 08:09:34 2022 ] val_loss: 0.7445392942428589, val_accuracy: 3.75
+[ Fri Aug  5 08:11:55 2022 ] [8,   101] loss: 0.184 acc: 0.113
+[ Fri Aug  5 08:12:58 2022 ] val_loss: 0.7374572443962097, val_accuracy: 5.0
+[ Fri Aug  5 08:15:18 2022 ] [9,   101] loss: 0.179 acc: 0.130
+[ Fri Aug  5 08:16:21 2022 ] val_loss: 0.7363148736953735, val_accuracy: 5.25
+[ Fri Aug  5 08:18:40 2022 ] [10,   101] loss: 0.174 acc: 0.138
+[ Fri Aug  5 08:19:43 2022 ] val_loss: 0.7385073216756185, val_accuracy: 6.0
+[ Fri Aug  5 08:22:04 2022 ] [11,   101] loss: 0.170 acc: 0.154
+[ Fri Aug  5 08:23:06 2022 ] val_loss: 0.7315216692288716, val_accuracy: 6.5
+[ Fri Aug  5 08:25:27 2022 ] [12,   101] loss: 0.167 acc: 0.164
+[ Fri Aug  5 08:26:29 2022 ] val_loss: 0.729356476465861, val_accuracy: 6.5
+[ Fri Aug  5 08:28:55 2022 ] [13,   101] loss: 0.163 acc: 0.180
+[ Fri Aug  5 08:29:57 2022 ] val_loss: 0.7219984920819601, val_accuracy: 7.249999999999999
+[ Fri Aug  5 08:32:18 2022 ] [14,   101] loss: 0.159 acc: 0.188
+[ Fri Aug  5 08:33:20 2022 ] val_loss: 0.71862331310908, val_accuracy: 8.25
+[ Fri Aug  5 08:35:40 2022 ] [15,   101] loss: 0.154 acc: 0.200
+[ Fri Aug  5 08:36:42 2022 ] val_loss: 0.7190259591738383, val_accuracy: 8.25
+[ Fri Aug  5 08:39:01 2022 ] [16,   101] loss: 0.150 acc: 0.216
+[ Fri Aug  5 08:40:03 2022 ] val_loss: 0.7177768079439799, val_accuracy: 9.25
+[ Fri Aug  5 08:42:23 2022 ] [17,   101] loss: 0.145 acc: 0.235
+[ Fri Aug  5 08:43:25 2022 ] val_loss: 0.7179877543449402, val_accuracy: 9.5
+[ Fri Aug  5 08:45:43 2022 ] [18,   101] loss: 0.140 acc: 0.269
+[ Fri Aug  5 08:46:45 2022 ] val_loss: 0.7175971269607544, val_accuracy: 9.5
+[ Fri Aug  5 08:49:05 2022 ] [19,   101] loss: 0.135 acc: 0.301
+[ Fri Aug  5 08:50:08 2022 ] val_loss: 0.7158105047543843, val_accuracy: 10.75
+[ Fri Aug  5 08:52:27 2022 ] [20,   101] loss: 0.130 acc: 0.321
+[ Fri Aug  5 08:53:30 2022 ] val_loss: 0.7178006259600321, val_accuracy: 10.5
+[ Fri Aug  5 08:55:49 2022 ] [21,   101] loss: 0.126 acc: 0.343
+[ Fri Aug  5 08:56:52 2022 ] val_loss: 0.7245298687616984, val_accuracy: 10.5
+[ Fri Aug  5 08:59:11 2022 ] [22,   101] loss: 0.122 acc: 0.356
+[ Fri Aug  5 09:00:13 2022 ] val_loss: 0.7274823300043742, val_accuracy: 10.75
+[ Fri Aug  5 09:02:32 2022 ] [23,   101] loss: 0.117 acc: 0.380
+[ Fri Aug  5 09:03:34 2022 ] val_loss: 0.7268824942906698, val_accuracy: 10.0
+[ Fri Aug  5 09:05:53 2022 ] [24,   101] loss: 0.114 acc: 0.407
+[ Fri Aug  5 09:06:55 2022 ] val_loss: 0.7335825888315837, val_accuracy: 11.75
+[ Fri Aug  5 09:09:14 2022 ] [25,   101] loss: 0.109 acc: 0.415
+[ Fri Aug  5 09:10:16 2022 ] val_loss: 0.7273586972554524, val_accuracy: 12.75
+[ Fri Aug  5 09:12:35 2022 ] [26,   101] loss: 0.104 acc: 0.470
+[ Fri Aug  5 09:13:39 2022 ] val_loss: 0.7290214983622233, val_accuracy: 12.75
+[ Fri Aug  5 09:16:00 2022 ] [27,   101] loss: 0.099 acc: 0.497
+[ Fri Aug  5 09:17:03 2022 ] val_loss: 0.7301903454462687, val_accuracy: 12.75
+[ Fri Aug  5 09:19:22 2022 ] [28,   101] loss: 0.095 acc: 0.524
+[ Fri Aug  5 09:20:25 2022 ] val_loss: 0.738778711160024, val_accuracy: 11.75
+[ Fri Aug  5 09:22:44 2022 ] [29,   101] loss: 0.089 acc: 0.555
+[ Fri Aug  5 09:23:46 2022 ] val_loss: 0.7412694660822551, val_accuracy: 12.25
+[ Fri Aug  5 09:26:05 2022 ] [30,   101] loss: 0.083 acc: 0.598
+[ Fri Aug  5 09:27:07 2022 ] val_loss: 0.7422151239713033, val_accuracy: 12.5
+[ Fri Aug  5 09:29:26 2022 ] [31,   101] loss: 0.077 acc: 0.644
+[ Fri Aug  5 09:30:28 2022 ] val_loss: 0.7395535842577616, val_accuracy: 14.499999999999998
+[ Fri Aug  5 09:32:47 2022 ] [32,   101] loss: 0.071 acc: 0.676
+[ Fri Aug  5 09:33:49 2022 ] val_loss: 0.7433167338371277, val_accuracy: 15.25
+[ Fri Aug  5 09:36:08 2022 ] [33,   101] loss: 0.065 acc: 0.726
+[ Fri Aug  5 09:37:10 2022 ] val_loss: 0.7435633897781372, val_accuracy: 16.25
+[ Fri Aug  5 09:39:29 2022 ] [34,   101] loss: 0.060 acc: 0.766
+[ Fri Aug  5 09:40:31 2022 ] val_loss: 0.7473536411921183, val_accuracy: 15.25
+[ Fri Aug  5 09:42:50 2022 ] [35,   101] loss: 0.057 acc: 0.794
+[ Fri Aug  5 09:43:52 2022 ] val_loss: 0.7634753052393596, val_accuracy: 15.25
+[ Fri Aug  5 09:46:11 2022 ] [36,   101] loss: 0.054 acc: 0.807
+[ Fri Aug  5 09:47:13 2022 ] val_loss: 0.7643012245496114, val_accuracy: 16.5
+[ Fri Aug  5 09:49:32 2022 ] [37,   101] loss: 0.051 acc: 0.818
+[ Fri Aug  5 09:50:35 2022 ] val_loss: 0.7812649504343668, val_accuracy: 16.5
+[ Fri Aug  5 09:52:54 2022 ] [38,   101] loss: 0.047 acc: 0.861
+[ Fri Aug  5 09:53:56 2022 ] val_loss: 0.7833407219250997, val_accuracy: 15.75
+[ Fri Aug  5 09:56:16 2022 ] [39,   101] loss: 0.041 acc: 0.901
+[ Fri Aug  5 09:57:19 2022 ] val_loss: 0.7900721613566081, val_accuracy: 14.499999999999998
+[ Fri Aug  5 09:59:37 2022 ] [40,   101] loss: 0.037 acc: 0.916
+[ Fri Aug  5 10:00:39 2022 ] val_loss: 0.7797663617134094, val_accuracy: 15.75
+[ Fri Aug  5 10:02:59 2022 ] [41,   101] loss: 0.034 acc: 0.936
+[ Fri Aug  5 10:04:01 2022 ] val_loss: 0.7838371324539185, val_accuracy: 17.0
+[ Fri Aug  5 10:06:21 2022 ] [42,   101] loss: 0.031 acc: 0.959
+[ Fri Aug  5 10:07:23 2022 ] val_loss: 0.776472605864207, val_accuracy: 17.5
+[ Fri Aug  5 10:09:41 2022 ] [43,   101] loss: 0.027 acc: 0.966
+[ Fri Aug  5 10:10:43 2022 ] val_loss: 0.7790046695868175, val_accuracy: 18.75
+[ Fri Aug  5 10:13:02 2022 ] [44,   101] loss: 0.024 acc: 0.985
+[ Fri Aug  5 10:14:06 2022 ] val_loss: 0.7911442033449809, val_accuracy: 17.75
+[ Fri Aug  5 10:16:25 2022 ] [45,   101] loss: 0.022 acc: 0.984
+[ Fri Aug  5 10:17:28 2022 ] val_loss: 0.7984291370709737, val_accuracy: 17.5
+[ Fri Aug  5 10:19:47 2022 ] [46,   101] loss: 0.019 acc: 0.993
+[ Fri Aug  5 10:20:49 2022 ] val_loss: 0.814397646188736, val_accuracy: 18.0
+[ Fri Aug  5 10:23:11 2022 ] [47,   101] loss: 0.017 acc: 1.004
+[ Fri Aug  5 10:24:14 2022 ] val_loss: 0.8141275310516357, val_accuracy: 19.25
+[ Fri Aug  5 10:26:35 2022 ] [48,   101] loss: 0.015 acc: 1.002
+[ Fri Aug  5 10:27:37 2022 ] val_loss: 0.8119370253880819, val_accuracy: 18.75
+[ Fri Aug  5 10:29:57 2022 ] [49,   101] loss: 0.013 acc: 1.006
+[ Fri Aug  5 10:30:59 2022 ] val_loss: 0.8145120048522949, val_accuracy: 18.25
+[ Fri Aug  5 10:33:19 2022 ] [50,   101] loss: 0.012 acc: 1.006
+[ Fri Aug  5 10:34:21 2022 ] val_loss: 0.8157414329051972, val_accuracy: 18.25
+[ Fri Aug  5 10:36:42 2022 ] [51,   101] loss: 0.011 acc: 1.009
+[ Fri Aug  5 10:37:44 2022 ] val_loss: 0.8101481540997824, val_accuracy: 19.0
+[ Fri Aug  5 10:40:04 2022 ] [52,   101] loss: 0.010 acc: 1.010
+[ Fri Aug  5 10:41:06 2022 ] val_loss: 0.8055480130513509, val_accuracy: 18.25
+[ Fri Aug  5 10:43:27 2022 ] [53,   101] loss: 0.009 acc: 1.010
+[ Fri Aug  5 10:44:29 2022 ] val_loss: 0.8064867468674978, val_accuracy: 19.5
+[ Fri Aug  5 10:46:49 2022 ] [54,   101] loss: 0.008 acc: 1.010
+[ Fri Aug  5 10:47:51 2022 ] val_loss: 0.8128044366836548, val_accuracy: 18.75
+[ Fri Aug  5 10:50:13 2022 ] [55,   101] loss: 0.007 acc: 1.009
+[ Fri Aug  5 10:51:16 2022 ] val_loss: 0.8198088812828064, val_accuracy: 19.75
+[ Fri Aug  5 10:53:36 2022 ] [56,   101] loss: 0.006 acc: 1.010
+[ Fri Aug  5 10:54:39 2022 ] val_loss: 0.8211614660422007, val_accuracy: 20.5
+[ Fri Aug  5 10:56:59 2022 ] [57,   101] loss: 0.005 acc: 1.010
+[ Fri Aug  5 10:58:02 2022 ] val_loss: 0.8204680363337199, val_accuracy: 20.0
+[ Fri Aug  5 11:00:22 2022 ] [58,   101] loss: 0.004 acc: 1.009
+[ Fri Aug  5 11:01:25 2022 ] val_loss: 0.8267426506678264, val_accuracy: 19.25
+[ Fri Aug  5 11:03:44 2022 ] [59,   101] loss: 0.004 acc: 1.010
+[ Fri Aug  5 11:04:46 2022 ] val_loss: 0.8322580548127493, val_accuracy: 19.0
+[ Fri Aug  5 11:07:09 2022 ] [60,   101] loss: 0.003 acc: 1.010
+[ Fri Aug  5 11:08:12 2022 ] val_loss: 0.8304627251625061, val_accuracy: 19.5
+[ Fri Aug  5 11:10:32 2022 ] [61,   101] loss: 0.003 acc: 1.010
+[ Fri Aug  5 11:11:35 2022 ] val_loss: 0.8252661104996999, val_accuracy: 19.75
+[ Fri Aug  5 11:13:56 2022 ] [62,   101] loss: 0.002 acc: 1.010
+[ Fri Aug  5 11:14:58 2022 ] val_loss: 0.8225358152389526, val_accuracy: 20.25
+[ Fri Aug  5 11:17:19 2022 ] [63,   101] loss: 0.002 acc: 1.010
+[ Fri Aug  5 11:18:22 2022 ] val_loss: 0.8222052073478698, val_accuracy: 21.0
+[ Fri Aug  5 11:20:42 2022 ] [64,   101] loss: 0.002 acc: 1.010
+[ Fri Aug  5 11:21:44 2022 ] val_loss: 0.8221510295073191, val_accuracy: 21.5
+[ Fri Aug  5 11:24:05 2022 ] [65,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:25:07 2022 ] val_loss: 0.8213597881793976, val_accuracy: 21.75
+[ Fri Aug  5 11:27:27 2022 ] [66,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:28:29 2022 ] val_loss: 0.8204113531112671, val_accuracy: 22.5
+[ Fri Aug  5 11:30:51 2022 ] [67,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:31:53 2022 ] val_loss: 0.819793225924174, val_accuracy: 22.0
+[ Fri Aug  5 11:34:12 2022 ] [68,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:35:14 2022 ] val_loss: 0.8198810895284017, val_accuracy: 22.0
+[ Fri Aug  5 11:37:34 2022 ] [69,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:38:36 2022 ] val_loss: 0.8199558186531067, val_accuracy: 22.5
+[ Fri Aug  5 11:40:57 2022 ] [70,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:42:00 2022 ] val_loss: 0.8203510002295176, val_accuracy: 22.5
+[ Fri Aug  5 11:44:19 2022 ] [71,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:45:21 2022 ] val_loss: 0.820498739083608, val_accuracy: 22.0
+[ Fri Aug  5 11:47:41 2022 ] [72,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:48:44 2022 ] val_loss: 0.8207289254665375, val_accuracy: 22.5
+[ Fri Aug  5 11:51:04 2022 ] [73,   101] loss: 0.001 acc: 1.010
+[ Fri Aug  5 11:52:07 2022 ] val_loss: 0.8210505557060241, val_accuracy: 22.75
+[ Fri Aug  5 11:54:27 2022 ] [74,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 11:55:30 2022 ] val_loss: 0.8215950624148051, val_accuracy: 22.75
+[ Fri Aug  5 11:57:50 2022 ] [75,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 11:58:52 2022 ] val_loss: 0.8220304195086161, val_accuracy: 22.75
+[ Fri Aug  5 12:01:11 2022 ] [76,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:02:13 2022 ] val_loss: 0.822689829270045, val_accuracy: 23.0
+[ Fri Aug  5 12:04:32 2022 ] [77,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:05:34 2022 ] val_loss: 0.8231701378027598, val_accuracy: 23.0
+[ Fri Aug  5 12:07:53 2022 ] [78,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:08:55 2022 ] val_loss: 0.8239255607128143, val_accuracy: 23.25
+[ Fri Aug  5 12:11:15 2022 ] [79,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:12:17 2022 ] val_loss: 0.8245980644226074, val_accuracy: 23.5
+[ Fri Aug  5 12:14:36 2022 ] [80,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:15:38 2022 ] val_loss: 0.8253956850369771, val_accuracy: 24.0
+[ Fri Aug  5 12:17:59 2022 ] [81,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:19:01 2022 ] val_loss: 0.825948957602183, val_accuracy: 24.0
+[ Fri Aug  5 12:21:21 2022 ] [82,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:22:24 2022 ] val_loss: 0.8266235880057017, val_accuracy: 24.0
+[ Fri Aug  5 12:24:43 2022 ] [83,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:25:45 2022 ] val_loss: 0.8272125415007273, val_accuracy: 24.0
+[ Fri Aug  5 12:28:04 2022 ] [84,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:29:07 2022 ] val_loss: 0.8278984475135803, val_accuracy: 24.0
+[ Fri Aug  5 12:31:26 2022 ] [85,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:32:28 2022 ] val_loss: 0.8285008736451467, val_accuracy: 24.0
+[ Fri Aug  5 12:34:48 2022 ] [86,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:35:50 2022 ] val_loss: 0.8291581630706787, val_accuracy: 24.0
+[ Fri Aug  5 12:38:10 2022 ] [87,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:39:12 2022 ] val_loss: 0.8297430046399434, val_accuracy: 24.0
+[ Fri Aug  5 12:41:31 2022 ] [88,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:42:33 2022 ] val_loss: 0.830398922363917, val_accuracy: 24.25
+[ Fri Aug  5 12:44:52 2022 ] [89,   101] loss: 0.000 acc: 1.010
+[ Fri Aug  5 12:45:55 2022 ] val_loss: 0.8309852079550425, val_accuracy: 24.5
+[ Sat Aug  6 02:43:57 2022 ] [1,   700] loss: 4.202 acc: 0.044
+[ Sat Aug  6 02:52:30 2022 ] val_loss: 4.080022237300873, val_accuracy: 0.05333333333333334
+[ Sat Aug  6 03:06:08 2022 ] [2,   700] loss: 3.589 acc: 0.110
+[ Sat Aug  6 03:12:07 2022 ] val_loss: 3.770201498667399, val_accuracy: 0.09791666666666667
+[ Sat Aug  6 03:25:52 2022 ] [3,   700] loss: 3.223 acc: 0.166
+[ Sat Aug  6 03:31:51 2022 ] val_loss: 3.5646060546239218, val_accuracy: 0.14958333333333335
+[ Sat Aug  6 03:47:49 2022 ] [4,   700] loss: 2.902 acc: 0.237
+[ Sat Aug  6 03:54:31 2022 ] val_loss: 3.4042137241363526, val_accuracy: 0.18916666666666668
+[ Sat Aug  6 04:08:08 2022 ] [5,   700] loss: 2.581 acc: 0.329
+[ Sat Aug  6 04:14:06 2022 ] val_loss: 3.238678474028905, val_accuracy: 0.25375
+[ Sat Aug  6 04:27:50 2022 ] [6,   700] loss: 2.274 acc: 0.419
+[ Sat Aug  6 04:33:49 2022 ] val_loss: 3.0858439652125043, val_accuracy: 0.3075
+[ Sat Aug  6 04:49:33 2022 ] [7,   700] loss: 2.008 acc: 0.490
+[ Sat Aug  6 04:56:13 2022 ] val_loss: 2.9814778582255044, val_accuracy: 0.34708333333333335
+[ Sat Aug  6 05:10:00 2022 ] [8,   700] loss: 1.779 acc: 0.550
+[ Sat Aug  6 05:15:58 2022 ] val_loss: 2.899373759031296, val_accuracy: 0.3745833333333333
+[ Sat Aug  6 05:29:43 2022 ] [9,   700] loss: 1.580 acc: 0.601
+[ Sat Aug  6 05:35:41 2022 ] val_loss: 2.83847775777181, val_accuracy: 0.40708333333333335
+[ Sat Aug  6 05:51:20 2022 ] [10,   700] loss: 1.405 acc: 0.644
+[ Sat Aug  6 05:57:59 2022 ] val_loss: 2.83286261399587, val_accuracy: 0.42916666666666664
+[ Sat Aug  6 06:11:40 2022 ] [11,   700] loss: 1.243 acc: 0.683
+[ Sat Aug  6 06:17:39 2022 ] val_loss: 2.8657868923743566, val_accuracy: 0.44166666666666665
+[ Sat Aug  6 06:31:22 2022 ] [12,   700] loss: 1.099 acc: 0.722
+[ Sat Aug  6 06:37:20 2022 ] val_loss: 2.872510004043579, val_accuracy: 0.4504166666666667
+[ Sat Aug  6 06:53:03 2022 ] [13,   700] loss: 0.967 acc: 0.756
+[ Sat Aug  6 06:59:47 2022 ] val_loss: 2.874307945370674, val_accuracy: 0.4583333333333333
+[ Sat Aug  6 07:13:32 2022 ] [14,   700] loss: 0.849 acc: 0.788
+[ Sat Aug  6 07:19:30 2022 ] val_loss: 2.887531144420306, val_accuracy: 0.46875
+[ Sat Aug  6 07:33:15 2022 ] [15,   700] loss: 0.743 acc: 0.817
+[ Sat Aug  6 07:39:15 2022 ] val_loss: 2.9030432253082594, val_accuracy: 0.4795833333333333
+[ Sat Aug  6 07:54:48 2022 ] [16,   700] loss: 0.650 acc: 0.841
+[ Sat Aug  6 08:01:52 2022 ] val_loss: 2.9359556434551877, val_accuracy: 0.48625
+[ Sat Aug  6 08:15:36 2022 ] [17,   700] loss: 0.553 acc: 0.866
+[ Sat Aug  6 08:21:35 2022 ] val_loss: 2.956146064500014, val_accuracy: 0.4870833333333333
+[ Sat Aug  6 08:35:19 2022 ] [18,   700] loss: 0.469 acc: 0.896
+[ Sat Aug  6 08:41:18 2022 ] val_loss: 2.961061536371708, val_accuracy: 0.49291666666666667
+[ Sat Aug  6 08:56:56 2022 ] [19,   700] loss: 0.404 acc: 0.917
+[ Sat Aug  6 09:03:37 2022 ] val_loss: 2.8953500029444696, val_accuracy: 0.5145833333333333
+[ Sat Aug  6 09:17:19 2022 ] [20,   700] loss: 0.343 acc: 0.933
+[ Sat Aug  6 09:23:17 2022 ] val_loss: 2.9767403439680735, val_accuracy: 0.51
+[ Sat Aug  6 09:37:02 2022 ] [21,   700] loss: 0.288 acc: 0.949
+[ Sat Aug  6 09:43:01 2022 ] val_loss: 3.0562367687126, val_accuracy: 0.50625
+[ Sat Aug  6 09:58:34 2022 ] [22,   700] loss: 0.238 acc: 0.962
+[ Sat Aug  6 10:05:14 2022 ] val_loss: 3.0662148715058963, val_accuracy: 0.5095833333333334
+[ Sat Aug  6 10:18:50 2022 ] [23,   700] loss: 0.198 acc: 0.972
+[ Sat Aug  6 10:24:48 2022 ] val_loss: 3.041955239822467, val_accuracy: 0.5104166666666666
+[ Sat Aug  6 10:38:33 2022 ] [24,   700] loss: 0.172 acc: 0.981
+[ Sat Aug  6 10:44:31 2022 ] val_loss: 3.100387201309204, val_accuracy: 0.51375
+[ Sat Aug  6 10:59:53 2022 ] [25,   700] loss: 0.147 acc: 0.984
+[ Sat Aug  6 11:06:22 2022 ] val_loss: 3.147324460496505, val_accuracy: 0.5020833333333333
+[ Sat Aug  6 11:19:54 2022 ] [26,   700] loss: 0.145 acc: 0.980
+[ Sat Aug  6 11:25:52 2022 ] val_loss: 3.1250750508656107, val_accuracy: 0.5058333333333334
+[ Sat Aug  6 11:39:38 2022 ] [27,   700] loss: 0.130 acc: 0.982
+[ Sat Aug  6 11:45:36 2022 ] val_loss: 3.13897750005126, val_accuracy: 0.5179166666666667
+[ Sat Aug  6 12:01:01 2022 ] [28,   700] loss: 0.121 acc: 0.982
+[ Sat Aug  6 12:07:34 2022 ] val_loss: 2.8927792433152595, val_accuracy: 0.5458333333333333
+[ Sat Aug  6 12:21:01 2022 ] [29,   700] loss: 0.088 acc: 0.990
+[ Sat Aug  6 12:27:00 2022 ] val_loss: 2.966861323490739, val_accuracy: 0.5520833333333334
+[ Sat Aug  6 12:40:44 2022 ] [30,   700] loss: 0.083 acc: 0.992
+[ Sat Aug  6 12:46:43 2022 ] val_loss: 2.9815904994557303, val_accuracy: 0.55125
+[ Sat Aug  6 13:02:18 2022 ] [31,   700] loss: 0.086 acc: 0.989
+[ Sat Aug  6 13:08:46 2022 ] val_loss: 3.2813428188612064, val_accuracy: 0.5170833333333333
+[ Sat Aug  6 13:22:15 2022 ] [32,   700] loss: 0.085 acc: 0.989
+[ Sat Aug  6 13:28:12 2022 ] val_loss: 3.0800653536369405, val_accuracy: 0.52875
+[ Sat Aug  6 13:41:58 2022 ] [33,   700] loss: 0.067 acc: 0.992
+[ Sat Aug  6 13:47:57 2022 ] val_loss: 3.1557452182595926, val_accuracy: 0.5520833333333334
+[ Sat Aug  6 14:03:26 2022 ] [34,   700] loss: 0.088 acc: 0.985
+[ Sat Aug  6 14:10:00 2022 ] val_loss: 3.2325490281606712, val_accuracy: 0.5366666666666666
+[ Sat Aug  6 14:23:44 2022 ] [35,   700] loss: 0.054 acc: 0.993
+[ Sat Aug  6 14:29:42 2022 ] val_loss: 3.153682504805426, val_accuracy: 0.56125
+[ Sat Aug  6 14:43:27 2022 ] [36,   700] loss: 0.067 acc: 0.989
+[ Sat Aug  6 14:49:25 2022 ] val_loss: 3.094041280945142, val_accuracy: 0.5666666666666667
+[ Sat Aug  6 15:04:41 2022 ] [37,   700] loss: 0.069 acc: 0.988
+[ Sat Aug  6 15:11:08 2022 ] val_loss: 3.054594324082136, val_accuracy: 0.5595833333333333
+[ Sat Aug  6 15:24:33 2022 ] [38,   700] loss: 0.040 acc: 0.995
+[ Sat Aug  6 15:30:31 2022 ] val_loss: 3.089680156856775, val_accuracy: 0.5791666666666667
+[ Sat Aug  6 15:44:16 2022 ] [39,   700] loss: 0.069 acc: 0.986
+[ Sat Aug  6 15:50:14 2022 ] val_loss: 3.138003775452574, val_accuracy: 0.5604166666666667
+[ Sat Aug  6 16:05:26 2022 ] [40,   700] loss: 0.078 acc: 0.985
+[ Sat Aug  6 16:11:58 2022 ] val_loss: 3.214374208934605, val_accuracy: 0.57625
+[ Sat Aug  6 16:25:24 2022 ] [41,   700] loss: 0.030 acc: 0.996
+[ Sat Aug  6 16:31:21 2022 ] val_loss: 3.3186037282583616, val_accuracy: 0.57375
+[ Sat Aug  6 16:44:52 2022 ] [42,   700] loss: 0.036 acc: 0.995
+[ Sat Aug  6 16:50:50 2022 ] val_loss: 2.972570422353844, val_accuracy: 0.58375
+[ Sat Aug  6 17:05:59 2022 ] [43,   700] loss: 0.090 acc: 0.979
+[ Sat Aug  6 17:12:39 2022 ] val_loss: 2.943677936779956, val_accuracy: 0.5725
+[ Sat Aug  6 17:27:43 2022 ] [44,   700] loss: 0.039 acc: 0.994
+[ Sat Aug  6 17:34:37 2022 ] val_loss: 3.090243480267624, val_accuracy: 0.5791666666666667
+[ Sat Aug  6 17:49:07 2022 ] [45,   700] loss: 0.036 acc: 0.995
+[ Sat Aug  6 17:55:05 2022 ] val_loss: 3.3885940797875325, val_accuracy: 0.57375
+[ Sat Aug  6 18:10:29 2022 ] [46,   700] loss: 0.057 acc: 0.988
+[ Sat Aug  6 18:16:50 2022 ] val_loss: 3.302322013558199, val_accuracy: 0.57
+[ Sat Aug  6 18:30:36 2022 ] [47,   700] loss: 0.053 acc: 0.989
+[ Sat Aug  6 18:36:34 2022 ] val_loss: 3.071145569359263, val_accuracy: 0.5645833333333333
+[ Sat Aug  6 18:50:21 2022 ] [48,   700] loss: 0.021 acc: 0.998
+[ Sat Aug  6 18:56:19 2022 ] val_loss: 3.042338821530963, val_accuracy: 0.6041666666666666
+[ Sat Aug  6 19:11:28 2022 ] [49,   700] loss: 0.019 acc: 0.998
+[ Sat Aug  6 19:17:57 2022 ] val_loss: 3.20714331721887, val_accuracy: 0.6054166666666667
+[ Sat Aug  6 19:31:23 2022 ] [50,   700] loss: 0.082 acc: 0.979
+[ Sat Aug  6 19:37:19 2022 ] val_loss: 3.2433225045229, val_accuracy: 0.5575
+[ Sat Aug  6 19:50:45 2022 ] [51,   700] loss: 0.037 acc: 0.994
+[ Sat Aug  6 19:56:42 2022 ] val_loss: 3.1996701226755975, val_accuracy: 0.6075
+[ Sat Aug  6 20:11:45 2022 ] [52,   700] loss: 0.008 acc: 1.000
+[ Sat Aug  6 20:18:06 2022 ] val_loss: 3.170876343032966, val_accuracy: 0.6141666666666666
+[ Sat Aug  6 20:31:32 2022 ] [53,   700] loss: 0.029 acc: 0.993
+[ Sat Aug  6 20:37:29 2022 ] val_loss: 3.2454872238636017, val_accuracy: 0.5145833333333333
+[ Sat Aug  6 20:50:58 2022 ] [54,   700] loss: 0.098 acc: 0.973
+[ Sat Aug  6 20:56:55 2022 ] val_loss: 3.0646756188571453, val_accuracy: 0.60875
+[ Sat Aug  6 21:11:59 2022 ] [55,   700] loss: 0.008 acc: 1.000
+[ Sat Aug  6 21:18:43 2022 ] val_loss: 3.0861333286948502, val_accuracy: 0.6204166666666666
+[ Sat Aug  6 21:32:33 2022 ] [56,   700] loss: 0.008 acc: 0.999
+[ Sat Aug  6 21:38:32 2022 ] val_loss: 3.1412953678394357, val_accuracy: 0.6058333333333333
+[ Sat Aug  6 21:52:22 2022 ] [57,   700] loss: 0.070 acc: 0.981
+[ Sat Aug  6 21:58:22 2022 ] val_loss: 3.2221128392219542, val_accuracy: 0.5945833333333334
+[ Sat Aug  6 22:13:24 2022 ] [58,   700] loss: 0.018 acc: 0.998
+[ Sat Aug  6 22:19:59 2022 ] val_loss: 3.1152678464135777, val_accuracy: 0.6233333333333333
+[ Sat Aug  6 22:33:31 2022 ] [59,   700] loss: 0.028 acc: 0.996
+[ Sat Aug  6 22:39:28 2022 ] val_loss: 3.1563918856096764, val_accuracy: 0.5629166666666666
+[ Sat Aug  6 22:52:59 2022 ] [60,   700] loss: 0.040 acc: 0.991
+[ Sat Aug  6 22:58:56 2022 ] val_loss: 3.4375951945595444, val_accuracy: 0.5720833333333334
+[ Sat Aug  6 23:14:04 2022 ] [61,   700] loss: 0.013 acc: 0.999
+[ Sat Aug  6 23:20:25 2022 ] val_loss: 3.091363562584544, val_accuracy: 0.61125
+[ Sat Aug  6 23:33:55 2022 ] [62,   700] loss: 0.055 acc: 0.986
+[ Sat Aug  6 23:39:52 2022 ] val_loss: 3.044881241476784, val_accuracy: 0.5979166666666667
+[ Sat Aug  6 23:53:22 2022 ] [63,   700] loss: 0.013 acc: 0.999
+[ Sat Aug  6 23:59:19 2022 ] val_loss: 3.093507135044783, val_accuracy: 0.61125
+[ Sun Aug  7 00:14:39 2022 ] [64,   700] loss: 0.008 acc: 0.999
+[ Sun Aug  7 00:22:01 2022 ] val_loss: 3.1105493955438335, val_accuracy: 0.61875
+[ Sun Aug  7 00:37:42 2022 ] [65,   700] loss: 0.002 acc: 1.000
+[ Sun Aug  7 00:43:41 2022 ] val_loss: 3.1227220240825164, val_accuracy: 0.625
+[ Sun Aug  7 00:57:26 2022 ] [66,   700] loss: 0.001 acc: 1.000
+[ Sun Aug  7 01:03:24 2022 ] val_loss: 3.1512467816999803, val_accuracy: 0.6283333333333333
+[ Sun Aug  7 01:18:15 2022 ] [67,   700] loss: 0.001 acc: 1.000
+[ Sun Aug  7 01:24:38 2022 ] val_loss: 3.1816332463702808, val_accuracy: 0.6304166666666666
+[ Sun Aug  7 01:38:24 2022 ] [68,   700] loss: 0.001 acc: 1.000
+[ Sun Aug  7 01:44:23 2022 ] val_loss: 3.2131996818166226, val_accuracy: 0.63125
+[ Sun Aug  7 01:58:08 2022 ] [69,   700] loss: 0.001 acc: 1.000
+[ Sun Aug  7 02:04:07 2022 ] val_loss: 3.245202262319314, val_accuracy: 0.6304166666666666
+[ Sun Aug  7 02:19:01 2022 ] [70,   700] loss: 0.001 acc: 1.000
+[ Sun Aug  7 02:25:30 2022 ] val_loss: 3.276447513261034, val_accuracy: 0.6304166666666666
+[ Sun Aug  7 02:39:21 2022 ] [71,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 02:45:20 2022 ] val_loss: 3.3080597946901493, val_accuracy: 0.6308333333333334
+[ Sun Aug  7 02:59:11 2022 ] [72,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 03:05:11 2022 ] val_loss: 3.337870181580074, val_accuracy: 0.6316666666666667
+[ Sun Aug  7 03:20:03 2022 ] [73,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 03:26:25 2022 ] val_loss: 3.36611103570632, val_accuracy: 0.6320833333333333
+[ Sun Aug  7 03:40:04 2022 ] [74,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 03:46:02 2022 ] val_loss: 3.3927086118612593, val_accuracy: 0.6329166666666667
+[ Sun Aug  7 03:59:48 2022 ] [75,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 04:05:46 2022 ] val_loss: 3.4180495735653675, val_accuracy: 0.6329166666666667
+[ Sun Aug  7 04:20:44 2022 ] [76,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 04:27:02 2022 ] val_loss: 3.439258842273266, val_accuracy: 0.63375
+[ Sun Aug  7 04:40:35 2022 ] [77,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 04:46:33 2022 ] val_loss: 3.4583316098861783, val_accuracy: 0.6379166666666667
+[ Sun Aug  7 05:00:19 2022 ] [78,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 05:06:17 2022 ] val_loss: 3.4759506023549087, val_accuracy: 0.6395833333333333
+[ Sun Aug  7 05:21:08 2022 ] [79,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 05:27:29 2022 ] val_loss: 3.4961218338504354, val_accuracy: 0.6375
+[ Sun Aug  7 05:41:14 2022 ] [80,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 05:47:12 2022 ] val_loss: 3.514419855111143, val_accuracy: 0.6375
+[ Sun Aug  7 06:00:57 2022 ] [81,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 06:06:55 2022 ] val_loss: 3.5308084474065495, val_accuracy: 0.6383333333333333
+[ Sun Aug  7 06:21:46 2022 ] [82,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 06:28:08 2022 ] val_loss: 3.545201481647673, val_accuracy: 0.6391666666666667
+[ Sun Aug  7 06:41:35 2022 ] [83,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 06:47:32 2022 ] val_loss: 3.5618626524664676, val_accuracy: 0.6408333333333334
+[ Sun Aug  7 07:01:17 2022 ] [84,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 07:07:15 2022 ] val_loss: 3.5776838306388528, val_accuracy: 0.6425
+[ Sun Aug  7 07:21:59 2022 ] [85,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 07:28:12 2022 ] val_loss: 3.598800649002466, val_accuracy: 0.6433333333333333
+[ Sun Aug  7 07:41:58 2022 ] [86,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 07:47:56 2022 ] val_loss: 3.619862152983163, val_accuracy: 0.6429166666666667
+[ Sun Aug  7 08:01:41 2022 ] [87,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 08:07:39 2022 ] val_loss: 3.643196960547818, val_accuracy: 0.6429166666666667
+[ Sun Aug  7 08:22:43 2022 ] [88,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 08:28:58 2022 ] val_loss: 3.666866348414175, val_accuracy: 0.6429166666666667
+[ Sun Aug  7 08:42:44 2022 ] [89,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 08:48:43 2022 ] val_loss: 3.6870741881585127, val_accuracy: 0.64125
+[ Sun Aug  7 09:02:29 2022 ] [90,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 09:08:27 2022 ] val_loss: 3.715614193284388, val_accuracy: 0.6433333333333333
+[ Sun Aug  7 09:23:23 2022 ] [91,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 09:29:41 2022 ] val_loss: 3.736778386961293, val_accuracy: 0.64375
+[ Sun Aug  7 09:43:08 2022 ] [92,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 09:49:04 2022 ] val_loss: 3.7581279419082847, val_accuracy: 0.6433333333333333
+[ Sun Aug  7 10:02:32 2022 ] [93,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 10:08:30 2022 ] val_loss: 3.783160140768535, val_accuracy: 0.6425
+[ Sun Aug  7 10:22:15 2022 ] [94,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 10:28:14 2022 ] val_loss: 3.805583154624052, val_accuracy: 0.6429166666666667
+[ Sun Aug  7 10:42:58 2022 ] [95,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 10:49:15 2022 ] val_loss: 3.825377773452201, val_accuracy: 0.645
+[ Sun Aug  7 11:03:02 2022 ] [96,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 11:09:00 2022 ] val_loss: 3.863362572868382, val_accuracy: 0.6441666666666667
+[ Sun Aug  7 11:22:43 2022 ] [97,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 11:28:42 2022 ] val_loss: 3.892877909514509, val_accuracy: 0.6429166666666667
+[ Sun Aug  7 11:43:26 2022 ] [98,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 11:49:41 2022 ] val_loss: 3.9160451633499, val_accuracy: 0.6433333333333333
+[ Sun Aug  7 12:03:08 2022 ] [99,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 12:09:05 2022 ] val_loss: 3.9397474354164825, val_accuracy: 0.64375
+[ Sun Aug  7 12:22:49 2022 ] [100,   700] loss: 0.000 acc: 1.000
+[ Sun Aug  7 12:28:47 2022 ] val_loss: 3.9504834756940483, val_accuracy: 0.645
+[ Sun Aug  7 12:28:47 2022 ] whole time:122668
+[ Sun Aug  7 12:32:47 2022 ] [1,   210] loss: 3.388 acc: 0.049
+[ Sun Aug  7 12:34:28 2022 ] val_loss: 3.1595369153552584, val_accuracy: 0.12222222222222222
+[ Sun Aug  7 12:38:33 2022 ] [2,   210] loss: 3.184 acc: 0.083
+[ Sun Aug  7 12:40:15 2022 ] val_loss: 3.0358307705985177, val_accuracy: 0.12916666666666668
+[ Sun Aug  7 12:44:23 2022 ] [3,   210] loss: 3.121 acc: 0.089
+[ Sun Aug  7 12:46:06 2022 ] val_loss: 2.9919792042838202, val_accuracy: 0.09583333333333334
+[ Sun Aug  7 12:50:10 2022 ] [4,   210] loss: 2.922 acc: 0.129
+[ Sun Aug  7 12:51:52 2022 ] val_loss: 2.7683219353357953, val_accuracy: 0.16666666666666666
+[ Sun Aug  7 12:55:56 2022 ] [5,   210] loss: 2.798 acc: 0.158
+[ Sun Aug  7 12:57:37 2022 ] val_loss: 2.7161103036668566, val_accuracy: 0.15833333333333333
+[ Sun Aug  7 13:01:39 2022 ] [6,   210] loss: 2.714 acc: 0.176
+[ Sun Aug  7 13:03:20 2022 ] val_loss: 2.67373306883706, val_accuracy: 0.17222222222222222
+[ Sun Aug  7 13:07:22 2022 ] [7,   210] loss: 2.613 acc: 0.212
+[ Sun Aug  7 13:09:02 2022 ] val_loss: 2.6103846894370184, val_accuracy: 0.2013888888888889
+[ Sun Aug  7 13:13:05 2022 ] [8,   210] loss: 2.525 acc: 0.235
+[ Sun Aug  7 13:14:47 2022 ] val_loss: 2.5589134242799547, val_accuracy: 0.2361111111111111
+[ Sun Aug  7 13:18:52 2022 ] [9,   210] loss: 2.437 acc: 0.256
+[ Sun Aug  7 13:20:34 2022 ] val_loss: 2.4320014092657303, val_accuracy: 0.2611111111111111
+[ Sun Aug  7 13:24:40 2022 ] [10,   210] loss: 2.343 acc: 0.274
+[ Sun Aug  7 13:26:22 2022 ] val_loss: 2.3389663073751663, val_accuracy: 0.2902777777777778
+[ Sun Aug  7 13:30:28 2022 ] [11,   210] loss: 2.275 acc: 0.298
+[ Sun Aug  7 13:32:10 2022 ] val_loss: 2.26616932021247, val_accuracy: 0.34444444444444444
+[ Sun Aug  7 13:36:14 2022 ] [12,   210] loss: 2.152 acc: 0.342
+[ Sun Aug  7 13:37:56 2022 ] val_loss: 2.1620084563891093, val_accuracy: 0.37083333333333335
+[ Sun Aug  7 13:42:01 2022 ] [13,   210] loss: 2.038 acc: 0.377
+[ Sun Aug  7 13:43:43 2022 ] val_loss: 2.109644068611993, val_accuracy: 0.37777777777777777
+[ Sun Aug  7 13:47:49 2022 ] [14,   210] loss: 1.939 acc: 0.411
+[ Sun Aug  7 13:49:31 2022 ] val_loss: 2.048395363489787, val_accuracy: 0.39305555555555555
+[ Sun Aug  7 13:53:35 2022 ] [15,   210] loss: 1.864 acc: 0.443
+[ Sun Aug  7 13:55:16 2022 ] val_loss: 2.022042812903722, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 13:59:19 2022 ] [16,   210] loss: 1.777 acc: 0.454
+[ Sun Aug  7 14:00:59 2022 ] val_loss: 1.9787164171536764, val_accuracy: 0.4222222222222222
+[ Sun Aug  7 14:05:00 2022 ] [17,   210] loss: 1.723 acc: 0.472
+[ Sun Aug  7 14:06:39 2022 ] val_loss: 1.9680065658357409, val_accuracy: 0.4125
+[ Sun Aug  7 14:10:40 2022 ] [18,   210] loss: 1.617 acc: 0.516
+[ Sun Aug  7 14:12:20 2022 ] val_loss: 1.9158027331034342, val_accuracy: 0.4388888888888889
+[ Sun Aug  7 14:16:23 2022 ] [19,   210] loss: 1.528 acc: 0.543
+[ Sun Aug  7 14:18:05 2022 ] val_loss: 1.8825382239288755, val_accuracy: 0.4652777777777778
+[ Sun Aug  7 14:22:08 2022 ] [20,   210] loss: 1.457 acc: 0.561
+[ Sun Aug  7 14:23:50 2022 ] val_loss: 1.8825128349992963, val_accuracy: 0.4708333333333333
+[ Sun Aug  7 14:27:56 2022 ] [21,   210] loss: 1.376 acc: 0.584
+[ Sun Aug  7 14:29:38 2022 ] val_loss: 1.8749419093132018, val_accuracy: 0.45694444444444443
+[ Sun Aug  7 14:33:45 2022 ] [22,   210] loss: 1.308 acc: 0.604
+[ Sun Aug  7 14:35:27 2022 ] val_loss: 1.9285328812069362, val_accuracy: 0.45694444444444443
+[ Sun Aug  7 14:39:31 2022 ] [23,   210] loss: 1.260 acc: 0.612
+[ Sun Aug  7 14:41:13 2022 ] val_loss: 1.9675134665436216, val_accuracy: 0.4652777777777778
+[ Sun Aug  7 14:45:17 2022 ] [24,   210] loss: 1.172 acc: 0.654
+[ Sun Aug  7 14:46:59 2022 ] val_loss: 1.8676509228017595, val_accuracy: 0.4875
+[ Sun Aug  7 14:51:05 2022 ] [25,   210] loss: 1.135 acc: 0.655
+[ Sun Aug  7 14:52:48 2022 ] val_loss: 1.9541176279385886, val_accuracy: 0.4652777777777778
+[ Sun Aug  7 14:56:52 2022 ] [26,   210] loss: 1.109 acc: 0.662
+[ Sun Aug  7 14:58:33 2022 ] val_loss: 1.9495735976431106, val_accuracy: 0.48055555555555557
+[ Sun Aug  7 15:02:36 2022 ] [27,   210] loss: 1.081 acc: 0.679
+[ Sun Aug  7 15:04:15 2022 ] val_loss: 1.953465645843082, val_accuracy: 0.48333333333333334
+[ Sun Aug  7 15:08:16 2022 ] [28,   210] loss: 1.082 acc: 0.667
+[ Sun Aug  7 15:09:56 2022 ] val_loss: 1.7756282799773746, val_accuracy: 0.5291666666666667
+[ Sun Aug  7 15:13:57 2022 ] [29,   210] loss: 0.986 acc: 0.715
+[ Sun Aug  7 15:15:37 2022 ] val_loss: 1.7747804482777914, val_accuracy: 0.525
+[ Sun Aug  7 15:19:41 2022 ] [30,   210] loss: 0.934 acc: 0.723
+[ Sun Aug  7 15:21:22 2022 ] val_loss: 1.8357320308685303, val_accuracy: 0.5361111111111111
+[ Sun Aug  7 15:25:24 2022 ] [31,   210] loss: 0.901 acc: 0.743
+[ Sun Aug  7 15:27:05 2022 ] val_loss: 1.843532845709059, val_accuracy: 0.5430555555555555
+[ Sun Aug  7 15:31:12 2022 ] [32,   210] loss: 0.899 acc: 0.735
+[ Sun Aug  7 15:32:54 2022 ] val_loss: 1.8741468184524113, val_accuracy: 0.5555555555555556
+[ Sun Aug  7 15:37:00 2022 ] [33,   210] loss: 0.834 acc: 0.764
+[ Sun Aug  7 15:38:42 2022 ] val_loss: 1.7948733852969276, val_accuracy: 0.5569444444444445
+[ Sun Aug  7 15:42:46 2022 ] [34,   210] loss: 0.818 acc: 0.757
+[ Sun Aug  7 15:44:27 2022 ] val_loss: 1.914926877948973, val_accuracy: 0.5416666666666666
+[ Sun Aug  7 15:48:32 2022 ] [35,   210] loss: 0.832 acc: 0.753
+[ Sun Aug  7 15:50:14 2022 ] val_loss: 1.9597291072209677, val_accuracy: 0.5305555555555556
+[ Sun Aug  7 15:54:20 2022 ] [36,   210] loss: 0.910 acc: 0.732
+[ Sun Aug  7 15:56:01 2022 ] val_loss: 2.0017771346701516, val_accuracy: 0.5333333333333333
+[ Sun Aug  7 16:00:05 2022 ] [37,   210] loss: 0.795 acc: 0.767
+[ Sun Aug  7 16:01:46 2022 ] val_loss: 2.094976270198822, val_accuracy: 0.5263888888888889
+[ Sun Aug  7 16:05:49 2022 ] [38,   210] loss: 0.766 acc: 0.776
+[ Sun Aug  7 16:07:29 2022 ] val_loss: 2.017687945895725, val_accuracy: 0.5513888888888889
+[ Sun Aug  7 16:11:29 2022 ] [39,   210] loss: 0.746 acc: 0.785
+[ Sun Aug  7 16:13:10 2022 ] val_loss: 2.09147397213512, val_accuracy: 0.5347222222222222
+[ Sun Aug  7 16:17:12 2022 ] [40,   210] loss: 0.726 acc: 0.793
+[ Sun Aug  7 16:18:54 2022 ] val_loss: 2.0856715781821147, val_accuracy: 0.5458333333333333
+[ Sun Aug  7 16:22:59 2022 ] [41,   210] loss: 0.786 acc: 0.770
+[ Sun Aug  7 16:24:40 2022 ] val_loss: 2.432035428616736, val_accuracy: 0.5
+[ Sun Aug  7 16:28:43 2022 ] [42,   210] loss: 0.784 acc: 0.774
+[ Sun Aug  7 16:30:24 2022 ] val_loss: 2.2137018422285717, val_accuracy: 0.5375
+[ Sun Aug  7 16:34:31 2022 ] [43,   210] loss: 0.717 acc: 0.787
+[ Sun Aug  7 16:36:13 2022 ] val_loss: 2.1465884685516357, val_accuracy: 0.5472222222222223
+[ Sun Aug  7 16:40:21 2022 ] [44,   210] loss: 0.693 acc: 0.800
+[ Sun Aug  7 16:42:03 2022 ] val_loss: 2.1393017252286275, val_accuracy: 0.5444444444444444
+[ Sun Aug  7 16:46:09 2022 ] [45,   210] loss: 0.686 acc: 0.810
+[ Sun Aug  7 16:47:50 2022 ] val_loss: 2.259462798304028, val_accuracy: 0.5319444444444444
+[ Sun Aug  7 16:51:56 2022 ] [46,   210] loss: 0.684 acc: 0.798
+[ Sun Aug  7 16:53:37 2022 ] val_loss: 2.121197973522875, val_accuracy: 0.5666666666666667
+[ Sun Aug  7 16:57:41 2022 ] [47,   210] loss: 0.729 acc: 0.785
+[ Sun Aug  7 16:59:22 2022 ] val_loss: 2.301300126314163, val_accuracy: 0.5472222222222223
+[ Sun Aug  7 17:03:39 2022 ] [48,   210] loss: 0.723 acc: 0.789
+[ Sun Aug  7 17:05:20 2022 ] val_loss: 2.182989778204097, val_accuracy: 0.5569444444444445
+[ Sun Aug  7 17:09:24 2022 ] [49,   210] loss: 0.735 acc: 0.782
+[ Sun Aug  7 17:11:04 2022 ] val_loss: 2.2477634929948382, val_accuracy: 0.55
+[ Sun Aug  7 17:15:05 2022 ] [50,   210] loss: 0.689 acc: 0.795
+[ Sun Aug  7 17:16:46 2022 ] val_loss: 2.3163800850510596, val_accuracy: 0.5375
+[ Sun Aug  7 17:21:17 2022 ] [51,   210] loss: 0.643 acc: 0.814
+[ Sun Aug  7 17:23:15 2022 ] val_loss: 2.158850383427408, val_accuracy: 0.5555555555555556
+[ Sun Aug  7 17:27:35 2022 ] [52,   210] loss: 0.616 acc: 0.826
+[ Sun Aug  7 17:29:16 2022 ] val_loss: 2.0439708037508857, val_accuracy: 0.6013888888888889
+[ Sun Aug  7 17:33:18 2022 ] [53,   210] loss: 0.672 acc: 0.803
+[ Sun Aug  7 17:34:58 2022 ] val_loss: 2.018297668794791, val_accuracy: 0.5888888888888889
+[ Sun Aug  7 17:39:03 2022 ] [54,   210] loss: 0.658 acc: 0.804
+[ Sun Aug  7 17:40:45 2022 ] val_loss: 2.4543620374467636, val_accuracy: 0.5416666666666666
+[ Sun Aug  7 17:44:51 2022 ] [55,   210] loss: 0.689 acc: 0.800
+[ Sun Aug  7 17:46:33 2022 ] val_loss: 2.19032288963596, val_accuracy: 0.5819444444444445
+[ Sun Aug  7 17:50:37 2022 ] [56,   210] loss: 0.676 acc: 0.801
+[ Sun Aug  7 17:52:18 2022 ] val_loss: 2.329522568484147, val_accuracy: 0.5513888888888889
+[ Sun Aug  7 17:56:24 2022 ] [57,   210] loss: 0.613 acc: 0.817
+[ Sun Aug  7 17:58:05 2022 ] val_loss: 1.9775813321272533, val_accuracy: 0.6027777777777777
+[ Sun Aug  7 18:02:08 2022 ] [58,   210] loss: 0.573 acc: 0.835
+[ Sun Aug  7 18:03:50 2022 ] val_loss: 2.0528264373540877, val_accuracy: 0.5861111111111111
+[ Sun Aug  7 18:07:53 2022 ] [59,   210] loss: 0.726 acc: 0.793
+[ Sun Aug  7 18:09:34 2022 ] val_loss: 2.5327602280510795, val_accuracy: 0.5527777777777778
+[ Sun Aug  7 18:13:37 2022 ] [60,   210] loss: 0.736 acc: 0.783
+[ Sun Aug  7 18:15:17 2022 ] val_loss: 2.1271390828821395, val_accuracy: 0.5916666666666667
+[ Sun Aug  7 18:19:22 2022 ] [61,   210] loss: 0.583 acc: 0.829
+[ Sun Aug  7 18:21:04 2022 ] val_loss: 2.091925193534957, val_accuracy: 0.5958333333333333
+[ Sun Aug  7 18:25:10 2022 ] [62,   210] loss: 0.540 acc: 0.845
+[ Sun Aug  7 18:26:52 2022 ] val_loss: 1.962154793408182, val_accuracy: 0.6138888888888889
+[ Sun Aug  7 18:30:55 2022 ] [63,   210] loss: 0.564 acc: 0.839
+[ Sun Aug  7 18:32:37 2022 ] val_loss: 2.1981031455927424, val_accuracy: 0.5847222222222223
+[ Sun Aug  7 18:36:39 2022 ] [64,   210] loss: 0.689 acc: 0.790
+[ Sun Aug  7 18:38:19 2022 ] val_loss: 2.4915340258015526, val_accuracy: 0.5583333333333333
+[ Sun Aug  7 18:42:22 2022 ] [65,   210] loss: 0.647 acc: 0.810
+[ Sun Aug  7 18:44:03 2022 ] val_loss: 2.3469155963924195, val_accuracy: 0.5597222222222222
+[ Sun Aug  7 18:48:10 2022 ] [66,   210] loss: 0.562 acc: 0.838
+[ Sun Aug  7 18:49:52 2022 ] val_loss: 2.0374397698375915, val_accuracy: 0.5986111111111111
+[ Sun Aug  7 18:53:57 2022 ] [67,   210] loss: 0.584 acc: 0.818
+[ Sun Aug  7 18:55:38 2022 ] val_loss: 2.204282829662164, val_accuracy: 0.5777777777777777
+[ Sun Aug  7 18:59:43 2022 ] [68,   210] loss: 0.573 acc: 0.827
+[ Sun Aug  7 19:01:24 2022 ] val_loss: 2.2544796897305384, val_accuracy: 0.5930555555555556
+[ Sun Aug  7 19:05:28 2022 ] [69,   210] loss: 0.633 acc: 0.808
+[ Sun Aug  7 19:07:10 2022 ] val_loss: 2.582669197354052, val_accuracy: 0.5555555555555556
+[ Sun Aug  7 19:11:28 2022 ] [70,   210] loss: 0.601 acc: 0.814
+[ Sun Aug  7 19:13:10 2022 ] val_loss: 2.3769481781456205, val_accuracy: 0.5694444444444444
+[ Sun Aug  7 19:17:13 2022 ] [71,   210] loss: 0.598 acc: 0.819
+[ Sun Aug  7 19:18:55 2022 ] val_loss: 2.277681355012788, val_accuracy: 0.5708333333333333
+[ Sun Aug  7 19:23:02 2022 ] [72,   210] loss: 0.494 acc: 0.848
+[ Sun Aug  7 19:24:43 2022 ] val_loss: 2.205300108426147, val_accuracy: 0.6208333333333333
+[ Sun Aug  7 19:28:50 2022 ] [73,   210] loss: 0.477 acc: 0.851
+[ Sun Aug  7 19:30:32 2022 ] val_loss: 2.1527281593945293, val_accuracy: 0.6027777777777777
+[ Sun Aug  7 19:34:36 2022 ] [74,   210] loss: 0.460 acc: 0.858
+[ Sun Aug  7 19:36:17 2022 ] val_loss: 2.163114178842968, val_accuracy: 0.6027777777777777
+[ Sun Aug  7 19:40:18 2022 ] [75,   210] loss: 0.440 acc: 0.861
+[ Sun Aug  7 19:41:59 2022 ] val_loss: 2.1333459003104105, val_accuracy: 0.6194444444444445
+[ Sun Aug  7 19:45:59 2022 ] [76,   210] loss: 0.428 acc: 0.867
+[ Sun Aug  7 19:47:42 2022 ] val_loss: 2.1599308454328114, val_accuracy: 0.6125
+[ Sun Aug  7 19:51:48 2022 ] [77,   210] loss: 0.414 acc: 0.865
+[ Sun Aug  7 19:53:30 2022 ] val_loss: 2.203734924727016, val_accuracy: 0.6180555555555556
+[ Sun Aug  7 19:57:34 2022 ] [78,   210] loss: 0.715 acc: 0.805
+[ Sun Aug  7 19:59:16 2022 ] val_loss: 3.8452298230595057, val_accuracy: 0.4666666666666667
+[ Sun Aug  7 20:03:21 2022 ] [79,   210] loss: 0.998 acc: 0.726
+[ Sun Aug  7 20:05:02 2022 ] val_loss: 2.492772153019905, val_accuracy: 0.5666666666666667
+[ Sun Aug  7 20:09:08 2022 ] [80,   210] loss: 0.507 acc: 0.839
+[ Sun Aug  7 20:10:50 2022 ] val_loss: 2.117009843306409, val_accuracy: 0.6291666666666667
+[ Sun Aug  7 20:14:53 2022 ] [81,   210] loss: 0.432 acc: 0.863
+[ Sun Aug  7 20:16:35 2022 ] val_loss: 2.129218855500221, val_accuracy: 0.6180555555555556
+[ Sun Aug  7 20:20:38 2022 ] [82,   210] loss: 0.406 acc: 0.869
+[ Sun Aug  7 20:22:18 2022 ] val_loss: 2.1422812483376927, val_accuracy: 0.6180555555555556
+[ Sun Aug  7 20:26:19 2022 ] [83,   210] loss: 0.388 acc: 0.876
+[ Sun Aug  7 20:27:59 2022 ] val_loss: 2.18674852417575, val_accuracy: 0.6111111111111112
+[ Sun Aug  7 20:32:00 2022 ] [84,   210] loss: 0.372 acc: 0.877
+[ Sun Aug  7 20:33:39 2022 ] val_loss: 2.245988200770484, val_accuracy: 0.6097222222222223
+[ Sun Aug  7 20:37:43 2022 ] [85,   210] loss: 0.366 acc: 0.880
+[ Sun Aug  7 20:39:24 2022 ] val_loss: 2.2922709572646354, val_accuracy: 0.5986111111111111
+[ Sun Aug  7 20:43:26 2022 ] [86,   210] loss: 0.354 acc: 0.882
+[ Sun Aug  7 20:45:06 2022 ] val_loss: 2.328108238842752, val_accuracy: 0.6027777777777777
+[ Sun Aug  7 20:49:07 2022 ] [87,   210] loss: 0.358 acc: 0.881
+[ Sun Aug  7 20:50:47 2022 ] val_loss: 2.3868709673484165, val_accuracy: 0.5972222222222222
+[ Sun Aug  7 20:54:53 2022 ] [88,   210] loss: 0.649 acc: 0.821
+[ Sun Aug  7 20:56:35 2022 ] val_loss: 3.6405696127149794, val_accuracy: 0.48194444444444445
+[ Sun Aug  7 21:00:40 2022 ] [89,   210] loss: 0.892 acc: 0.754
+[ Sun Aug  7 21:02:21 2022 ] val_loss: 2.3141438776420222, val_accuracy: 0.5916666666666667
+[ Sun Aug  7 21:06:26 2022 ] [90,   210] loss: 0.418 acc: 0.865
+[ Sun Aug  7 21:08:08 2022 ] val_loss: 2.0540858031147056, val_accuracy: 0.6152777777777778
+[ Sun Aug  7 21:12:13 2022 ] [91,   210] loss: 0.461 acc: 0.857
+[ Sun Aug  7 21:14:03 2022 ] val_loss: 2.3238026113973724, val_accuracy: 0.6
+[ Sun Aug  7 21:18:07 2022 ] [92,   210] loss: 0.395 acc: 0.870
+[ Sun Aug  7 21:19:48 2022 ] val_loss: 2.3066311416526637, val_accuracy: 0.6041666666666666
+[ Sun Aug  7 21:23:51 2022 ] [93,   210] loss: 0.363 acc: 0.881
+[ Sun Aug  7 21:25:31 2022 ] val_loss: 2.21249952332841, val_accuracy: 0.5986111111111111
+[ Sun Aug  7 21:29:32 2022 ] [94,   210] loss: 0.346 acc: 0.880
+[ Sun Aug  7 21:31:12 2022 ] val_loss: 2.2372860587305494, val_accuracy: 0.5930555555555556
+[ Sun Aug  7 21:35:13 2022 ] [95,   210] loss: 0.469 acc: 0.856
+[ Sun Aug  7 21:36:53 2022 ] val_loss: 2.441963532567024, val_accuracy: 0.6
+[ Sun Aug  7 21:40:57 2022 ] [96,   210] loss: 0.552 acc: 0.824
+[ Sun Aug  7 21:42:38 2022 ] val_loss: 2.8508569631311627, val_accuracy: 0.5638888888888889
+[ Sun Aug  7 21:46:40 2022 ] [97,   210] loss: 0.474 acc: 0.842
+[ Sun Aug  7 21:48:20 2022 ] val_loss: 2.3184099435806274, val_accuracy: 0.6069444444444444
+[ Sun Aug  7 21:52:21 2022 ] [98,   210] loss: 0.448 acc: 0.851
+[ Sun Aug  7 21:54:01 2022 ] val_loss: 2.295086975726816, val_accuracy: 0.625
+[ Sun Aug  7 21:58:05 2022 ] [99,   210] loss: 0.353 acc: 0.883
+[ Sun Aug  7 21:59:47 2022 ] val_loss: 2.238582562572426, val_accuracy: 0.6430555555555556
+[ Sun Aug  7 22:03:51 2022 ] [100,   210] loss: 0.329 acc: 0.890
+[ Sun Aug  7 22:05:33 2022 ] val_loss: 2.1899049560228985, val_accuracy: 0.6458333333333334
+[ Sun Aug  7 22:05:33 2022 ] whole time:34605
+[ Sun Aug  7 22:06:33 2022 ] [1,    70] loss: 2.335 acc: 0.120
+[ Sun Aug  7 22:07:01 2022 ] val_loss: 2.278953774770101, val_accuracy: 0.1375
+[ Sun Aug  7 22:07:20 2022 ] [2,    70] loss: 2.289 acc: 0.121
+[ Sun Aug  7 22:07:26 2022 ] val_loss: 2.234854070345561, val_accuracy: 0.15
+[ Sun Aug  7 22:07:45 2022 ] [3,    70] loss: 2.195 acc: 0.157
+[ Sun Aug  7 22:07:52 2022 ] val_loss: 2.1981172442436216, val_accuracy: 0.17083333333333334
+[ Sun Aug  7 22:08:11 2022 ] [4,    70] loss: 2.133 acc: 0.198
+[ Sun Aug  7 22:08:17 2022 ] val_loss: 2.1684324979782104, val_accuracy: 0.17916666666666667
+[ Sun Aug  7 22:08:36 2022 ] [5,    70] loss: 2.087 acc: 0.202
+[ Sun Aug  7 22:08:43 2022 ] val_loss: 2.133306447664897, val_accuracy: 0.20416666666666666
+[ Sun Aug  7 22:09:02 2022 ] [6,    70] loss: 2.089 acc: 0.195
+[ Sun Aug  7 22:09:08 2022 ] val_loss: 2.135656678676605, val_accuracy: 0.20833333333333334
+[ Sun Aug  7 22:09:27 2022 ] [7,    70] loss: 2.049 acc: 0.207
+[ Sun Aug  7 22:09:34 2022 ] val_loss: 2.119006319840749, val_accuracy: 0.225
+[ Sun Aug  7 22:09:53 2022 ] [8,    70] loss: 2.006 acc: 0.248
+[ Sun Aug  7 22:09:59 2022 ] val_loss: 2.100107757250468, val_accuracy: 0.22916666666666666
+[ Sun Aug  7 22:10:18 2022 ] [9,    70] loss: 1.979 acc: 0.239
+[ Sun Aug  7 22:10:25 2022 ] val_loss: 2.1170416553815206, val_accuracy: 0.25416666666666665
+[ Sun Aug  7 22:10:44 2022 ] [10,    70] loss: 1.968 acc: 0.270
+[ Sun Aug  7 22:10:51 2022 ] val_loss: 2.08160586754481, val_accuracy: 0.25
+[ Sun Aug  7 22:11:09 2022 ] [11,    70] loss: 1.929 acc: 0.282
+[ Sun Aug  7 22:11:16 2022 ] val_loss: 2.055465809504191, val_accuracy: 0.2875
+[ Sun Aug  7 22:11:35 2022 ] [12,    70] loss: 1.892 acc: 0.286
+[ Sun Aug  7 22:11:42 2022 ] val_loss: 2.0626593828201294, val_accuracy: 0.2833333333333333
+[ Sun Aug  7 22:12:00 2022 ] [13,    70] loss: 1.838 acc: 0.327
+[ Sun Aug  7 22:12:07 2022 ] val_loss: 2.029313866297404, val_accuracy: 0.2875
+[ Sun Aug  7 22:12:26 2022 ] [14,    70] loss: 1.807 acc: 0.336
+[ Sun Aug  7 22:12:32 2022 ] val_loss: 1.9787953893343608, val_accuracy: 0.29583333333333334
+[ Sun Aug  7 22:12:51 2022 ] [15,    70] loss: 1.735 acc: 0.377
+[ Sun Aug  7 22:12:58 2022 ] val_loss: 2.0576298038164773, val_accuracy: 0.29583333333333334
+[ Sun Aug  7 22:13:17 2022 ] [16,    70] loss: 1.740 acc: 0.368
+[ Sun Aug  7 22:13:23 2022 ] val_loss: 1.9661348660786946, val_accuracy: 0.30416666666666664
+[ Sun Aug  7 22:13:42 2022 ] [17,    70] loss: 1.692 acc: 0.393
+[ Sun Aug  7 22:13:49 2022 ] val_loss: 1.954812353849411, val_accuracy: 0.29583333333333334
+[ Sun Aug  7 22:14:09 2022 ] [18,    70] loss: 1.666 acc: 0.396
+[ Sun Aug  7 22:14:17 2022 ] val_loss: 1.9864142835140228, val_accuracy: 0.2791666666666667
+[ Sun Aug  7 22:14:38 2022 ] [19,    70] loss: 1.637 acc: 0.400
+[ Sun Aug  7 22:14:44 2022 ] val_loss: 2.0142500400543213, val_accuracy: 0.2875
+[ Sun Aug  7 22:15:03 2022 ] [20,    70] loss: 1.597 acc: 0.416
+[ Sun Aug  7 22:15:09 2022 ] val_loss: 1.9495878140131633, val_accuracy: 0.30416666666666664
+[ Sun Aug  7 22:15:28 2022 ] [21,    70] loss: 1.548 acc: 0.446
+[ Sun Aug  7 22:15:35 2022 ] val_loss: 1.917518949508667, val_accuracy: 0.30416666666666664
+[ Sun Aug  7 22:15:54 2022 ] [22,    70] loss: 1.500 acc: 0.459
+[ Sun Aug  7 22:16:00 2022 ] val_loss: 1.933400849501292, val_accuracy: 0.325
+[ Sun Aug  7 22:16:19 2022 ] [23,    70] loss: 1.457 acc: 0.498
+[ Sun Aug  7 22:16:25 2022 ] val_loss: 1.8818165878454844, val_accuracy: 0.3625
+[ Sun Aug  7 22:16:44 2022 ] [24,    70] loss: 1.415 acc: 0.498
+[ Sun Aug  7 22:16:51 2022 ] val_loss: 1.8991959512233734, val_accuracy: 0.35
+[ Sun Aug  7 22:17:09 2022 ] [25,    70] loss: 1.364 acc: 0.529
+[ Sun Aug  7 22:17:16 2022 ] val_loss: 1.8545381804307302, val_accuracy: 0.3541666666666667
+[ Sun Aug  7 22:17:34 2022 ] [26,    70] loss: 1.388 acc: 0.500
+[ Sun Aug  7 22:17:41 2022 ] val_loss: 1.8771073639392852, val_accuracy: 0.36666666666666664
+[ Sun Aug  7 22:18:00 2022 ] [27,    70] loss: 1.310 acc: 0.543
+[ Sun Aug  7 22:18:06 2022 ] val_loss: 1.9067121068636577, val_accuracy: 0.3375
+[ Sun Aug  7 22:18:25 2022 ] [28,    70] loss: 1.275 acc: 0.562
+[ Sun Aug  7 22:18:32 2022 ] val_loss: 1.8750156263510387, val_accuracy: 0.37916666666666665
+[ Sun Aug  7 22:18:50 2022 ] [29,    70] loss: 1.207 acc: 0.570
+[ Sun Aug  7 22:18:57 2022 ] val_loss: 1.9457682887713115, val_accuracy: 0.3416666666666667
+[ Sun Aug  7 22:19:15 2022 ] [30,    70] loss: 1.174 acc: 0.588
+[ Sun Aug  7 22:19:22 2022 ] val_loss: 2.0034935057163237, val_accuracy: 0.325
+[ Sun Aug  7 22:19:41 2022 ] [31,    70] loss: 1.180 acc: 0.607
+[ Sun Aug  7 22:19:47 2022 ] val_loss: 2.0620185991128284, val_accuracy: 0.325
+[ Sun Aug  7 22:20:06 2022 ] [32,    70] loss: 1.137 acc: 0.609
+[ Sun Aug  7 22:20:13 2022 ] val_loss: 2.019046680132548, val_accuracy: 0.35833333333333334
+[ Sun Aug  7 22:20:31 2022 ] [33,    70] loss: 1.067 acc: 0.625
+[ Sun Aug  7 22:20:38 2022 ] val_loss: 2.1234495004018146, val_accuracy: 0.31666666666666665
+[ Sun Aug  7 22:20:57 2022 ] [34,    70] loss: 1.051 acc: 0.639
+[ Sun Aug  7 22:21:03 2022 ] val_loss: 2.145875370502472, val_accuracy: 0.30833333333333335
+[ Sun Aug  7 22:21:22 2022 ] [35,    70] loss: 1.002 acc: 0.652
+[ Sun Aug  7 22:21:28 2022 ] val_loss: 2.1599346160888673, val_accuracy: 0.3333333333333333
+[ Sun Aug  7 22:21:47 2022 ] [36,    70] loss: 0.996 acc: 0.661
+[ Sun Aug  7 22:21:54 2022 ] val_loss: 2.2424272457758585, val_accuracy: 0.30833333333333335
+[ Sun Aug  7 22:22:12 2022 ] [37,    70] loss: 0.955 acc: 0.662
+[ Sun Aug  7 22:22:19 2022 ] val_loss: 2.4559393604596456, val_accuracy: 0.3
+[ Sun Aug  7 22:22:38 2022 ] [38,    70] loss: 1.015 acc: 0.646
+[ Sun Aug  7 22:22:44 2022 ] val_loss: 2.1952399094899495, val_accuracy: 0.3541666666666667
+[ Sun Aug  7 22:23:03 2022 ] [39,    70] loss: 0.938 acc: 0.655
+[ Sun Aug  7 22:23:09 2022 ] val_loss: 2.26630064646403, val_accuracy: 0.375
+[ Sun Aug  7 22:23:28 2022 ] [40,    70] loss: 0.904 acc: 0.679
+[ Sun Aug  7 22:23:35 2022 ] val_loss: 2.3476342717806498, val_accuracy: 0.4
+[ Sun Aug  7 22:23:53 2022 ] [41,    70] loss: 0.880 acc: 0.693
+[ Sun Aug  7 22:24:00 2022 ] val_loss: 2.3962128241856893, val_accuracy: 0.3625
+[ Sun Aug  7 22:24:19 2022 ] [42,    70] loss: 0.901 acc: 0.659
+[ Sun Aug  7 22:24:25 2022 ] val_loss: 2.2923511187235515, val_accuracy: 0.3625
+[ Sun Aug  7 22:24:44 2022 ] [43,    70] loss: 0.823 acc: 0.714
+[ Sun Aug  7 22:24:51 2022 ] val_loss: 2.306764101982117, val_accuracy: 0.36666666666666664
+[ Sun Aug  7 22:25:09 2022 ] [44,    70] loss: 0.783 acc: 0.723
+[ Sun Aug  7 22:25:16 2022 ] val_loss: 2.424109460910161, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:25:35 2022 ] [45,    70] loss: 0.791 acc: 0.709
+[ Sun Aug  7 22:25:41 2022 ] val_loss: 2.373526430130005, val_accuracy: 0.375
+[ Sun Aug  7 22:26:00 2022 ] [46,    70] loss: 0.821 acc: 0.709
+[ Sun Aug  7 22:26:06 2022 ] val_loss: 2.4480807880560556, val_accuracy: 0.4
+[ Sun Aug  7 22:26:25 2022 ] [47,    70] loss: 0.760 acc: 0.741
+[ Sun Aug  7 22:26:32 2022 ] val_loss: 2.2958521783351897, val_accuracy: 0.42083333333333334
+[ Sun Aug  7 22:26:50 2022 ] [48,    70] loss: 0.729 acc: 0.734
+[ Sun Aug  7 22:26:57 2022 ] val_loss: 2.296032162507375, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:27:16 2022 ] [49,    70] loss: 0.785 acc: 0.714
+[ Sun Aug  7 22:27:22 2022 ] val_loss: 2.4289519170920055, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:27:41 2022 ] [50,    70] loss: 0.753 acc: 0.736
+[ Sun Aug  7 22:27:48 2022 ] val_loss: 2.475969890753428, val_accuracy: 0.42083333333333334
+[ Sun Aug  7 22:28:06 2022 ] [51,    70] loss: 0.744 acc: 0.748
+[ Sun Aug  7 22:28:13 2022 ] val_loss: 2.5573380569616955, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:28:32 2022 ] [52,    70] loss: 0.852 acc: 0.686
+[ Sun Aug  7 22:28:38 2022 ] val_loss: 2.467838869492213, val_accuracy: 0.4125
+[ Sun Aug  7 22:28:57 2022 ] [53,    70] loss: 0.780 acc: 0.723
+[ Sun Aug  7 22:29:04 2022 ] val_loss: 2.6003459533055624, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:29:22 2022 ] [54,    70] loss: 0.710 acc: 0.748
+[ Sun Aug  7 22:29:29 2022 ] val_loss: 2.3324939211209617, val_accuracy: 0.42916666666666664
+[ Sun Aug  7 22:29:48 2022 ] [55,    70] loss: 0.666 acc: 0.755
+[ Sun Aug  7 22:29:54 2022 ] val_loss: 2.4094084044297537, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:30:13 2022 ] [56,    70] loss: 0.680 acc: 0.750
+[ Sun Aug  7 22:30:20 2022 ] val_loss: 2.49473397731781, val_accuracy: 0.42083333333333334
+[ Sun Aug  7 22:30:39 2022 ] [57,    70] loss: 0.653 acc: 0.759
+[ Sun Aug  7 22:30:45 2022 ] val_loss: 2.5784314215183257, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:31:04 2022 ] [58,    70] loss: 0.645 acc: 0.771
+[ Sun Aug  7 22:31:11 2022 ] val_loss: 2.6964563091595966, val_accuracy: 0.4083333333333333
+[ Sun Aug  7 22:31:29 2022 ] [59,    70] loss: 0.631 acc: 0.773
+[ Sun Aug  7 22:31:36 2022 ] val_loss: 2.698977090915044, val_accuracy: 0.425
+[ Sun Aug  7 22:31:55 2022 ] [60,    70] loss: 0.619 acc: 0.764
+[ Sun Aug  7 22:32:01 2022 ] val_loss: 2.596935421228409, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:32:20 2022 ] [61,    70] loss: 0.603 acc: 0.779
+[ Sun Aug  7 22:32:27 2022 ] val_loss: 2.6629547317822775, val_accuracy: 0.4125
+[ Sun Aug  7 22:32:45 2022 ] [62,    70] loss: 0.594 acc: 0.773
+[ Sun Aug  7 22:32:52 2022 ] val_loss: 2.774806664387385, val_accuracy: 0.4125
+[ Sun Aug  7 22:33:11 2022 ] [63,    70] loss: 0.665 acc: 0.755
+[ Sun Aug  7 22:33:17 2022 ] val_loss: 2.9287172118822733, val_accuracy: 0.3875
+[ Sun Aug  7 22:33:36 2022 ] [64,    70] loss: 0.848 acc: 0.700
+[ Sun Aug  7 22:33:43 2022 ] val_loss: 2.8790815234184266, val_accuracy: 0.3625
+[ Sun Aug  7 22:34:01 2022 ] [65,    70] loss: 0.774 acc: 0.716
+[ Sun Aug  7 22:34:08 2022 ] val_loss: 2.7670156339804333, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:34:27 2022 ] [66,    70] loss: 0.731 acc: 0.714
+[ Sun Aug  7 22:34:33 2022 ] val_loss: 2.4939593533674875, val_accuracy: 0.42916666666666664
+[ Sun Aug  7 22:34:52 2022 ] [67,    70] loss: 0.653 acc: 0.748
+[ Sun Aug  7 22:34:59 2022 ] val_loss: 2.6530346016089124, val_accuracy: 0.4375
+[ Sun Aug  7 22:35:17 2022 ] [68,    70] loss: 0.606 acc: 0.771
+[ Sun Aug  7 22:35:24 2022 ] val_loss: 2.7531300326188406, val_accuracy: 0.42916666666666664
+[ Sun Aug  7 22:35:43 2022 ] [69,    70] loss: 0.593 acc: 0.786
+[ Sun Aug  7 22:35:49 2022 ] val_loss: 2.749960215886434, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:36:08 2022 ] [70,    70] loss: 0.560 acc: 0.789
+[ Sun Aug  7 22:36:15 2022 ] val_loss: 2.8047862728436788, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:36:33 2022 ] [71,    70] loss: 0.547 acc: 0.787
+[ Sun Aug  7 22:36:40 2022 ] val_loss: 2.861444441477458, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:36:59 2022 ] [72,    70] loss: 0.534 acc: 0.795
+[ Sun Aug  7 22:37:05 2022 ] val_loss: 2.9561063925425213, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:37:24 2022 ] [73,    70] loss: 0.522 acc: 0.796
+[ Sun Aug  7 22:37:31 2022 ] val_loss: 2.997557695706685, val_accuracy: 0.4083333333333333
+[ Sun Aug  7 22:37:49 2022 ] [74,    70] loss: 0.508 acc: 0.800
+[ Sun Aug  7 22:37:56 2022 ] val_loss: 2.976433304945628, val_accuracy: 0.375
+[ Sun Aug  7 22:38:15 2022 ] [75,    70] loss: 0.511 acc: 0.798
+[ Sun Aug  7 22:38:21 2022 ] val_loss: 3.0961177428563436, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:38:40 2022 ] [76,    70] loss: 0.525 acc: 0.795
+[ Sun Aug  7 22:38:47 2022 ] val_loss: 3.038875524202983, val_accuracy: 0.37916666666666665
+[ Sun Aug  7 22:39:05 2022 ] [77,    70] loss: 0.520 acc: 0.791
+[ Sun Aug  7 22:39:12 2022 ] val_loss: 3.0892183740933734, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:39:31 2022 ] [78,    70] loss: 0.637 acc: 0.754
+[ Sun Aug  7 22:39:37 2022 ] val_loss: 2.99178055425485, val_accuracy: 0.4125
+[ Sun Aug  7 22:39:56 2022 ] [79,    70] loss: 0.752 acc: 0.714
+[ Sun Aug  7 22:40:03 2022 ] val_loss: 3.1764926423629123, val_accuracy: 0.3875
+[ Sun Aug  7 22:40:21 2022 ] [80,    70] loss: 0.875 acc: 0.664
+[ Sun Aug  7 22:40:28 2022 ] val_loss: 2.9955565214157103, val_accuracy: 0.3625
+[ Sun Aug  7 22:40:47 2022 ] [81,    70] loss: 0.892 acc: 0.695
+[ Sun Aug  7 22:40:54 2022 ] val_loss: 3.2869513392448426, val_accuracy: 0.3375
+[ Sun Aug  7 22:41:12 2022 ] [82,    70] loss: 0.821 acc: 0.695
+[ Sun Aug  7 22:41:19 2022 ] val_loss: 2.9350772420565288, val_accuracy: 0.37916666666666665
+[ Sun Aug  7 22:41:38 2022 ] [83,    70] loss: 0.619 acc: 0.780
+[ Sun Aug  7 22:41:44 2022 ] val_loss: 2.6202478051185607, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:42:03 2022 ] [84,    70] loss: 0.590 acc: 0.782
+[ Sun Aug  7 22:42:10 2022 ] val_loss: 2.8499411404132844, val_accuracy: 0.4
+[ Sun Aug  7 22:42:29 2022 ] [85,    70] loss: 0.554 acc: 0.798
+[ Sun Aug  7 22:42:35 2022 ] val_loss: 2.6935087541739144, val_accuracy: 0.42083333333333334
+[ Sun Aug  7 22:42:54 2022 ] [86,    70] loss: 0.524 acc: 0.796
+[ Sun Aug  7 22:43:01 2022 ] val_loss: 2.7050935765107473, val_accuracy: 0.42083333333333334
+[ Sun Aug  7 22:43:20 2022 ] [87,    70] loss: 0.490 acc: 0.814
+[ Sun Aug  7 22:43:26 2022 ] val_loss: 2.7767494678497315, val_accuracy: 0.4166666666666667
+[ Sun Aug  7 22:43:45 2022 ] [88,    70] loss: 0.469 acc: 0.814
+[ Sun Aug  7 22:43:52 2022 ] val_loss: 2.808080369234085, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:44:11 2022 ] [89,    70] loss: 0.458 acc: 0.821
+[ Sun Aug  7 22:44:17 2022 ] val_loss: 2.844422231117884, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:44:36 2022 ] [90,    70] loss: 0.453 acc: 0.820
+[ Sun Aug  7 22:44:43 2022 ] val_loss: 2.9151194860537846, val_accuracy: 0.4041666666666667
+[ Sun Aug  7 22:45:02 2022 ] [91,    70] loss: 0.464 acc: 0.811
+[ Sun Aug  7 22:45:08 2022 ] val_loss: 2.893549499909083, val_accuracy: 0.3625
+[ Sun Aug  7 22:45:27 2022 ] [92,    70] loss: 0.467 acc: 0.818
+[ Sun Aug  7 22:45:34 2022 ] val_loss: 2.915437153975169, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:45:53 2022 ] [93,    70] loss: 0.451 acc: 0.820
+[ Sun Aug  7 22:45:59 2022 ] val_loss: 2.9878159602483114, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:46:18 2022 ] [94,    70] loss: 0.449 acc: 0.816
+[ Sun Aug  7 22:46:25 2022 ] val_loss: 2.9607958336671194, val_accuracy: 0.3875
+[ Sun Aug  7 22:46:44 2022 ] [95,    70] loss: 0.448 acc: 0.823
+[ Sun Aug  7 22:46:50 2022 ] val_loss: 3.002409835656484, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:47:09 2022 ] [96,    70] loss: 0.421 acc: 0.829
+[ Sun Aug  7 22:47:16 2022 ] val_loss: 3.086610722541809, val_accuracy: 0.36666666666666664
+[ Sun Aug  7 22:47:35 2022 ] [97,    70] loss: 0.433 acc: 0.821
+[ Sun Aug  7 22:47:42 2022 ] val_loss: 3.2192644357681273, val_accuracy: 0.39166666666666666
+[ Sun Aug  7 22:48:00 2022 ] [98,    70] loss: 0.429 acc: 0.821
+[ Sun Aug  7 22:48:07 2022 ] val_loss: 3.218447208404541, val_accuracy: 0.375
+[ Sun Aug  7 22:48:26 2022 ] [99,    70] loss: 0.452 acc: 0.816
+[ Sun Aug  7 22:48:33 2022 ] val_loss: 3.2657256652911504, val_accuracy: 0.3958333333333333
+[ Sun Aug  7 22:48:51 2022 ] [100,    70] loss: 0.458 acc: 0.809
+[ Sun Aug  7 22:48:58 2022 ] val_loss: 3.1690764009952543, val_accuracy: 0.3625
+[ Sun Aug  7 22:48:58 2022 ] whole time:2605
+[ Mon Aug 22 16:31:21 2022 ] [1,   700] loss: 4.411 acc: 0.029
+[ Mon Aug 22 16:34:05 2022 ] [2,   700] loss: 4.274 acc: 0.034
+[ Mon Aug 22 16:36:49 2022 ] [3,   700] loss: 4.147 acc: 0.049
+[ Mon Aug 22 16:39:32 2022 ] [4,   700] loss: 4.043 acc: 0.061
+[ Mon Aug 22 16:42:18 2022 ] [5,   700] loss: 3.960 acc: 0.071
+[ Mon Aug 22 16:52:38 2022 ] [1,   700] loss: 3.859 acc: 0.198
+[ Mon Aug 22 16:55:27 2022 ] [2,   700] loss: 3.749 acc: 0.231
+[ Mon Aug 22 16:58:18 2022 ] [3,   700] loss: 3.649 acc: 0.263
+[ Mon Aug 22 17:01:16 2022 ] [4,   700] loss: 3.534 acc: 0.314
+[ Mon Aug 22 17:04:30 2022 ] [5,   700] loss: 3.371 acc: 0.381
+[ Mon Aug 22 17:08:55 2022 ] [1,   700] loss: 3.059 acc: 0.531
+[ Mon Aug 22 17:10:45 2022 ] val_loss: 4.041789559523265, val_accuracy: 0.20916666666666667
+[ Mon Aug 22 17:13:50 2022 ] [2,   700] loss: 2.817 acc: 0.659
+[ Mon Aug 22 17:14:30 2022 ] val_loss: 4.008202460606893, val_accuracy: 0.23791666666666667
+[ Mon Aug 22 17:17:42 2022 ] [3,   700] loss: 2.577 acc: 0.807
+[ Mon Aug 22 17:18:11 2022 ] val_loss: 3.514110048611959, val_accuracy: 0.3383333333333333
+[ Mon Aug 22 17:21:01 2022 ] [4,   700] loss: 2.306 acc: 0.974
+[ Mon Aug 22 17:21:30 2022 ] val_loss: 3.5450172138214113, val_accuracy: 0.37333333333333335
+[ Mon Aug 22 17:24:19 2022 ] [5,   700] loss: 2.023 acc: 1.153
+[ Mon Aug 22 17:24:48 2022 ] val_loss: 3.7608180932203927, val_accuracy: 0.35291666666666666
+[ Mon Aug 22 17:27:38 2022 ] [6,   700] loss: 1.782 acc: 1.311
+[ Mon Aug 22 17:28:07 2022 ] val_loss: 3.853055118918419, val_accuracy: 0.37916666666666665
+[ Mon Aug 22 17:31:00 2022 ] [7,   700] loss: 1.557 acc: 1.445
+[ Mon Aug 22 17:31:29 2022 ] val_loss: 3.412077931364377, val_accuracy: 0.4945833333333333
+[ Mon Aug 22 17:34:19 2022 ] [8,   700] loss: 1.358 acc: 1.565
+[ Mon Aug 22 17:34:48 2022 ] val_loss: 3.8289935642480852, val_accuracy: 0.4370833333333333
+[ Mon Aug 22 17:37:36 2022 ] [9,   700] loss: 1.188 acc: 1.660
+[ Mon Aug 22 17:38:05 2022 ] val_loss: 4.132238661249478, val_accuracy: 0.40625
+[ Mon Aug 22 17:41:16 2022 ] [10,   700] loss: 1.041 acc: 1.731
+[ Mon Aug 22 17:41:56 2022 ] val_loss: 3.20216821650664, val_accuracy: 0.6029166666666667
+[ Mon Aug 22 17:44:47 2022 ] [11,   700] loss: 0.915 acc: 1.799
+[ Mon Aug 22 17:45:16 2022 ] val_loss: 3.4307830811540287, val_accuracy: 0.5616666666666666
+[ Mon Aug 22 17:48:04 2022 ] [12,   700] loss: 0.781 acc: 1.887
+[ Mon Aug 22 17:48:34 2022 ] val_loss: 3.3301163064688444, val_accuracy: 0.6241666666666666
+[ Mon Aug 22 17:51:22 2022 ] [13,   700] loss: 0.673 acc: 1.942
+[ Mon Aug 22 17:51:51 2022 ] val_loss: 3.1453745365267, val_accuracy: 0.65625
+[ Mon Aug 22 17:54:42 2022 ] [14,   700] loss: 0.565 acc: 2.014
+[ Mon Aug 22 17:55:12 2022 ] val_loss: 3.103245302507033, val_accuracy: 0.66125
+[ Mon Aug 22 17:58:04 2022 ] [15,   700] loss: 0.486 acc: 2.060
+[ Mon Aug 22 18:02:21 2022 ] [1,   700] loss: 4.593 acc: 0.022
+[ Mon Aug 22 18:02:50 2022 ] val_loss: 4.9916757901509605, val_accuracy: 0.014583333333333334
+[ Mon Aug 22 18:05:47 2022 ] [2,   700] loss: 4.368 acc: 0.030
+[ Mon Aug 22 18:06:16 2022 ] val_loss: 4.858123110930125, val_accuracy: 0.0175
+[ Mon Aug 22 18:09:07 2022 ] [3,   700] loss: 4.255 acc: 0.037
+[ Mon Aug 22 18:09:46 2022 ] val_loss: 4.226807384490967, val_accuracy: 0.04791666666666667
+[ Mon Aug 22 18:12:36 2022 ] [4,   700] loss: 4.140 acc: 0.047
+[ Mon Aug 22 18:13:15 2022 ] val_loss: 4.201679986317952, val_accuracy: 0.043333333333333335
+[ Mon Aug 22 18:16:16 2022 ] [5,   700] loss: 4.062 acc: 0.051
+[ Mon Aug 22 18:16:46 2022 ] val_loss: 4.275805753866831, val_accuracy: 0.052083333333333336
+[ Mon Aug 22 18:19:35 2022 ] [6,   700] loss: 4.002 acc: 0.057
+[ Mon Aug 22 18:20:04 2022 ] val_loss: 4.166630305449168, val_accuracy: 0.05625
+[ Mon Aug 22 18:22:54 2022 ] [7,   700] loss: 3.949 acc: 0.066
+[ Mon Aug 22 18:23:23 2022 ] val_loss: 4.219857084751129, val_accuracy: 0.0575
+[ Mon Aug 22 18:26:13 2022 ] [8,   700] loss: 3.892 acc: 0.073
+[ Mon Aug 22 18:26:42 2022 ] val_loss: 4.1115895891189576, val_accuracy: 0.06875
+[ Mon Aug 22 18:29:33 2022 ] [9,   700] loss: 3.805 acc: 0.086
+[ Mon Aug 22 18:30:02 2022 ] val_loss: 4.034348321755727, val_accuracy: 0.08708333333333333
+[ Mon Aug 22 18:32:50 2022 ] [10,   700] loss: 3.642 acc: 0.114
+[ Mon Aug 22 18:33:20 2022 ] val_loss: 3.9075561221440633, val_accuracy: 0.10208333333333333
+[ Mon Aug 22 18:36:09 2022 ] [11,   700] loss: 3.474 acc: 0.144
+[ Mon Aug 22 18:36:38 2022 ] val_loss: 3.8974534034729005, val_accuracy: 0.1175
+[ Mon Aug 22 18:39:26 2022 ] [12,   700] loss: 3.333 acc: 0.167
+[ Mon Aug 22 18:39:55 2022 ] val_loss: 3.822387966712316, val_accuracy: 0.14666666666666667
+[ Mon Aug 22 18:42:49 2022 ] [13,   700] loss: 3.191 acc: 0.193
+[ Mon Aug 22 18:43:20 2022 ] val_loss: 3.6896345806121826, val_accuracy: 0.17916666666666667
+[ Mon Aug 22 18:46:17 2022 ] [14,   700] loss: 3.035 acc: 0.226
+[ Mon Aug 22 18:46:48 2022 ] val_loss: 3.602134566307068, val_accuracy: 0.19708333333333333
+[ Mon Aug 22 18:49:44 2022 ] [15,   700] loss: 2.859 acc: 0.265
+[ Mon Aug 22 18:50:13 2022 ] val_loss: 3.5771975910663603, val_accuracy: 0.22791666666666666
+[ Mon Aug 22 18:53:05 2022 ] [16,   700] loss: 2.678 acc: 0.307
+[ Mon Aug 22 18:53:35 2022 ] val_loss: 3.450858014424642, val_accuracy: 0.2608333333333333
+[ Mon Aug 22 18:56:28 2022 ] [17,   700] loss: 2.460 acc: 0.361
+[ Mon Aug 22 18:56:58 2022 ] val_loss: 3.3717125658194225, val_accuracy: 0.31625
+[ Mon Aug 22 18:59:53 2022 ] [18,   700] loss: 2.194 acc: 0.441
+[ Mon Aug 22 19:00:23 2022 ] val_loss: 3.151448889772097, val_accuracy: 0.3675
+[ Mon Aug 22 19:03:19 2022 ] [19,   700] loss: 1.922 acc: 0.520
+[ Mon Aug 22 19:03:49 2022 ] val_loss: 2.972496834397316, val_accuracy: 0.43
+[ Mon Aug 22 19:08:15 2022 ] [20,   700] loss: 1.662 acc: 0.589
+[ Mon Aug 22 19:09:04 2022 ] val_loss: 2.8329208275675772, val_accuracy: 0.48583333333333334
+[ Mon Aug 22 19:13:40 2022 ] [21,   700] loss: 1.434 acc: 0.645
+[ Mon Aug 22 19:14:30 2022 ] val_loss: 3.1548706948757173, val_accuracy: 0.43666666666666665
+[ Mon Aug 22 19:18:07 2022 ] [22,   700] loss: 1.230 acc: 0.698
+[ Mon Aug 22 19:18:42 2022 ] val_loss: 3.6699074727296828, val_accuracy: 0.3779166666666667
+[ Mon Aug 22 19:22:14 2022 ] [23,   700] loss: 1.053 acc: 0.750
+[ Mon Aug 22 19:22:48 2022 ] val_loss: 3.094587828318278, val_accuracy: 0.4995833333333333
+[ Mon Aug 22 19:26:08 2022 ] [24,   700] loss: 0.888 acc: 0.783
+[ Mon Aug 22 19:26:42 2022 ] val_loss: 3.048973899980386, val_accuracy: 0.5175
+[ Mon Aug 22 19:29:54 2022 ] [25,   700] loss: 0.753 acc: 0.814
+[ Mon Aug 22 19:30:23 2022 ] val_loss: 3.9189390814304352, val_accuracy: 0.38958333333333334
+[ Mon Aug 22 19:33:11 2022 ] [26,   700] loss: 0.635 acc: 0.848
+[ Mon Aug 22 19:33:40 2022 ] val_loss: 3.418233344008525, val_accuracy: 0.49041666666666667
+[ Mon Aug 22 19:36:28 2022 ] [27,   700] loss: 0.532 acc: 0.870
+[ Mon Aug 22 19:36:57 2022 ] val_loss: 3.452132942775885, val_accuracy: 0.49875
+[ Mon Aug 22 19:39:46 2022 ] [28,   700] loss: 0.433 acc: 0.900
+[ Mon Aug 22 19:40:15 2022 ] val_loss: 3.052548782962064, val_accuracy: 0.5833333333333334
+[ Mon Aug 22 19:43:03 2022 ] [29,   700] loss: 0.359 acc: 0.914
+[ Mon Aug 22 19:43:32 2022 ] val_loss: 3.373929100340853, val_accuracy: 0.5258333333333334
+[ Mon Aug 22 19:46:20 2022 ] [30,   700] loss: 0.312 acc: 0.927
+[ Mon Aug 22 19:46:49 2022 ] val_loss: 3.29015562451755, val_accuracy: 0.6329166666666667
+[ Mon Aug 22 19:49:37 2022 ] [31,   700] loss: 0.288 acc: 0.930
+[ Mon Aug 22 19:50:06 2022 ] val_loss: 3.3890383386115235, val_accuracy: 0.5891666666666666
+[ Mon Aug 22 19:52:55 2022 ] [32,   700] loss: 0.259 acc: 0.936
+[ Mon Aug 22 19:53:24 2022 ] val_loss: 3.1245682475032908, val_accuracy: 0.6645833333333333
+[ Mon Aug 22 19:56:12 2022 ] [33,   700] loss: 0.213 acc: 0.949
+[ Mon Aug 22 19:56:41 2022 ] val_loss: 3.0878083391115068, val_accuracy: 0.6720833333333334
+[ Mon Aug 22 19:59:33 2022 ] [34,   700] loss: 0.193 acc: 0.951
+[ Mon Aug 22 20:00:02 2022 ] val_loss: 3.1618791908894974, val_accuracy: 0.7029166666666666
+[ Mon Aug 22 20:02:51 2022 ] [35,   700] loss: 0.189 acc: 0.953
+[ Mon Aug 22 20:03:20 2022 ] val_loss: 3.113945519896612, val_accuracy: 0.7258333333333333
+[ Mon Aug 22 20:06:09 2022 ] [36,   700] loss: 0.147 acc: 0.961
+[ Mon Aug 22 20:06:38 2022 ] val_loss: 3.4828872499770176, val_accuracy: 0.7016666666666667
+[ Mon Aug 22 20:09:38 2022 ] [37,   700] loss: 0.144 acc: 0.962
+[ Mon Aug 22 20:10:08 2022 ] val_loss: 3.2488551337271927, val_accuracy: 0.7275
+[ Mon Aug 22 20:13:08 2022 ] [38,   700] loss: 0.145 acc: 0.961
+[ Mon Aug 22 20:13:37 2022 ] val_loss: 3.218590642576261, val_accuracy: 0.755
+[ Mon Aug 22 20:16:26 2022 ] [39,   700] loss: 0.117 acc: 0.969
+[ Mon Aug 22 20:17:07 2022 ] val_loss: 3.366358908787758, val_accuracy: 0.7620833333333333
+[ Mon Aug 22 20:20:23 2022 ] [40,   700] loss: 0.124 acc: 0.966
+[ Mon Aug 22 20:20:52 2022 ] val_loss: 3.391673853651931, val_accuracy: 0.7370833333333333
+[ Mon Aug 22 20:23:40 2022 ] [41,   700] loss: 0.132 acc: 0.962
+[ Mon Aug 22 20:24:09 2022 ] val_loss: 3.4796229733593647, val_accuracy: 0.7329166666666667
+[ Mon Aug 22 20:26:58 2022 ] [42,   700] loss: 0.095 acc: 0.975
+[ Mon Aug 22 20:27:27 2022 ] val_loss: 3.3669311354092013, val_accuracy: 0.7529166666666667
+[ Mon Aug 22 20:30:16 2022 ] [43,   700] loss: 0.105 acc: 0.971
+[ Mon Aug 22 20:30:45 2022 ] val_loss: 3.2516883374292713, val_accuracy: 0.7454166666666666
+[ Mon Aug 22 20:33:33 2022 ] [44,   700] loss: 0.088 acc: 0.977
+[ Mon Aug 22 20:34:02 2022 ] val_loss: 3.5971094775691745, val_accuracy: 0.765
+[ Mon Aug 22 20:36:51 2022 ] [45,   700] loss: 0.116 acc: 0.967
+[ Mon Aug 22 20:37:20 2022 ] val_loss: 3.3970224428147775, val_accuracy: 0.7616666666666667
+[ Mon Aug 22 20:40:09 2022 ] [46,   700] loss: 0.069 acc: 0.984
+[ Mon Aug 22 20:40:38 2022 ] val_loss: 3.361917768906375, val_accuracy: 0.78625
+[ Mon Aug 22 20:43:26 2022 ] [47,   700] loss: 0.053 acc: 0.987
+[ Mon Aug 22 20:43:55 2022 ] val_loss: 5.3302737580736474, val_accuracy: 0.555
+[ Mon Aug 22 20:46:44 2022 ] [48,   700] loss: 0.109 acc: 0.971
+[ Mon Aug 22 20:47:13 2022 ] val_loss: 3.62241090009183, val_accuracy: 0.7495833333333334
+[ Mon Aug 22 20:50:05 2022 ] [49,   700] loss: 0.104 acc: 0.970
+[ Mon Aug 22 20:50:35 2022 ] val_loss: 3.5416090755259697, val_accuracy: 0.7870833333333334
+[ Mon Aug 22 20:53:24 2022 ] [50,   700] loss: 0.043 acc: 0.990
+[ Mon Aug 22 20:53:53 2022 ] val_loss: 3.533586919773249, val_accuracy: 0.7920833333333334
+[ Mon Aug 22 20:56:41 2022 ] [51,   700] loss: 0.081 acc: 0.977
+[ Mon Aug 22 20:57:10 2022 ] val_loss: 3.3577688736080504, val_accuracy: 0.7795833333333333
+[ Mon Aug 22 20:59:59 2022 ] [52,   700] loss: 0.059 acc: 0.984
+[ Mon Aug 22 21:00:28 2022 ] val_loss: 3.6704790601418065, val_accuracy: 0.7908333333333334
+[ Mon Aug 22 21:03:17 2022 ] [53,   700] loss: 0.103 acc: 0.969
+[ Mon Aug 22 21:03:46 2022 ] val_loss: 3.511245625978627, val_accuracy: 0.7875
+[ Mon Aug 22 21:06:48 2022 ] [54,   700] loss: 0.059 acc: 0.985
+[ Mon Aug 22 21:07:17 2022 ] val_loss: 3.538029881812302, val_accuracy: 0.7845833333333333
+[ Mon Aug 22 21:10:19 2022 ] [55,   700] loss: 0.049 acc: 0.986
+[ Mon Aug 22 21:10:48 2022 ] val_loss: 3.589391731810562, val_accuracy: 0.7883333333333333
+[ Mon Aug 22 21:13:36 2022 ] [56,   700] loss: 0.053 acc: 0.986
+[ Mon Aug 22 21:14:05 2022 ] val_loss: 3.7808781779723843, val_accuracy: 0.7733333333333333
+[ Mon Aug 22 21:16:55 2022 ] [57,   700] loss: 0.100 acc: 0.970
+[ Mon Aug 22 21:17:42 2022 ] val_loss: 3.5927304882443667, val_accuracy: 0.7554166666666666
+[ Mon Aug 22 21:20:43 2022 ] [58,   700] loss: 0.047 acc: 0.988
+[ Mon Aug 22 21:21:12 2022 ] val_loss: 3.9007479607440474, val_accuracy: 0.7808333333333334
+[ Mon Aug 22 21:24:00 2022 ] [59,   700] loss: 0.069 acc: 0.979
+[ Mon Aug 22 21:24:29 2022 ] val_loss: 3.840368248671487, val_accuracy: 0.7545833333333334
+[ Mon Aug 22 21:27:17 2022 ] [60,   700] loss: 0.072 acc: 0.980
+[ Mon Aug 22 21:27:47 2022 ] val_loss: 3.5038312591050635, val_accuracy: 0.7625
+[ Mon Aug 22 21:30:35 2022 ] [61,   700] loss: 0.048 acc: 0.988
+[ Mon Aug 22 21:31:04 2022 ] val_loss: 3.7077192345711776, val_accuracy: 0.7841666666666667
+[ Mon Aug 22 21:33:53 2022 ] [62,   700] loss: 0.049 acc: 0.986
+[ Mon Aug 22 21:34:22 2022 ] val_loss: 3.7430407322510533, val_accuracy: 0.7758333333333334
+[ Mon Aug 22 21:37:10 2022 ] [63,   700] loss: 0.050 acc: 0.987
+[ Mon Aug 22 21:37:40 2022 ] val_loss: 3.9494670887433556, val_accuracy: 0.7554166666666666
+[ Mon Aug 22 21:40:28 2022 ] [64,   700] loss: 0.063 acc: 0.982
+[ Mon Aug 22 21:40:57 2022 ] val_loss: 3.6432998978416586, val_accuracy: 0.81375
+[ Mon Aug 22 21:43:46 2022 ] [65,   700] loss: 0.046 acc: 0.987
+[ Mon Aug 22 21:44:15 2022 ] val_loss: 3.793665357393911, val_accuracy: 0.7833333333333333
+[ Mon Aug 22 21:47:03 2022 ] [66,   700] loss: 0.049 acc: 0.986
+[ Mon Aug 22 21:47:33 2022 ] val_loss: 3.875918482462025, val_accuracy: 0.8070833333333334
+[ Mon Aug 22 21:50:22 2022 ] [67,   700] loss: 0.063 acc: 0.983
+[ Mon Aug 22 21:50:51 2022 ] val_loss: 3.847396333589022, val_accuracy: 0.8045833333333333
+[ Mon Aug 22 21:53:41 2022 ] [68,   700] loss: 0.049 acc: 0.985
+[ Mon Aug 22 21:54:11 2022 ] val_loss: 3.9103767943998355, val_accuracy: 0.7995833333333333
+[ Mon Aug 22 21:57:01 2022 ] [69,   700] loss: 0.034 acc: 0.993
+[ Mon Aug 22 21:57:30 2022 ] val_loss: 3.7608565519192414, val_accuracy: 0.805
+[ Mon Aug 22 22:00:20 2022 ] [70,   700] loss: 0.070 acc: 0.980
+[ Mon Aug 22 22:00:49 2022 ] val_loss: 3.8836226375968543, val_accuracy: 0.7025
+[ Mon Aug 22 22:03:39 2022 ] [71,   700] loss: 0.023 acc: 0.994
+[ Mon Aug 22 22:04:09 2022 ] val_loss: 3.887161787387413, val_accuracy: 0.8133333333333334
+[ Mon Aug 22 22:07:10 2022 ] [72,   700] loss: 0.044 acc: 0.989
+[ Mon Aug 22 22:07:39 2022 ] val_loss: 4.138600092677904, val_accuracy: 0.73875
+[ Mon Aug 22 22:10:41 2022 ] [73,   700] loss: 0.054 acc: 0.984
+[ Mon Aug 22 22:11:11 2022 ] val_loss: 4.074021320224686, val_accuracy: 0.7820833333333334
+[ Mon Aug 22 22:14:01 2022 ] [74,   700] loss: 0.040 acc: 0.989
+[ Mon Aug 22 22:14:30 2022 ] val_loss: 4.146099511054811, val_accuracy: 0.7958333333333333
+[ Mon Aug 22 22:17:20 2022 ] [75,   700] loss: 0.036 acc: 0.990
+[ Mon Aug 22 22:18:14 2022 ] val_loss: 3.9960981479802467, val_accuracy: 0.8183333333333334
+[ Mon Aug 22 22:21:16 2022 ] [76,   700] loss: 0.010 acc: 0.998
+[ Mon Aug 22 22:21:45 2022 ] val_loss: 4.033776651145411, val_accuracy: 0.7883333333333333
+[ Mon Aug 22 22:24:35 2022 ] [77,   700] loss: 0.085 acc: 0.974
+[ Mon Aug 22 22:25:04 2022 ] val_loss: 3.6465473330697447, val_accuracy: 0.8066666666666666
+[ Mon Aug 22 22:27:54 2022 ] [78,   700] loss: 0.036 acc: 0.991
+[ Mon Aug 22 22:28:24 2022 ] val_loss: 3.9729646547782855, val_accuracy: 0.8020833333333334
+[ Mon Aug 22 22:31:14 2022 ] [79,   700] loss: 0.042 acc: 0.989
+[ Mon Aug 22 22:31:43 2022 ] val_loss: 3.944279206877145, val_accuracy: 0.8154166666666667
+[ Mon Aug 22 22:34:33 2022 ] [80,   700] loss: 0.010 acc: 0.998
+[ Mon Aug 22 22:35:02 2022 ] val_loss: 3.951409605934047, val_accuracy: 0.8016666666666666
+[ Mon Aug 22 22:37:52 2022 ] [81,   700] loss: 0.077 acc: 0.978
+[ Mon Aug 22 22:38:21 2022 ] val_loss: 4.128986160822163, val_accuracy: 0.7879166666666667
+[ Mon Aug 22 22:41:11 2022 ] [82,   700] loss: 0.025 acc: 0.993
+[ Mon Aug 22 22:41:41 2022 ] val_loss: 3.818832185632988, val_accuracy: 0.8195833333333333
+[ Mon Aug 22 22:44:31 2022 ] [83,   700] loss: 0.025 acc: 0.994
+[ Mon Aug 22 22:45:00 2022 ] val_loss: 3.918820690868753, val_accuracy: 0.8016666666666666
+[ Mon Aug 22 22:47:50 2022 ] [84,   700] loss: 0.049 acc: 0.987
+[ Mon Aug 22 22:48:19 2022 ] val_loss: 3.906650882683313, val_accuracy: 0.8075
+[ Mon Aug 22 22:51:09 2022 ] [85,   700] loss: 0.020 acc: 0.995
+[ Mon Aug 22 22:51:38 2022 ] val_loss: 4.07420689433506, val_accuracy: 0.8275
+[ Mon Aug 22 22:54:28 2022 ] [86,   700] loss: 0.002 acc: 1.000
+[ Mon Aug 22 22:54:58 2022 ] val_loss: 4.101350285801957, val_accuracy: 0.8295833333333333
+[ Mon Aug 22 22:57:47 2022 ] [87,   700] loss: 0.002 acc: 0.999
+[ Mon Aug 22 22:58:17 2022 ] val_loss: 3.9419611256379365, val_accuracy: 0.8154166666666667
+[ Mon Aug 22 23:01:07 2022 ] [88,   700] loss: 0.126 acc: 0.965
+[ Mon Aug 22 23:01:36 2022 ] val_loss: 4.059897909939955, val_accuracy: 0.8145833333333333
+[ Mon Aug 22 23:04:26 2022 ] [89,   700] loss: 0.016 acc: 0.996
+[ Mon Aug 22 23:04:55 2022 ] val_loss: 3.9641559740452825, val_accuracy: 0.8291666666666667
+[ Mon Aug 22 23:07:51 2022 ] [90,   700] loss: 0.002 acc: 1.000
+[ Mon Aug 22 23:08:21 2022 ] val_loss: 3.9738888933892516, val_accuracy: 0.8345833333333333
+[ Mon Aug 22 23:11:22 2022 ] [91,   700] loss: 0.001 acc: 1.000
+[ Mon Aug 22 23:11:52 2022 ] val_loss: 4.020444125379458, val_accuracy: 0.8358333333333333
+[ Mon Aug 22 23:14:42 2022 ] [92,   700] loss: 0.000 acc: 1.000
+[ Mon Aug 22 23:15:11 2022 ] val_loss: 4.031155570837568, val_accuracy: 0.8354166666666667
+[ Mon Aug 22 23:18:09 2022 ] [93,   700] loss: 0.000 acc: 1.000
+[ Mon Aug 22 23:18:50 2022 ] val_loss: 4.091606587855221, val_accuracy: 0.8345833333333333
+[ Mon Aug 22 23:21:52 2022 ] [94,   700] loss: 0.000 acc: 1.000
+[ Mon Aug 22 23:22:21 2022 ] val_loss: 4.123744678341748, val_accuracy: 0.83375
+[ Mon Aug 22 23:25:11 2022 ] [95,   700] loss: 0.000 acc: 1.000
+[ Mon Aug 22 23:25:41 2022 ] val_loss: 4.15048166365503, val_accuracy: 0.835
+[ Mon Aug 22 23:28:31 2022 ] [96,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 00:07:54 2022 ] [1,   700] loss: 4.352 acc: 0.037
+[ Tue Aug 23 00:08:30 2022 ] val_loss: 5.042910220623017, val_accuracy: 0.03208333333333333
+[ Tue Aug 23 00:12:19 2022 ] [2,   700] loss: 4.104 acc: 0.061
+[ Tue Aug 23 00:12:55 2022 ] val_loss: 4.293891642093659, val_accuracy: 0.056666666666666664
+[ Tue Aug 23 00:16:32 2022 ] [3,   700] loss: 3.956 acc: 0.073
+[ Tue Aug 23 00:17:09 2022 ] val_loss: 4.1543083731333414, val_accuracy: 0.06416666666666666
+[ Tue Aug 23 00:20:56 2022 ] [4,   700] loss: 3.857 acc: 0.085
+[ Tue Aug 23 00:22:00 2022 ] val_loss: 4.084547255039215, val_accuracy: 0.07625
+[ Tue Aug 23 00:25:36 2022 ] [5,   700] loss: 3.786 acc: 0.095
+[ Tue Aug 23 00:26:12 2022 ] val_loss: 4.035427260398865, val_accuracy: 0.08708333333333333
+[ Tue Aug 23 00:29:59 2022 ] [6,   700] loss: 3.717 acc: 0.108
+[ Tue Aug 23 00:30:35 2022 ] val_loss: 3.9544482469558715, val_accuracy: 0.09375
+[ Tue Aug 23 00:34:13 2022 ] [7,   700] loss: 3.628 acc: 0.121
+[ Tue Aug 23 00:34:51 2022 ] val_loss: 3.8759681725502015, val_accuracy: 0.11083333333333334
+[ Tue Aug 23 00:38:32 2022 ] [8,   700] loss: 3.502 acc: 0.145
+[ Tue Aug 23 00:39:08 2022 ] val_loss: 3.7760583925247193, val_accuracy: 0.12708333333333333
+[ Tue Aug 23 00:42:43 2022 ] [9,   700] loss: 3.330 acc: 0.178
+[ Tue Aug 23 00:43:17 2022 ] val_loss: 3.6275737047195435, val_accuracy: 0.16208333333333333
+[ Tue Aug 23 00:46:43 2022 ] [10,   700] loss: 3.090 acc: 0.227
+[ Tue Aug 23 00:47:17 2022 ] val_loss: 3.6319100006421405, val_accuracy: 0.18125
+[ Tue Aug 23 00:50:43 2022 ] [11,   700] loss: 2.788 acc: 0.300
+[ Tue Aug 23 00:51:18 2022 ] val_loss: 3.6621968829631806, val_accuracy: 0.205
+[ Tue Aug 23 00:54:44 2022 ] [12,   700] loss: 2.473 acc: 0.392
+[ Tue Aug 23 00:55:18 2022 ] val_loss: 3.1834532789389294, val_accuracy: 0.34541666666666665
+[ Tue Aug 23 00:58:44 2022 ] [13,   700] loss: 2.162 acc: 0.472
+[ Tue Aug 23 00:59:18 2022 ] val_loss: 2.8699710766474404, val_accuracy: 0.4575
+[ Tue Aug 23 01:02:44 2022 ] [14,   700] loss: 1.886 acc: 0.556
+[ Tue Aug 23 01:03:19 2022 ] val_loss: 2.6997727992137275, val_accuracy: 0.5283333333333333
+[ Tue Aug 23 01:06:45 2022 ] [15,   700] loss: 1.634 acc: 0.622
+[ Tue Aug 23 01:07:19 2022 ] val_loss: 2.59016731262207, val_accuracy: 0.58875
+[ Tue Aug 23 01:10:45 2022 ] [16,   700] loss: 1.411 acc: 0.677
+[ Tue Aug 23 01:11:19 2022 ] val_loss: 2.556177885135015, val_accuracy: 0.6095833333333334
+[ Tue Aug 23 01:14:59 2022 ] [17,   700] loss: 1.215 acc: 0.726
+[ Tue Aug 23 01:15:33 2022 ] val_loss: 2.516516525298357, val_accuracy: 0.6275
+[ Tue Aug 23 01:19:11 2022 ] [18,   700] loss: 1.049 acc: 0.763
+[ Tue Aug 23 01:19:45 2022 ] val_loss: 2.5368605806926885, val_accuracy: 0.6641666666666667
+[ Tue Aug 23 01:23:12 2022 ] [19,   700] loss: 0.899 acc: 0.797
+[ Tue Aug 23 01:24:16 2022 ] val_loss: 2.616713268508514, val_accuracy: 0.6420833333333333
+[ Tue Aug 23 01:27:54 2022 ] [20,   700] loss: 0.769 acc: 0.823
+[ Tue Aug 23 01:28:29 2022 ] val_loss: 3.0930753957728543, val_accuracy: 0.57125
+[ Tue Aug 23 01:31:54 2022 ] [21,   700] loss: 0.645 acc: 0.848
+[ Tue Aug 23 01:32:29 2022 ] val_loss: 2.7617323825011653, val_accuracy: 0.655
+[ Tue Aug 23 01:35:54 2022 ] [22,   700] loss: 0.554 acc: 0.864
+[ Tue Aug 23 01:36:29 2022 ] val_loss: 2.7845593477537234, val_accuracy: 0.6733333333333333
+[ Tue Aug 23 01:39:54 2022 ] [23,   700] loss: 0.468 acc: 0.882
+[ Tue Aug 23 01:40:29 2022 ] val_loss: 2.7169495433320603, val_accuracy: 0.6629166666666667
+[ Tue Aug 23 01:43:55 2022 ] [24,   700] loss: 0.399 acc: 0.903
+[ Tue Aug 23 01:44:29 2022 ] val_loss: 3.014998563627402, val_accuracy: 0.5391666666666667
+[ Tue Aug 23 01:47:55 2022 ] [25,   700] loss: 0.353 acc: 0.912
+[ Tue Aug 23 01:48:29 2022 ] val_loss: 3.1573054889341194, val_accuracy: 0.5541666666666667
+[ Tue Aug 23 01:52:06 2022 ] [26,   700] loss: 0.315 acc: 0.917
+[ Tue Aug 23 01:52:42 2022 ] val_loss: 2.908024541810155, val_accuracy: 0.63125
+[ Tue Aug 23 01:56:17 2022 ] [27,   700] loss: 0.263 acc: 0.935
+[ Tue Aug 23 01:56:53 2022 ] val_loss: 3.0257364863157274, val_accuracy: 0.7033333333333334
+[ Tue Aug 23 02:00:27 2022 ] [28,   700] loss: 0.254 acc: 0.936
+[ Tue Aug 23 02:01:03 2022 ] val_loss: 3.038706742177407, val_accuracy: 0.7245833333333334
+[ Tue Aug 23 02:04:38 2022 ] [29,   700] loss: 0.208 acc: 0.947
+[ Tue Aug 23 02:05:14 2022 ] val_loss: 2.9480887836466234, val_accuracy: 0.7191666666666666
+[ Tue Aug 23 02:08:49 2022 ] [30,   700] loss: 0.195 acc: 0.949
+[ Tue Aug 23 02:09:24 2022 ] val_loss: 3.339768565601359, val_accuracy: 0.6879166666666666
+[ Tue Aug 23 02:12:59 2022 ] [31,   700] loss: 0.178 acc: 0.951
+[ Tue Aug 23 02:13:35 2022 ] val_loss: 3.173923712434868, val_accuracy: 0.7375
+[ Tue Aug 23 02:17:21 2022 ] [32,   700] loss: 0.186 acc: 0.948
+[ Tue Aug 23 02:17:57 2022 ] val_loss: 3.203621055544354, val_accuracy: 0.74375
+[ Tue Aug 23 02:21:43 2022 ] [33,   700] loss: 0.141 acc: 0.964
+[ Tue Aug 23 02:22:19 2022 ] val_loss: 3.037792042433284, val_accuracy: 0.7195833333333334
+[ Tue Aug 23 02:25:54 2022 ] [34,   700] loss: 0.133 acc: 0.968
+[ Tue Aug 23 02:27:01 2022 ] val_loss: 3.6232377518651386, val_accuracy: 0.6995833333333333
+[ Tue Aug 23 02:30:49 2022 ] [35,   700] loss: 0.137 acc: 0.967
+[ Tue Aug 23 02:31:25 2022 ] val_loss: 3.4615968920569866, val_accuracy: 0.71625
+[ Tue Aug 23 02:35:00 2022 ] [36,   700] loss: 0.132 acc: 0.963
+[ Tue Aug 23 02:35:36 2022 ] val_loss: 3.3007367185813687, val_accuracy: 0.7120833333333333
+[ Tue Aug 23 02:39:11 2022 ] [37,   700] loss: 0.105 acc: 0.970
+[ Tue Aug 23 02:39:47 2022 ] val_loss: 3.3695808846425885, val_accuracy: 0.74375
+[ Tue Aug 23 02:43:22 2022 ] [38,   700] loss: 0.108 acc: 0.971
+[ Tue Aug 23 02:43:58 2022 ] val_loss: 3.7932274067103084, val_accuracy: 0.7358333333333333
+[ Tue Aug 23 02:47:33 2022 ] [39,   700] loss: 0.116 acc: 0.968
+[ Tue Aug 23 02:48:09 2022 ] val_loss: 3.5868477814396225, val_accuracy: 0.6391666666666667
+[ Tue Aug 23 02:51:44 2022 ] [40,   700] loss: 0.094 acc: 0.974
+[ Tue Aug 23 02:52:20 2022 ] val_loss: 3.4068657102851043, val_accuracy: 0.78125
+[ Tue Aug 23 02:55:55 2022 ] [41,   700] loss: 0.095 acc: 0.974
+[ Tue Aug 23 02:56:30 2022 ] val_loss: 3.475467501503008, val_accuracy: 0.78
+[ Tue Aug 23 03:00:08 2022 ] [42,   700] loss: 0.084 acc: 0.976
+[ Tue Aug 23 03:00:45 2022 ] val_loss: 3.524613396433027, val_accuracy: 0.7216666666666667
+[ Tue Aug 23 03:04:21 2022 ] [43,   700] loss: 0.081 acc: 0.980
+[ Tue Aug 23 03:04:57 2022 ] val_loss: 3.6566766582157775, val_accuracy: 0.75
+[ Tue Aug 23 03:08:32 2022 ] [44,   700] loss: 0.089 acc: 0.975
+[ Tue Aug 23 03:09:08 2022 ] val_loss: 3.513437805591578, val_accuracy: 0.7945833333333333
+[ Tue Aug 23 03:12:43 2022 ] [45,   700] loss: 0.093 acc: 0.971
+[ Tue Aug 23 03:13:19 2022 ] val_loss: 3.6806845120763563, val_accuracy: 0.7583333333333333
+[ Tue Aug 23 03:16:54 2022 ] [46,   700] loss: 0.083 acc: 0.975
+[ Tue Aug 23 03:17:30 2022 ] val_loss: 3.612723113579365, val_accuracy: 0.7041666666666667
+[ Tue Aug 23 03:21:14 2022 ] [47,   700] loss: 0.081 acc: 0.978
+[ Tue Aug 23 03:21:50 2022 ] val_loss: 3.627660857864151, val_accuracy: 0.7916666666666666
+[ Tue Aug 23 03:25:37 2022 ] [48,   700] loss: 0.064 acc: 0.983
+[ Tue Aug 23 03:26:12 2022 ] val_loss: 4.076503671172637, val_accuracy: 0.7629166666666667
+[ Tue Aug 23 03:30:01 2022 ] [49,   700] loss: 0.071 acc: 0.981
+[ Tue Aug 23 03:30:53 2022 ] val_loss: 3.535974849263827, val_accuracy: 0.6770833333333334
+[ Tue Aug 23 03:34:41 2022 ] [50,   700] loss: 0.071 acc: 0.980
+[ Tue Aug 23 03:35:17 2022 ] val_loss: 5.916264882485072, val_accuracy: 0.34208333333333335
+[ Tue Aug 23 03:38:52 2022 ] [51,   700] loss: 0.072 acc: 0.979
+[ Tue Aug 23 03:39:28 2022 ] val_loss: 3.9223653173455872, val_accuracy: 0.7966666666666666
+[ Tue Aug 23 03:43:03 2022 ] [52,   700] loss: 0.028 acc: 0.996
+[ Tue Aug 23 03:43:39 2022 ] val_loss: 3.8249812371105265, val_accuracy: 0.7675
+[ Tue Aug 23 03:47:14 2022 ] [53,   700] loss: 0.089 acc: 0.974
+[ Tue Aug 23 03:47:50 2022 ] val_loss: 3.714549719938368, val_accuracy: 0.8
+[ Tue Aug 23 03:51:26 2022 ] [54,   700] loss: 0.058 acc: 0.985
+[ Tue Aug 23 03:52:02 2022 ] val_loss: 3.67857011283874, val_accuracy: 0.76875
+[ Tue Aug 23 03:55:37 2022 ] [55,   700] loss: 0.064 acc: 0.981
+[ Tue Aug 23 03:56:13 2022 ] val_loss: 4.082020729514588, val_accuracy: 0.78875
+[ Tue Aug 23 03:59:48 2022 ] [56,   700] loss: 0.051 acc: 0.987
+[ Tue Aug 23 04:00:24 2022 ] val_loss: 3.8095029805026086, val_accuracy: 0.7983333333333333
+[ Tue Aug 23 04:03:59 2022 ] [57,   700] loss: 0.048 acc: 0.987
+[ Tue Aug 23 04:04:35 2022 ] val_loss: 3.7377034225147994, val_accuracy: 0.7508333333333334
+[ Tue Aug 23 04:08:10 2022 ] [58,   700] loss: 0.082 acc: 0.975
+[ Tue Aug 23 04:08:46 2022 ] val_loss: 3.7684474211569854, val_accuracy: 0.7941666666666667
+[ Tue Aug 23 04:12:22 2022 ] [59,   700] loss: 0.067 acc: 0.981
+[ Tue Aug 23 04:12:58 2022 ] val_loss: 3.9449358892797077, val_accuracy: 0.7708333333333334
+[ Tue Aug 23 04:16:33 2022 ] [60,   700] loss: 0.036 acc: 0.991
+[ Tue Aug 23 04:17:09 2022 ] val_loss: 3.9906177388695143, val_accuracy: 0.8025
+[ Tue Aug 23 04:20:46 2022 ] [61,   700] loss: 0.041 acc: 0.991
+[ Tue Aug 23 04:21:22 2022 ] val_loss: 4.077597585331629, val_accuracy: 0.7854166666666667
+[ Tue Aug 23 04:25:10 2022 ] [62,   700] loss: 0.069 acc: 0.979
+[ Tue Aug 23 04:25:46 2022 ] val_loss: 4.000976176858931, val_accuracy: 0.7929166666666667
+[ Tue Aug 23 04:29:22 2022 ] [63,   700] loss: 0.052 acc: 0.987
+[ Tue Aug 23 04:29:59 2022 ] val_loss: 3.9045029964326265, val_accuracy: 0.7891666666666667
+[ Tue Aug 23 04:33:47 2022 ] [64,   700] loss: 0.042 acc: 0.987
+[ Tue Aug 23 04:34:36 2022 ] val_loss: 3.728668332673381, val_accuracy: 0.7741666666666667
+[ Tue Aug 23 04:38:25 2022 ] [65,   700] loss: 0.026 acc: 0.993
+[ Tue Aug 23 04:39:01 2022 ] val_loss: 3.9313279275443103, val_accuracy: 0.8095833333333333
+[ Tue Aug 23 04:42:36 2022 ] [66,   700] loss: 0.046 acc: 0.987
+[ Tue Aug 23 04:43:12 2022 ] val_loss: 3.9149784937142975, val_accuracy: 0.7733333333333333
+[ Tue Aug 23 04:46:44 2022 ] [67,   700] loss: 0.055 acc: 0.986
+[ Tue Aug 23 04:47:19 2022 ] val_loss: 3.6863726105669046, val_accuracy: 0.7875
+[ Tue Aug 23 04:50:45 2022 ] [68,   700] loss: 0.048 acc: 0.987
+[ Tue Aug 23 04:51:20 2022 ] val_loss: 3.852991177419487, val_accuracy: 0.8020833333333334
+[ Tue Aug 23 04:54:47 2022 ] [69,   700] loss: 0.007 acc: 1.000
+[ Tue Aug 23 04:55:21 2022 ] val_loss: 4.012406118974734, val_accuracy: 0.8166666666666667
+[ Tue Aug 23 04:58:48 2022 ] [70,   700] loss: 0.009 acc: 0.998
+[ Tue Aug 23 04:59:23 2022 ] val_loss: 5.022126753528913, val_accuracy: 0.3804166666666667
+[ Tue Aug 23 05:02:50 2022 ] [71,   700] loss: 0.137 acc: 0.961
+[ Tue Aug 23 05:03:24 2022 ] val_loss: 3.927559877990134, val_accuracy: 0.8004166666666667
+[ Tue Aug 23 05:06:57 2022 ] [72,   700] loss: 0.017 acc: 0.996
+[ Tue Aug 23 05:07:31 2022 ] val_loss: 4.017254390549184, val_accuracy: 0.8070833333333334
+[ Tue Aug 23 05:10:57 2022 ] [73,   700] loss: 0.044 acc: 0.988
+[ Tue Aug 23 05:11:32 2022 ] val_loss: 3.9056324780233505, val_accuracy: 0.8070833333333334
+[ Tue Aug 23 05:14:58 2022 ] [74,   700] loss: 0.060 acc: 0.984
+[ Tue Aug 23 05:15:32 2022 ] val_loss: 3.9233077983096276, val_accuracy: 0.8004166666666667
+[ Tue Aug 23 05:18:58 2022 ] [75,   700] loss: 0.041 acc: 0.988
+[ Tue Aug 23 05:19:33 2022 ] val_loss: 4.067364493911373, val_accuracy: 0.7991666666666667
+[ Tue Aug 23 05:22:59 2022 ] [76,   700] loss: 0.026 acc: 0.994
+[ Tue Aug 23 05:23:33 2022 ] val_loss: 3.981894967894626, val_accuracy: 0.7995833333333333
+[ Tue Aug 23 05:27:13 2022 ] [77,   700] loss: 0.054 acc: 0.984
+[ Tue Aug 23 05:27:48 2022 ] val_loss: 3.9325972449149775, val_accuracy: 0.8041666666666667
+[ Tue Aug 23 05:31:14 2022 ] [78,   700] loss: 0.037 acc: 0.990
+[ Tue Aug 23 05:31:49 2022 ] val_loss: 4.091167428698051, val_accuracy: 0.8029166666666666
+[ Tue Aug 23 05:35:23 2022 ] [79,   700] loss: 0.031 acc: 0.992
+[ Tue Aug 23 05:36:27 2022 ] val_loss: 4.043375176110834, val_accuracy: 0.8120833333333334
+[ Tue Aug 23 05:40:07 2022 ] [80,   700] loss: 0.039 acc: 0.989
+[ Tue Aug 23 05:40:42 2022 ] val_loss: 4.181456654430949, val_accuracy: 0.7670833333333333
+[ Tue Aug 23 05:44:08 2022 ] [81,   700] loss: 0.046 acc: 0.986
+[ Tue Aug 23 05:44:42 2022 ] val_loss: 4.138437811622195, val_accuracy: 0.7908333333333334
+[ Tue Aug 23 05:48:08 2022 ] [82,   700] loss: 0.046 acc: 0.988
+[ Tue Aug 23 05:48:43 2022 ] val_loss: 3.9881738167231378, val_accuracy: 0.7875
+[ Tue Aug 23 05:52:09 2022 ] [83,   700] loss: 0.026 acc: 0.994
+[ Tue Aug 23 05:52:43 2022 ] val_loss: 4.14800569667077, val_accuracy: 0.8170833333333334
+[ Tue Aug 23 05:56:09 2022 ] [84,   700] loss: 0.005 acc: 0.999
+[ Tue Aug 23 05:56:44 2022 ] val_loss: 4.2058893786661855, val_accuracy: 0.8141666666666667
+[ Tue Aug 23 06:00:10 2022 ] [85,   700] loss: 0.072 acc: 0.979
+[ Tue Aug 23 06:00:44 2022 ] val_loss: 4.2406770065028105, val_accuracy: 0.7904166666666667
+[ Tue Aug 23 06:04:10 2022 ] [86,   700] loss: 0.022 acc: 0.995
+[ Tue Aug 23 06:04:44 2022 ] val_loss: 4.018989291466981, val_accuracy: 0.8170833333333334
+[ Tue Aug 23 06:08:10 2022 ] [87,   700] loss: 0.041 acc: 0.989
+[ Tue Aug 23 06:08:45 2022 ] val_loss: 4.371183243965812, val_accuracy: 0.7920833333333334
+[ Tue Aug 23 06:12:11 2022 ] [88,   700] loss: 0.040 acc: 0.989
+[ Tue Aug 23 06:12:45 2022 ] val_loss: 4.481540204908615, val_accuracy: 0.7725
+[ Tue Aug 23 06:16:11 2022 ] [89,   700] loss: 0.012 acc: 0.998
+[ Tue Aug 23 06:16:46 2022 ] val_loss: 4.164133052802851, val_accuracy: 0.825
+[ Tue Aug 23 06:20:12 2022 ] [90,   700] loss: 0.025 acc: 0.993
+[ Tue Aug 23 06:20:46 2022 ] val_loss: 4.292863860012294, val_accuracy: 0.7566666666666667
+[ Tue Aug 23 06:24:13 2022 ] [91,   700] loss: 0.070 acc: 0.979
+[ Tue Aug 23 06:24:48 2022 ] val_loss: 4.191981282454034, val_accuracy: 0.8083333333333333
+[ Tue Aug 23 06:28:27 2022 ] [92,   700] loss: 0.013 acc: 0.997
+[ Tue Aug 23 06:29:01 2022 ] val_loss: 4.20789995429555, val_accuracy: 0.8116666666666666
+[ Tue Aug 23 06:32:40 2022 ] [93,   700] loss: 0.005 acc: 0.999
+[ Tue Aug 23 06:33:14 2022 ] val_loss: 4.048809287029762, val_accuracy: 0.8258333333333333
+[ Tue Aug 23 06:36:40 2022 ] [94,   700] loss: 0.048 acc: 0.988
+[ Tue Aug 23 06:37:47 2022 ] val_loss: 4.423246726323851, val_accuracy: 0.7158333333333333
+[ Tue Aug 23 06:41:26 2022 ] [95,   700] loss: 0.067 acc: 0.981
+[ Tue Aug 23 06:42:00 2022 ] val_loss: 4.084550750411763, val_accuracy: 0.8154166666666667
+[ Tue Aug 23 06:45:26 2022 ] [96,   700] loss: 0.008 acc: 0.998
+[ Tue Aug 23 06:46:01 2022 ] val_loss: 4.11291577735426, val_accuracy: 0.8158333333333333
+[ Tue Aug 23 06:49:27 2022 ] [97,   700] loss: 0.004 acc: 0.999
+[ Tue Aug 23 06:50:01 2022 ] val_loss: 4.209520269253638, val_accuracy: 0.8170833333333334
+[ Tue Aug 23 06:53:27 2022 ] [98,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 06:54:02 2022 ] val_loss: 4.2977000646365715, val_accuracy: 0.8216666666666667
+[ Tue Aug 23 06:57:28 2022 ] [99,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 06:58:02 2022 ] val_loss: 4.322474077023297, val_accuracy: 0.8233333333333334
+[ Tue Aug 23 07:01:28 2022 ] [100,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 07:02:03 2022 ] val_loss: 4.364172591681291, val_accuracy: 0.8216666666666667
+[ Tue Aug 23 07:05:29 2022 ] [101,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 07:06:03 2022 ] val_loss: 4.385996413272525, val_accuracy: 0.8258333333333333
+[ Tue Aug 23 07:09:29 2022 ] [102,   700] loss: 0.134 acc: 0.966
+[ Tue Aug 23 07:10:04 2022 ] val_loss: 4.201890255382071, val_accuracy: 0.7995833333333333
+[ Tue Aug 23 07:13:30 2022 ] [103,   700] loss: 0.027 acc: 0.991
+[ Tue Aug 23 07:14:04 2022 ] val_loss: 4.311135374559071, val_accuracy: 0.8108333333333333
+[ Tue Aug 23 07:17:30 2022 ] [104,   700] loss: 0.007 acc: 0.999
+[ Tue Aug 23 07:18:05 2022 ] val_loss: 4.127947131502551, val_accuracy: 0.82
+[ Tue Aug 23 07:21:31 2022 ] [105,   700] loss: 0.014 acc: 0.997
+[ Tue Aug 23 07:22:05 2022 ] val_loss: 4.334702789916094, val_accuracy: 0.8070833333333334
+[ Tue Aug 23 07:25:31 2022 ] [106,   700] loss: 0.066 acc: 0.981
+[ Tue Aug 23 07:26:06 2022 ] val_loss: 4.150600319889684, val_accuracy: 0.6541666666666667
+[ Tue Aug 23 07:29:42 2022 ] [107,   700] loss: 0.043 acc: 0.987
+[ Tue Aug 23 07:30:17 2022 ] val_loss: 4.409861509847268, val_accuracy: 0.81375
+[ Tue Aug 23 07:33:53 2022 ] [108,   700] loss: 0.005 acc: 0.999
+[ Tue Aug 23 07:34:27 2022 ] val_loss: 4.371908218945121, val_accuracy: 0.81625
+[ Tue Aug 23 07:38:03 2022 ] [109,   700] loss: 0.016 acc: 0.995
+[ Tue Aug 23 07:38:54 2022 ] val_loss: 4.088080918886808, val_accuracy: 0.8108333333333333
+[ Tue Aug 23 07:42:33 2022 ] [110,   700] loss: 0.036 acc: 0.991
+[ Tue Aug 23 07:43:07 2022 ] val_loss: 4.082522152707813, val_accuracy: 0.8054166666666667
+[ Tue Aug 23 07:46:33 2022 ] [111,   700] loss: 0.045 acc: 0.987
+[ Tue Aug 23 07:47:08 2022 ] val_loss: 4.429035724077447, val_accuracy: 0.8108333333333333
+[ Tue Aug 23 07:50:34 2022 ] [112,   700] loss: 0.005 acc: 0.999
+[ Tue Aug 23 07:51:08 2022 ] val_loss: 4.435969520766308, val_accuracy: 0.8216666666666667
+[ Tue Aug 23 07:54:34 2022 ] [113,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 07:55:09 2022 ] val_loss: 4.5305968446747835, val_accuracy: 0.8191666666666667
+[ Tue Aug 23 07:58:35 2022 ] [114,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 07:59:09 2022 ] val_loss: 4.5600451377650595, val_accuracy: 0.82375
+[ Tue Aug 23 08:02:35 2022 ] [115,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:03:10 2022 ] val_loss: 4.57343046784005, val_accuracy: 0.8241666666666667
+[ Tue Aug 23 08:06:36 2022 ] [116,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:07:10 2022 ] val_loss: 4.586092263108746, val_accuracy: 0.825
+[ Tue Aug 23 08:10:36 2022 ] [117,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:11:11 2022 ] val_loss: 4.6349258520863925, val_accuracy: 0.82625
+[ Tue Aug 23 08:14:37 2022 ] [118,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:15:11 2022 ] val_loss: 4.6495664348507635, val_accuracy: 0.8279166666666666
+[ Tue Aug 23 08:18:37 2022 ] [119,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:19:12 2022 ] val_loss: 4.693710447276723, val_accuracy: 0.8275
+[ Tue Aug 23 08:22:38 2022 ] [120,   700] loss: 0.150 acc: 0.963
+[ Tue Aug 23 08:23:12 2022 ] val_loss: 4.29070542367727, val_accuracy: 0.8008333333333333
+[ Tue Aug 23 08:26:39 2022 ] [121,   700] loss: 0.010 acc: 0.997
+[ Tue Aug 23 08:27:13 2022 ] val_loss: 4.397239268534628, val_accuracy: 0.82125
+[ Tue Aug 23 08:30:44 2022 ] [122,   700] loss: 0.002 acc: 1.000
+[ Tue Aug 23 08:31:19 2022 ] val_loss: 4.449683760673814, val_accuracy: 0.8254166666666667
+[ Tue Aug 23 08:34:58 2022 ] [123,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 08:35:33 2022 ] val_loss: 4.5224735213752005, val_accuracy: 0.8229166666666666
+[ Tue Aug 23 08:39:13 2022 ] [124,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:40:02 2022 ] val_loss: 4.493544632404097, val_accuracy: 0.8258333333333333
+[ Tue Aug 23 08:43:41 2022 ] [125,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:44:16 2022 ] val_loss: 4.507813187373935, val_accuracy: 0.83
+[ Tue Aug 23 08:47:42 2022 ] [126,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:48:16 2022 ] val_loss: 4.5993613871650325, val_accuracy: 0.8270833333333333
+[ Tue Aug 23 08:51:42 2022 ] [127,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:52:17 2022 ] val_loss: 4.640868401698773, val_accuracy: 0.8295833333333333
+[ Tue Aug 23 08:55:43 2022 ] [128,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 08:56:17 2022 ] val_loss: 4.679482353941961, val_accuracy: 0.8275
+[ Tue Aug 23 08:59:43 2022 ] [129,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:00:18 2022 ] val_loss: 4.71881508814942, val_accuracy: 0.8304166666666667
+[ Tue Aug 23 09:03:44 2022 ] [130,   700] loss: 0.134 acc: 0.972
+[ Tue Aug 23 09:04:18 2022 ] val_loss: 4.357947589275427, val_accuracy: 0.7295833333333334
+[ Tue Aug 23 09:07:44 2022 ] [131,   700] loss: 0.055 acc: 0.984
+[ Tue Aug 23 09:08:19 2022 ] val_loss: 4.481985460356706, val_accuracy: 0.8179166666666666
+[ Tue Aug 23 09:11:45 2022 ] [132,   700] loss: 0.005 acc: 0.999
+[ Tue Aug 23 09:12:19 2022 ] val_loss: 4.551111010451386, val_accuracy: 0.8216666666666667
+[ Tue Aug 23 09:15:46 2022 ] [133,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 09:16:20 2022 ] val_loss: 4.601523168147054, val_accuracy: 0.8220833333333334
+[ Tue Aug 23 09:19:46 2022 ] [134,   700] loss: 0.001 acc: 1.000
+[ Tue Aug 23 09:20:21 2022 ] val_loss: 4.603925591480947, val_accuracy: 0.8220833333333334
+[ Tue Aug 23 09:23:47 2022 ] [135,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:24:21 2022 ] val_loss: 4.648615002774738, val_accuracy: 0.8241666666666667
+[ Tue Aug 23 09:27:47 2022 ] [136,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:28:22 2022 ] val_loss: 4.679791795665954, val_accuracy: 0.825
+[ Tue Aug 23 09:32:01 2022 ] [137,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:32:35 2022 ] val_loss: 4.725791342374867, val_accuracy: 0.8266666666666667
+[ Tue Aug 23 09:36:01 2022 ] [138,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:36:36 2022 ] val_loss: 4.770462295292764, val_accuracy: 0.8270833333333333
+[ Tue Aug 23 09:40:14 2022 ] [139,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:41:05 2022 ] val_loss: 4.812232932148132, val_accuracy: 0.8295833333333333
+[ Tue Aug 23 09:44:45 2022 ] [140,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:45:19 2022 ] val_loss: 4.8461329609286015, val_accuracy: 0.8304166666666667
+[ Tue Aug 23 09:48:45 2022 ] [141,   700] loss: 0.000 acc: 1.000
+[ Tue Aug 23 09:49:20 2022 ] val_loss: 4.908315305344132, val_accuracy: 0.83125
+[ Tue Aug 23 09:52:56 2022 ] [142,   700] loss: 0.000 acc: 1.000
+[ Fri Aug 26 16:42:29 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 16:43:19 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 16:45:19 2022 ] [1,    70] train_loss: 2.914 train_acc: 0.146
+[ Fri Aug 26 16:46:09 2022 ] [1,    30] val_loss: 2.290 val_acc: 0.163
+[ Fri Aug 26 16:46:31 2022 ] [2,    70] train_loss: 2.219 train_acc: 0.184
+[ Fri Aug 26 16:46:35 2022 ] [2,    30] val_loss: 2.152 val_acc: 0.217
+[ Fri Aug 26 16:46:56 2022 ] [3,    70] train_loss: 2.130 train_acc: 0.214
+[ Fri Aug 26 16:47:00 2022 ] [3,    30] val_loss: 2.113 val_acc: 0.192
+[ Fri Aug 26 16:47:22 2022 ] [4,    70] train_loss: 2.070 train_acc: 0.234
+[ Fri Aug 26 16:47:26 2022 ] [4,    30] val_loss: 2.088 val_acc: 0.212
+[ Fri Aug 26 16:47:48 2022 ] [5,    70] train_loss: 2.015 train_acc: 0.232
+[ Fri Aug 26 16:47:52 2022 ] [5,    30] val_loss: 2.064 val_acc: 0.221
+[ Fri Aug 26 16:48:14 2022 ] [6,    70] train_loss: 1.991 train_acc: 0.277
+[ Fri Aug 26 16:48:18 2022 ] [6,    30] val_loss: 2.081 val_acc: 0.196
+[ Fri Aug 26 16:48:39 2022 ] [7,    70] train_loss: 1.993 train_acc: 0.259
+[ Fri Aug 26 16:48:43 2022 ] [7,    30] val_loss: 2.064 val_acc: 0.208
+[ Fri Aug 26 16:49:05 2022 ] [8,    70] train_loss: 1.915 train_acc: 0.296
+[ Fri Aug 26 16:49:09 2022 ] [8,    30] val_loss: 2.004 val_acc: 0.221
+[ Fri Aug 26 16:49:31 2022 ] [9,    70] train_loss: 1.851 train_acc: 0.311
+[ Fri Aug 26 16:49:35 2022 ] [9,    30] val_loss: 1.995 val_acc: 0.225
+[ Fri Aug 26 16:49:57 2022 ] [10,    70] train_loss: 1.792 train_acc: 0.348
+[ Fri Aug 26 16:50:01 2022 ] [10,    30] val_loss: 1.928 val_acc: 0.271
+[ Fri Aug 26 16:50:22 2022 ] [11,    70] train_loss: 1.732 train_acc: 0.375
+[ Fri Aug 26 16:50:26 2022 ] [11,    30] val_loss: 1.903 val_acc: 0.237
+[ Fri Aug 26 16:50:48 2022 ] [12,    70] train_loss: 1.702 train_acc: 0.395
+[ Fri Aug 26 16:50:52 2022 ] [12,    30] val_loss: 1.929 val_acc: 0.271
+[ Fri Aug 26 16:51:14 2022 ] [13,    70] train_loss: 1.689 train_acc: 0.398
+[ Fri Aug 26 16:51:18 2022 ] [13,    30] val_loss: 1.862 val_acc: 0.292
+[ Fri Aug 26 16:51:40 2022 ] [14,    70] train_loss: 1.610 train_acc: 0.416
+[ Fri Aug 26 16:51:44 2022 ] [14,    30] val_loss: 1.872 val_acc: 0.300
+[ Fri Aug 26 16:52:05 2022 ] [15,    70] train_loss: 1.563 train_acc: 0.452
+[ Fri Aug 26 16:52:10 2022 ] [15,    30] val_loss: 1.907 val_acc: 0.283
+[ Fri Aug 26 16:52:31 2022 ] [16,    70] train_loss: 1.585 train_acc: 0.445
+[ Fri Aug 26 16:52:35 2022 ] [16,    30] val_loss: 1.954 val_acc: 0.275
+[ Fri Aug 26 16:52:57 2022 ] [17,    70] train_loss: 1.545 train_acc: 0.450
+[ Fri Aug 26 16:53:01 2022 ] [17,    30] val_loss: 1.849 val_acc: 0.317
+[ Fri Aug 26 16:53:23 2022 ] [18,    70] train_loss: 1.453 train_acc: 0.498
+[ Fri Aug 26 16:53:27 2022 ] [18,    30] val_loss: 1.855 val_acc: 0.317
+[ Fri Aug 26 16:53:48 2022 ] [19,    70] train_loss: 1.408 train_acc: 0.514
+[ Fri Aug 26 16:53:52 2022 ] [19,    30] val_loss: 1.863 val_acc: 0.321
+[ Fri Aug 26 16:54:14 2022 ] [20,    70] train_loss: 1.347 train_acc: 0.554
+[ Fri Aug 26 16:54:18 2022 ] [20,    30] val_loss: 1.847 val_acc: 0.329
+[ Fri Aug 26 16:54:40 2022 ] [21,    70] train_loss: 1.345 train_acc: 0.532
+[ Fri Aug 26 16:54:44 2022 ] [21,    30] val_loss: 1.815 val_acc: 0.329
+[ Fri Aug 26 16:55:06 2022 ] [22,    70] train_loss: 1.304 train_acc: 0.566
+[ Fri Aug 26 16:55:10 2022 ] [22,    30] val_loss: 1.805 val_acc: 0.383
+[ Fri Aug 26 16:55:31 2022 ] [23,    70] train_loss: 1.228 train_acc: 0.593
+[ Fri Aug 26 16:55:36 2022 ] [23,    30] val_loss: 1.814 val_acc: 0.396
+[ Fri Aug 26 16:55:57 2022 ] [24,    70] train_loss: 1.192 train_acc: 0.588
+[ Fri Aug 26 16:56:01 2022 ] [24,    30] val_loss: 1.779 val_acc: 0.404
+[ Fri Aug 26 16:56:23 2022 ] [25,    70] train_loss: 1.136 train_acc: 0.611
+[ Fri Aug 26 16:56:27 2022 ] [25,    30] val_loss: 1.799 val_acc: 0.392
+[ Fri Aug 26 16:56:49 2022 ] [26,    70] train_loss: 1.069 train_acc: 0.636
+[ Fri Aug 26 16:56:53 2022 ] [26,    30] val_loss: 1.800 val_acc: 0.412
+[ Fri Aug 26 16:57:15 2022 ] [27,    70] train_loss: 1.011 train_acc: 0.668
+[ Fri Aug 26 16:57:19 2022 ] [27,    30] val_loss: 1.770 val_acc: 0.421
+[ Fri Aug 26 16:57:40 2022 ] [28,    70] train_loss: 1.001 train_acc: 0.673
+[ Fri Aug 26 16:57:44 2022 ] [28,    30] val_loss: 1.774 val_acc: 0.396
+[ Fri Aug 26 16:58:06 2022 ] [29,    70] train_loss: 0.967 train_acc: 0.684
+[ Fri Aug 26 16:58:10 2022 ] [29,    30] val_loss: 1.745 val_acc: 0.421
+[ Fri Aug 26 16:58:32 2022 ] [30,    70] train_loss: 0.932 train_acc: 0.698
+[ Fri Aug 26 16:58:36 2022 ] [30,    30] val_loss: 1.735 val_acc: 0.412
+[ Fri Aug 26 16:58:58 2022 ] [31,    70] train_loss: 0.931 train_acc: 0.698
+[ Fri Aug 26 16:59:02 2022 ] [31,    30] val_loss: 1.788 val_acc: 0.396
+[ Fri Aug 26 16:59:23 2022 ] [32,    70] train_loss: 0.919 train_acc: 0.693
+[ Fri Aug 26 16:59:27 2022 ] [32,    30] val_loss: 1.832 val_acc: 0.417
+[ Fri Aug 26 16:59:49 2022 ] [33,    70] train_loss: 0.871 train_acc: 0.713
+[ Fri Aug 26 16:59:53 2022 ] [33,    30] val_loss: 1.814 val_acc: 0.383
+[ Fri Aug 26 17:00:15 2022 ] [34,    70] train_loss: 0.861 train_acc: 0.721
+[ Fri Aug 26 17:00:19 2022 ] [34,    30] val_loss: 1.767 val_acc: 0.408
+[ Fri Aug 26 17:00:40 2022 ] [35,    70] train_loss: 0.822 train_acc: 0.720
+[ Fri Aug 26 17:00:45 2022 ] [35,    30] val_loss: 1.735 val_acc: 0.425
+[ Fri Aug 26 17:01:06 2022 ] [36,    70] train_loss: 0.800 train_acc: 0.730
+[ Fri Aug 26 17:01:10 2022 ] [36,    30] val_loss: 1.815 val_acc: 0.404
+[ Fri Aug 26 17:01:32 2022 ] [37,    70] train_loss: 0.774 train_acc: 0.748
+[ Fri Aug 26 17:01:36 2022 ] [37,    30] val_loss: 1.745 val_acc: 0.438
+[ Fri Aug 26 17:01:58 2022 ] [38,    70] train_loss: 0.735 train_acc: 0.754
+[ Fri Aug 26 17:02:02 2022 ] [38,    30] val_loss: 1.797 val_acc: 0.408
+[ Fri Aug 26 17:02:23 2022 ] [39,    70] train_loss: 0.735 train_acc: 0.754
+[ Fri Aug 26 17:02:28 2022 ] [39,    30] val_loss: 1.817 val_acc: 0.417
+[ Fri Aug 26 17:02:49 2022 ] [40,    70] train_loss: 0.726 train_acc: 0.759
+[ Fri Aug 26 17:02:53 2022 ] [40,    30] val_loss: 1.865 val_acc: 0.388
+[ Fri Aug 26 17:03:15 2022 ] [41,    70] train_loss: 0.699 train_acc: 0.761
+[ Fri Aug 26 17:03:19 2022 ] [41,    30] val_loss: 1.820 val_acc: 0.417
+[ Fri Aug 26 17:03:41 2022 ] [42,    70] train_loss: 0.674 train_acc: 0.777
+[ Fri Aug 26 17:03:45 2022 ] [42,    30] val_loss: 1.917 val_acc: 0.392
+[ Fri Aug 26 17:04:06 2022 ] [43,    70] train_loss: 0.667 train_acc: 0.771
+[ Fri Aug 26 17:04:11 2022 ] [43,    30] val_loss: 1.934 val_acc: 0.404
+[ Fri Aug 26 17:04:32 2022 ] [44,    70] train_loss: 0.656 train_acc: 0.770
+[ Fri Aug 26 17:04:36 2022 ] [44,    30] val_loss: 2.017 val_acc: 0.392
+[ Fri Aug 26 17:04:58 2022 ] [45,    70] train_loss: 0.656 train_acc: 0.768
+[ Fri Aug 26 17:05:02 2022 ] [45,    30] val_loss: 1.971 val_acc: 0.442
+[ Fri Aug 26 17:05:24 2022 ] [46,    70] train_loss: 0.696 train_acc: 0.761
+[ Fri Aug 26 17:05:28 2022 ] [46,    30] val_loss: 1.977 val_acc: 0.412
+[ Fri Aug 26 17:05:49 2022 ] [47,    70] train_loss: 0.795 train_acc: 0.732
+[ Fri Aug 26 17:05:53 2022 ] [47,    30] val_loss: 1.851 val_acc: 0.404
+[ Fri Aug 26 17:06:16 2022 ] [48,    70] train_loss: 0.775 train_acc: 0.730
+[ Fri Aug 26 17:06:20 2022 ] [48,    30] val_loss: 1.871 val_acc: 0.412
+[ Fri Aug 26 17:06:42 2022 ] [49,    70] train_loss: 0.664 train_acc: 0.766
+[ Fri Aug 26 17:06:46 2022 ] [49,    30] val_loss: 1.876 val_acc: 0.429
+[ Fri Aug 26 17:07:27 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 18:08:59 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 18:38:04 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 18:40:11 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 18:56:45 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Fri Aug 26 18:56:46 2022 ] [1,     1] train_loss: 4.748 train_acc: 0.000
+[ Fri Aug 26 18:56:46 2022 ] [1,     1] val_loss: 4.512 val_acc: 0.000
+[ Fri Aug 26 18:56:46 2022 ] [2,     1] train_loss: 4.516 train_acc: 0.000
+[ Fri Aug 26 18:56:46 2022 ] [2,     1] val_loss: 4.061 val_acc: 1.000
+[ Fri Aug 26 18:56:46 2022 ] [3,     1] train_loss: 4.057 train_acc: 1.000
+[ Fri Aug 26 18:56:46 2022 ] [3,     1] val_loss: 3.749 val_acc: 1.000
+[ Fri Aug 26 18:56:46 2022 ] [4,     1] train_loss: 3.749 train_acc: 1.000
+[ Fri Aug 26 18:56:46 2022 ] [4,     1] val_loss: 3.405 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [5,     1] train_loss: 3.404 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [5,     1] val_loss: 3.103 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [6,     1] train_loss: 3.103 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [6,     1] val_loss: 2.830 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [7,     1] train_loss: 2.830 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [7,     1] val_loss: 2.612 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [8,     1] train_loss: 2.612 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [8,     1] val_loss: 2.390 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [9,     1] train_loss: 2.390 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [9,     1] val_loss: 2.186 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [10,     1] train_loss: 2.186 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [10,     1] val_loss: 2.004 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [11,     1] train_loss: 2.004 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [11,     1] val_loss: 1.829 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [12,     1] train_loss: 1.829 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [12,     1] val_loss: 1.657 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [13,     1] train_loss: 1.657 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [13,     1] val_loss: 1.498 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [14,     1] train_loss: 1.498 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [14,     1] val_loss: 1.352 val_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [15,     1] train_loss: 1.352 train_acc: 1.000
+[ Fri Aug 26 18:56:47 2022 ] [15,     1] val_loss: 1.212 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [16,     1] train_loss: 1.212 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [16,     1] val_loss: 1.077 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [17,     1] train_loss: 1.077 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [17,     1] val_loss: 0.952 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [18,     1] train_loss: 0.952 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [18,     1] val_loss: 0.840 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [19,     1] train_loss: 0.840 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [19,     1] val_loss: 0.739 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [20,     1] train_loss: 0.739 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [20,     1] val_loss: 0.648 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [21,     1] train_loss: 0.648 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [21,     1] val_loss: 0.565 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [22,     1] train_loss: 0.565 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [22,     1] val_loss: 0.493 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [23,     1] train_loss: 0.493 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [23,     1] val_loss: 0.430 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [24,     1] train_loss: 0.430 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [24,     1] val_loss: 0.375 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [25,     1] train_loss: 0.375 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [25,     1] val_loss: 0.328 val_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [26,     1] train_loss: 0.328 train_acc: 1.000
+[ Fri Aug 26 18:56:48 2022 ] [26,     1] val_loss: 0.287 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [27,     1] train_loss: 0.287 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [27,     1] val_loss: 0.252 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [28,     1] train_loss: 0.252 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [28,     1] val_loss: 0.221 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [29,     1] train_loss: 0.221 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [29,     1] val_loss: 0.195 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [30,     1] train_loss: 0.195 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [30,     1] val_loss: 0.173 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [31,     1] train_loss: 0.173 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [31,     1] val_loss: 0.154 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [32,     1] train_loss: 0.154 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [32,     1] val_loss: 0.138 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [33,     1] train_loss: 0.138 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [33,     1] val_loss: 0.124 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [34,     1] train_loss: 0.124 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [34,     1] val_loss: 0.112 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [35,     1] train_loss: 0.112 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [35,     1] val_loss: 0.102 val_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [36,     1] train_loss: 0.102 train_acc: 1.000
+[ Fri Aug 26 18:56:49 2022 ] [36,     1] val_loss: 0.093 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [37,     1] train_loss: 0.093 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [37,     1] val_loss: 0.085 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [38,     1] train_loss: 0.085 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [38,     1] val_loss: 0.078 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [39,     1] train_loss: 0.078 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [39,     1] val_loss: 0.072 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [40,     1] train_loss: 0.072 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [40,     1] val_loss: 0.067 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [41,     1] train_loss: 0.067 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [41,     1] val_loss: 0.062 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [42,     1] train_loss: 0.062 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [42,     1] val_loss: 0.058 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [43,     1] train_loss: 0.058 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [43,     1] val_loss: 0.054 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [44,     1] train_loss: 0.054 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [44,     1] val_loss: 0.051 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [45,     1] train_loss: 0.051 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [45,     1] val_loss: 0.048 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [46,     1] train_loss: 0.048 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [46,     1] val_loss: 0.046 val_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [47,     1] train_loss: 0.046 train_acc: 1.000
+[ Fri Aug 26 18:56:50 2022 ] [47,     1] val_loss: 0.043 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [48,     1] train_loss: 0.043 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [48,     1] val_loss: 0.041 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [49,     1] train_loss: 0.041 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [49,     1] val_loss: 0.039 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [50,     1] train_loss: 0.039 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [50,     1] val_loss: 0.038 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [51,     1] train_loss: 0.038 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [51,     1] val_loss: 0.036 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [52,     1] train_loss: 0.036 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [52,     1] val_loss: 0.035 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [53,     1] train_loss: 0.035 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [53,     1] val_loss: 0.033 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [54,     1] train_loss: 0.033 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [54,     1] val_loss: 0.032 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [55,     1] train_loss: 0.032 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [55,     1] val_loss: 0.031 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [56,     1] train_loss: 0.031 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [56,     1] val_loss: 0.030 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [57,     1] train_loss: 0.030 train_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [57,     1] val_loss: 0.029 val_acc: 1.000
+[ Fri Aug 26 18:56:51 2022 ] [58,     1] train_loss: 0.029 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [58,     1] val_loss: 0.028 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [59,     1] train_loss: 0.028 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [59,     1] val_loss: 0.027 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [60,     1] train_loss: 0.027 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [60,     1] val_loss: 0.027 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [61,     1] train_loss: 0.027 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [61,     1] val_loss: 0.026 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [62,     1] train_loss: 0.026 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [62,     1] val_loss: 0.025 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [63,     1] train_loss: 0.025 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [63,     1] val_loss: 0.025 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [64,     1] train_loss: 0.025 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [64,     1] val_loss: 0.024 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [65,     1] train_loss: 0.024 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [65,     1] val_loss: 0.024 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [66,     1] train_loss: 0.024 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [66,     1] val_loss: 0.023 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [67,     1] train_loss: 0.023 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [67,     1] val_loss: 0.023 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [68,     1] train_loss: 0.023 train_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [68,     1] val_loss: 0.022 val_acc: 1.000
+[ Fri Aug 26 18:56:52 2022 ] [69,     1] train_loss: 0.022 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [69,     1] val_loss: 0.022 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [70,     1] train_loss: 0.022 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [70,     1] val_loss: 0.021 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [71,     1] train_loss: 0.021 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [71,     1] val_loss: 0.021 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [72,     1] train_loss: 0.021 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [72,     1] val_loss: 0.020 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [73,     1] train_loss: 0.020 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [73,     1] val_loss: 0.020 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [74,     1] train_loss: 0.020 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [74,     1] val_loss: 0.020 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [75,     1] train_loss: 0.020 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [75,     1] val_loss: 0.019 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [76,     1] train_loss: 0.019 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [76,     1] val_loss: 0.019 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [77,     1] train_loss: 0.019 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [77,     1] val_loss: 0.019 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [78,     1] train_loss: 0.019 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [78,     1] val_loss: 0.018 val_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [79,     1] train_loss: 0.018 train_acc: 1.000
+[ Fri Aug 26 18:56:53 2022 ] [79,     1] val_loss: 0.018 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [80,     1] train_loss: 0.018 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [80,     1] val_loss: 0.018 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [81,     1] train_loss: 0.018 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [81,     1] val_loss: 0.018 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [82,     1] train_loss: 0.018 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [82,     1] val_loss: 0.017 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [83,     1] train_loss: 0.017 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [83,     1] val_loss: 0.017 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [84,     1] train_loss: 0.017 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [84,     1] val_loss: 0.017 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [85,     1] train_loss: 0.017 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [85,     1] val_loss: 0.017 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [86,     1] train_loss: 0.017 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [86,     1] val_loss: 0.016 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [87,     1] train_loss: 0.016 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [87,     1] val_loss: 0.016 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [88,     1] train_loss: 0.016 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [88,     1] val_loss: 0.016 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [89,     1] train_loss: 0.016 train_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [89,     1] val_loss: 0.016 val_acc: 1.000
+[ Fri Aug 26 18:56:54 2022 ] [90,     1] train_loss: 0.016 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [90,     1] val_loss: 0.016 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [91,     1] train_loss: 0.016 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [91,     1] val_loss: 0.015 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [92,     1] train_loss: 0.015 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [92,     1] val_loss: 0.015 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [93,     1] train_loss: 0.015 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [93,     1] val_loss: 0.015 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [94,     1] train_loss: 0.015 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [94,     1] val_loss: 0.015 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [95,     1] train_loss: 0.015 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [95,     1] val_loss: 0.015 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [96,     1] train_loss: 0.015 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [96,     1] val_loss: 0.014 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [97,     1] train_loss: 0.014 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [97,     1] val_loss: 0.014 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [98,     1] train_loss: 0.014 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [98,     1] val_loss: 0.014 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [99,     1] train_loss: 0.014 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [99,     1] val_loss: 0.014 val_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [100,     1] train_loss: 0.014 train_acc: 1.000
+[ Fri Aug 26 18:56:55 2022 ] [100,     1] val_loss: 0.014 val_acc: 1.000
+[ Sat Aug 27 00:32:58 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(256, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(512, 512, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(512, 512, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(512, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=256, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(256, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sat Aug 27 00:42:38 2022 ] [1,  1200] train_loss: 4.617 train_acc: 0.019
+[ Sat Aug 27 00:42:39 2022 ] [1,     1] val_loss: 4.175 val_acc: 0.000
+[ Sat Aug 27 00:46:17 2022 ] [2,  1200] train_loss: 4.434 train_acc: 0.020
+[ Sat Aug 27 00:46:17 2022 ] [2,     1] val_loss: 4.223 val_acc: 0.000
+[ Sat Aug 27 00:49:51 2022 ] [3,  1200] train_loss: 4.377 train_acc: 0.023
+[ Sat Aug 27 00:49:51 2022 ] [3,     1] val_loss: 4.254 val_acc: 0.000
+[ Sat Aug 27 00:53:27 2022 ] [4,  1200] train_loss: 4.328 train_acc: 0.025
+[ Sat Aug 27 00:53:27 2022 ] [4,     1] val_loss: 4.298 val_acc: 0.000
+[ Sat Aug 27 00:56:52 2022 ] [5,  1200] train_loss: 4.289 train_acc: 0.030
+[ Sat Aug 27 00:56:52 2022 ] [5,     1] val_loss: 4.353 val_acc: 0.000
+[ Sat Aug 27 01:00:15 2022 ] [6,  1200] train_loss: 4.253 train_acc: 0.033
+[ Sat Aug 27 01:00:15 2022 ] [6,     1] val_loss: 4.440 val_acc: 0.000
+[ Sat Aug 27 01:03:38 2022 ] [7,  1200] train_loss: 4.219 train_acc: 0.035
+[ Sat Aug 27 01:03:38 2022 ] [7,     1] val_loss: 4.549 val_acc: 0.000
+[ Sat Aug 27 01:06:56 2022 ] [8,  1200] train_loss: 4.186 train_acc: 0.040
+[ Sat Aug 27 01:06:56 2022 ] [8,     1] val_loss: 4.691 val_acc: 0.000
+[ Sat Aug 27 01:10:01 2022 ] [9,  1200] train_loss: 4.128 train_acc: 0.047
+[ Sat Aug 27 01:10:01 2022 ] [9,     1] val_loss: 4.769 val_acc: 0.000
+[ Sat Aug 27 01:13:11 2022 ] [10,  1200] train_loss: 4.026 train_acc: 0.054
+[ Sat Aug 27 01:13:11 2022 ] [10,     1] val_loss: 4.914 val_acc: 0.000
+[ Sat Aug 27 01:16:05 2022 ] [11,  1200] train_loss: 3.922 train_acc: 0.065
+[ Sat Aug 27 01:16:05 2022 ] [11,     1] val_loss: 5.157 val_acc: 0.000
+[ Sat Aug 27 01:19:16 2022 ] [12,  1200] train_loss: 3.816 train_acc: 0.075
+[ Sat Aug 27 01:19:16 2022 ] [12,     1] val_loss: 5.497 val_acc: 0.000
+[ Sat Aug 27 01:22:23 2022 ] [13,  1200] train_loss: 3.695 train_acc: 0.088
+[ Sat Aug 27 01:22:23 2022 ] [13,     1] val_loss: 5.737 val_acc: 0.000
+[ Sat Aug 27 01:25:25 2022 ] [14,  1200] train_loss: 3.547 train_acc: 0.109
+[ Sat Aug 27 01:25:25 2022 ] [14,     1] val_loss: 6.195 val_acc: 0.000
+[ Sat Aug 27 01:28:21 2022 ] [15,  1200] train_loss: 3.400 train_acc: 0.123
+[ Sat Aug 27 01:28:21 2022 ] [15,     1] val_loss: 6.669 val_acc: 0.000
+[ Sat Aug 27 01:31:21 2022 ] [16,  1200] train_loss: 3.277 train_acc: 0.140
+[ Sat Aug 27 01:31:21 2022 ] [16,     1] val_loss: 6.945 val_acc: 0.000
+[ Sat Aug 27 01:34:26 2022 ] [17,  1200] train_loss: 3.173 train_acc: 0.156
+[ Sat Aug 27 01:34:26 2022 ] [17,     1] val_loss: 7.187 val_acc: 0.000
+[ Sat Aug 27 01:37:24 2022 ] [18,  1200] train_loss: 3.084 train_acc: 0.165
+[ Sat Aug 27 01:37:24 2022 ] [18,     1] val_loss: 7.365 val_acc: 0.000
+[ Sat Aug 27 01:40:26 2022 ] [19,  1200] train_loss: 3.003 train_acc: 0.182
+[ Sat Aug 27 01:40:26 2022 ] [19,     1] val_loss: 7.696 val_acc: 0.000
+[ Sat Aug 27 01:43:13 2022 ] [20,  1200] train_loss: 2.924 train_acc: 0.203
+[ Sat Aug 27 01:43:13 2022 ] [20,     1] val_loss: 7.817 val_acc: 0.000
+[ Sat Aug 27 01:45:58 2022 ] [21,  1200] train_loss: 2.842 train_acc: 0.222
+[ Sat Aug 27 01:45:58 2022 ] [21,     1] val_loss: 7.829 val_acc: 0.000
+[ Sat Aug 27 01:48:45 2022 ] [22,  1200] train_loss: 2.758 train_acc: 0.245
+[ Sat Aug 27 01:48:45 2022 ] [22,     1] val_loss: 8.073 val_acc: 0.000
+[ Sat Aug 27 01:51:43 2022 ] [23,  1200] train_loss: 2.674 train_acc: 0.268
+[ Sat Aug 27 01:51:43 2022 ] [23,     1] val_loss: 8.171 val_acc: 0.000
+[ Sat Aug 27 01:54:27 2022 ] [24,  1200] train_loss: 2.585 train_acc: 0.283
+[ Sat Aug 27 01:54:27 2022 ] [24,     1] val_loss: 8.290 val_acc: 0.000
+[ Sat Aug 27 01:57:07 2022 ] [25,  1200] train_loss: 2.493 train_acc: 0.310
+[ Sat Aug 27 01:57:07 2022 ] [25,     1] val_loss: 8.432 val_acc: 0.000
+[ Sat Aug 27 01:59:50 2022 ] [26,  1200] train_loss: 2.398 train_acc: 0.329
+[ Sat Aug 27 01:59:50 2022 ] [26,     1] val_loss: 8.576 val_acc: 0.000
+[ Sat Aug 27 02:02:30 2022 ] [27,  1200] train_loss: 2.299 train_acc: 0.357
+[ Sat Aug 27 02:02:30 2022 ] [27,     1] val_loss: 8.715 val_acc: 0.000
+[ Sat Aug 27 02:05:14 2022 ] [28,  1200] train_loss: 2.197 train_acc: 0.381
+[ Sat Aug 27 02:05:14 2022 ] [28,     1] val_loss: 8.961 val_acc: 0.000
+[ Sat Aug 27 02:07:58 2022 ] [29,  1200] train_loss: 2.090 train_acc: 0.420
+[ Sat Aug 27 02:07:58 2022 ] [29,     1] val_loss: 9.061 val_acc: 0.000
+[ Sat Aug 27 02:10:44 2022 ] [30,  1200] train_loss: 1.983 train_acc: 0.452
+[ Sat Aug 27 02:10:44 2022 ] [30,     1] val_loss: 9.141 val_acc: 0.000
+[ Sat Aug 27 02:13:28 2022 ] [31,  1200] train_loss: 1.876 train_acc: 0.487
+[ Sat Aug 27 02:13:28 2022 ] [31,     1] val_loss: 9.070 val_acc: 0.000
+[ Sat Aug 27 02:16:13 2022 ] [32,  1200] train_loss: 1.769 train_acc: 0.521
+[ Sat Aug 27 02:16:14 2022 ] [32,     1] val_loss: 9.101 val_acc: 0.000
+[ Sat Aug 27 02:18:57 2022 ] [33,  1200] train_loss: 1.657 train_acc: 0.563
+[ Sat Aug 27 02:18:57 2022 ] [33,     1] val_loss: 9.125 val_acc: 0.000
+[ Sat Aug 27 02:21:44 2022 ] [34,  1200] train_loss: 1.546 train_acc: 0.598
+[ Sat Aug 27 02:21:44 2022 ] [34,     1] val_loss: 9.109 val_acc: 0.000
+[ Sat Aug 27 02:24:21 2022 ] [35,  1200] train_loss: 1.436 train_acc: 0.635
+[ Sat Aug 27 02:24:22 2022 ] [35,     1] val_loss: 9.127 val_acc: 0.000
+[ Sat Aug 27 02:27:01 2022 ] [36,  1200] train_loss: 1.330 train_acc: 0.670
+[ Sat Aug 27 02:27:01 2022 ] [36,     1] val_loss: 9.124 val_acc: 0.000
+[ Sat Aug 27 02:29:44 2022 ] [37,  1200] train_loss: 1.226 train_acc: 0.709
+[ Sat Aug 27 02:29:44 2022 ] [37,     1] val_loss: 9.247 val_acc: 0.000
+[ Sat Aug 27 02:32:28 2022 ] [38,  1200] train_loss: 1.129 train_acc: 0.739
+[ Sat Aug 27 02:32:28 2022 ] [38,     1] val_loss: 9.583 val_acc: 0.000
+[ Sat Aug 27 02:35:06 2022 ] [39,  1200] train_loss: 1.033 train_acc: 0.765
+[ Sat Aug 27 02:35:06 2022 ] [39,     1] val_loss: 9.554 val_acc: 0.000
+[ Sat Aug 27 02:37:47 2022 ] [40,  1200] train_loss: 0.947 train_acc: 0.793
+[ Sat Aug 27 02:37:48 2022 ] [40,     1] val_loss: 9.907 val_acc: 0.000
+[ Sat Aug 27 02:40:29 2022 ] [41,  1200] train_loss: 0.865 train_acc: 0.820
+[ Sat Aug 27 02:40:29 2022 ] [41,     1] val_loss: 9.919 val_acc: 0.000
+[ Sat Aug 27 02:43:12 2022 ] [42,  1200] train_loss: 0.773 train_acc: 0.847
+[ Sat Aug 27 02:43:12 2022 ] [42,     1] val_loss: 10.130 val_acc: 0.000
+[ Sat Aug 27 02:45:52 2022 ] [43,  1200] train_loss: 0.697 train_acc: 0.869
+[ Sat Aug 27 02:45:52 2022 ] [43,     1] val_loss: 10.346 val_acc: 0.000
+[ Sat Aug 27 02:48:34 2022 ] [44,  1200] train_loss: 0.629 train_acc: 0.881
+[ Sat Aug 27 02:48:34 2022 ] [44,     1] val_loss: 10.334 val_acc: 0.000
+[ Sat Aug 27 02:51:15 2022 ] [45,  1200] train_loss: 0.581 train_acc: 0.893
+[ Sat Aug 27 02:51:15 2022 ] [45,     1] val_loss: 10.557 val_acc: 0.000
+[ Sat Aug 27 02:53:57 2022 ] [46,  1200] train_loss: 0.541 train_acc: 0.900
+[ Sat Aug 27 02:53:57 2022 ] [46,     1] val_loss: 10.305 val_acc: 0.000
+[ Sat Aug 27 02:56:41 2022 ] [47,  1200] train_loss: 0.477 train_acc: 0.918
+[ Sat Aug 27 02:56:41 2022 ] [47,     1] val_loss: 10.651 val_acc: 0.000
+[ Sat Aug 27 02:59:30 2022 ] [48,  1200] train_loss: 0.443 train_acc: 0.919
+[ Sat Aug 27 02:59:30 2022 ] [48,     1] val_loss: 10.271 val_acc: 0.000
+[ Sat Aug 27 03:02:13 2022 ] [49,  1200] train_loss: 0.414 train_acc: 0.926
+[ Sat Aug 27 03:02:13 2022 ] [49,     1] val_loss: 10.485 val_acc: 0.000
+[ Sat Aug 27 03:04:55 2022 ] [50,  1200] train_loss: 0.390 train_acc: 0.925
+[ Sat Aug 27 03:04:55 2022 ] [50,     1] val_loss: 9.947 val_acc: 0.000
+[ Sat Aug 27 03:07:39 2022 ] [51,  1200] train_loss: 0.383 train_acc: 0.925
+[ Sat Aug 27 03:07:39 2022 ] [51,     1] val_loss: 10.434 val_acc: 0.000
+[ Sat Aug 27 03:10:20 2022 ] [52,  1200] train_loss: 0.335 train_acc: 0.940
+[ Sat Aug 27 03:10:20 2022 ] [52,     1] val_loss: 9.897 val_acc: 0.000
+[ Sat Aug 27 03:13:00 2022 ] [53,  1200] train_loss: 0.324 train_acc: 0.938
+[ Sat Aug 27 03:13:00 2022 ] [53,     1] val_loss: 9.851 val_acc: 0.000
+[ Sat Aug 27 03:15:45 2022 ] [54,  1200] train_loss: 0.325 train_acc: 0.941
+[ Sat Aug 27 03:15:45 2022 ] [54,     1] val_loss: 10.130 val_acc: 0.000
+[ Sat Aug 27 03:18:25 2022 ] [55,  1200] train_loss: 0.270 train_acc: 0.960
+[ Sat Aug 27 03:18:25 2022 ] [55,     1] val_loss: 9.899 val_acc: 0.000
+[ Sat Aug 27 03:21:06 2022 ] [56,  1200] train_loss: 0.253 train_acc: 0.951
+[ Sat Aug 27 03:21:06 2022 ] [56,     1] val_loss: 9.884 val_acc: 0.000
+[ Sat Aug 27 03:23:50 2022 ] [57,  1200] train_loss: 0.246 train_acc: 0.958
+[ Sat Aug 27 03:23:50 2022 ] [57,     1] val_loss: 10.363 val_acc: 0.000
+[ Sat Aug 27 03:26:30 2022 ] [58,  1200] train_loss: 0.240 train_acc: 0.961
+[ Sat Aug 27 03:26:31 2022 ] [58,     1] val_loss: 9.715 val_acc: 0.000
+[ Sat Aug 27 03:29:13 2022 ] [59,  1200] train_loss: 0.249 train_acc: 0.946
+[ Sat Aug 27 03:29:13 2022 ] [59,     1] val_loss: 10.345 val_acc: 0.000
+[ Sat Aug 27 03:31:54 2022 ] [60,  1200] train_loss: 0.210 train_acc: 0.958
+[ Sat Aug 27 03:31:54 2022 ] [60,     1] val_loss: 10.256 val_acc: 0.000
+[ Sat Aug 27 03:34:34 2022 ] [61,  1200] train_loss: 0.183 train_acc: 0.967
+[ Sat Aug 27 03:34:34 2022 ] [61,     1] val_loss: 10.728 val_acc: 0.000
+[ Sat Aug 27 03:37:17 2022 ] [62,  1200] train_loss: 0.204 train_acc: 0.958
+[ Sat Aug 27 03:37:17 2022 ] [62,     1] val_loss: 9.690 val_acc: 0.000
+[ Sat Aug 27 03:39:57 2022 ] [63,  1200] train_loss: 0.180 train_acc: 0.965
+[ Sat Aug 27 03:39:57 2022 ] [63,     1] val_loss: 10.783 val_acc: 0.000
+[ Sat Aug 27 03:42:34 2022 ] [64,  1200] train_loss: 0.171 train_acc: 0.972
+[ Sat Aug 27 03:42:34 2022 ] [64,     1] val_loss: 11.244 val_acc: 0.000
+[ Sat Aug 27 03:45:17 2022 ] [65,  1200] train_loss: 0.161 train_acc: 0.968
+[ Sat Aug 27 03:45:17 2022 ] [65,     1] val_loss: 10.484 val_acc: 0.000
+[ Sat Aug 27 03:47:57 2022 ] [66,  1200] train_loss: 0.215 train_acc: 0.953
+[ Sat Aug 27 03:47:57 2022 ] [66,     1] val_loss: 10.903 val_acc: 0.000
+[ Sat Aug 27 03:50:38 2022 ] [67,  1200] train_loss: 0.147 train_acc: 0.970
+[ Sat Aug 27 03:50:38 2022 ] [67,     1] val_loss: 10.677 val_acc: 0.000
+[ Sat Aug 27 03:53:19 2022 ] [68,  1200] train_loss: 0.170 train_acc: 0.967
+[ Sat Aug 27 03:53:19 2022 ] [68,     1] val_loss: 10.889 val_acc: 0.000
+[ Sat Aug 27 03:56:02 2022 ] [69,  1200] train_loss: 0.124 train_acc: 0.978
+[ Sat Aug 27 03:56:03 2022 ] [69,     1] val_loss: 11.556 val_acc: 0.000
+[ Sat Aug 27 03:58:45 2022 ] [70,  1200] train_loss: 0.180 train_acc: 0.967
+[ Sat Aug 27 03:58:46 2022 ] [70,     1] val_loss: 10.972 val_acc: 0.000
+[ Sat Aug 27 04:01:30 2022 ] [71,  1200] train_loss: 0.172 train_acc: 0.971
+[ Sat Aug 27 04:01:30 2022 ] [71,     1] val_loss: 11.660 val_acc: 0.000
+[ Sat Aug 27 04:04:10 2022 ] [72,  1200] train_loss: 0.138 train_acc: 0.971
+[ Sat Aug 27 04:04:10 2022 ] [72,     1] val_loss: 9.790 val_acc: 0.000
+[ Sat Aug 27 04:06:51 2022 ] [73,  1200] train_loss: 0.133 train_acc: 0.971
+[ Sat Aug 27 04:06:51 2022 ] [73,     1] val_loss: 12.157 val_acc: 0.000
+[ Sat Aug 27 04:09:32 2022 ] [74,  1200] train_loss: 0.122 train_acc: 0.977
+[ Sat Aug 27 04:09:32 2022 ] [74,     1] val_loss: 10.209 val_acc: 0.000
+[ Sat Aug 27 04:12:13 2022 ] [75,  1200] train_loss: 0.222 train_acc: 0.949
+[ Sat Aug 27 04:12:13 2022 ] [75,     1] val_loss: 10.074 val_acc: 0.000
+[ Sat Aug 27 04:14:59 2022 ] [76,  1200] train_loss: 0.108 train_acc: 0.980
+[ Sat Aug 27 04:14:59 2022 ] [76,     1] val_loss: 10.787 val_acc: 0.000
+[ Sat Aug 27 04:17:41 2022 ] [77,  1200] train_loss: 0.120 train_acc: 0.975
+[ Sat Aug 27 04:17:41 2022 ] [77,     1] val_loss: 10.747 val_acc: 0.000
+[ Sat Aug 27 04:20:22 2022 ] [78,  1200] train_loss: 0.152 train_acc: 0.967
+[ Sat Aug 27 04:20:22 2022 ] [78,     1] val_loss: 11.047 val_acc: 0.000
+[ Sat Aug 27 04:23:02 2022 ] [79,  1200] train_loss: 0.105 train_acc: 0.981
+[ Sat Aug 27 04:23:02 2022 ] [79,     1] val_loss: 9.446 val_acc: 0.000
+[ Sat Aug 27 04:25:45 2022 ] [80,  1200] train_loss: 0.168 train_acc: 0.964
+[ Sat Aug 27 04:25:45 2022 ] [80,     1] val_loss: 10.700 val_acc: 0.000
+[ Sat Aug 27 04:28:28 2022 ] [81,  1200] train_loss: 0.098 train_acc: 0.982
+[ Sat Aug 27 04:28:28 2022 ] [81,     1] val_loss: 10.929 val_acc: 0.000
+[ Sat Aug 27 04:31:13 2022 ] [82,  1200] train_loss: 0.142 train_acc: 0.966
+[ Sat Aug 27 04:31:13 2022 ] [82,     1] val_loss: 11.546 val_acc: 0.000
+[ Sat Aug 27 04:34:03 2022 ] [83,  1200] train_loss: 0.091 train_acc: 0.986
+[ Sat Aug 27 04:34:03 2022 ] [83,     1] val_loss: 10.672 val_acc: 0.000
+[ Sat Aug 27 04:36:43 2022 ] [84,  1200] train_loss: 0.125 train_acc: 0.969
+[ Sat Aug 27 04:36:43 2022 ] [84,     1] val_loss: 12.085 val_acc: 0.000
+[ Sat Aug 27 04:39:23 2022 ] [85,  1200] train_loss: 0.126 train_acc: 0.974
+[ Sat Aug 27 04:39:24 2022 ] [85,     1] val_loss: 10.470 val_acc: 0.000
+[ Sat Aug 27 04:42:03 2022 ] [86,  1200] train_loss: 0.095 train_acc: 0.981
+[ Sat Aug 27 04:42:03 2022 ] [86,     1] val_loss: 10.846 val_acc: 0.000
+[ Sat Aug 27 04:44:46 2022 ] [87,  1200] train_loss: 0.107 train_acc: 0.980
+[ Sat Aug 27 04:44:46 2022 ] [87,     1] val_loss: 10.854 val_acc: 0.000
+[ Sat Aug 27 04:47:26 2022 ] [88,  1200] train_loss: 0.109 train_acc: 0.978
+[ Sat Aug 27 04:47:26 2022 ] [88,     1] val_loss: 10.791 val_acc: 0.000
+[ Sat Aug 27 04:50:05 2022 ] [89,  1200] train_loss: 0.111 train_acc: 0.976
+[ Sat Aug 27 04:50:06 2022 ] [89,     1] val_loss: 10.720 val_acc: 0.000
+[ Sat Aug 27 04:52:46 2022 ] [90,  1200] train_loss: 0.091 train_acc: 0.985
+[ Sat Aug 27 04:52:46 2022 ] [90,     1] val_loss: 10.914 val_acc: 0.000
+[ Sat Aug 27 04:55:26 2022 ] [91,  1200] train_loss: 0.109 train_acc: 0.980
+[ Sat Aug 27 04:55:26 2022 ] [91,     1] val_loss: 10.977 val_acc: 0.000
+[ Sat Aug 27 04:58:06 2022 ] [92,  1200] train_loss: 0.115 train_acc: 0.978
+[ Sat Aug 27 04:58:06 2022 ] [92,     1] val_loss: 10.738 val_acc: 0.000
+[ Sat Aug 27 05:00:47 2022 ] [93,  1200] train_loss: 0.086 train_acc: 0.986
+[ Sat Aug 27 05:00:47 2022 ] [93,     1] val_loss: 9.949 val_acc: 0.000
+[ Sat Aug 27 05:03:28 2022 ] [94,  1200] train_loss: 0.099 train_acc: 0.981
+[ Sat Aug 27 05:03:28 2022 ] [94,     1] val_loss: 9.442 val_acc: 0.000
+[ Sat Aug 27 05:06:15 2022 ] [95,  1200] train_loss: 0.078 train_acc: 0.986
+[ Sat Aug 27 05:06:15 2022 ] [95,     1] val_loss: 10.835 val_acc: 0.000
+[ Sat Aug 27 05:08:52 2022 ] [96,  1200] train_loss: 0.125 train_acc: 0.973
+[ Sat Aug 27 05:08:52 2022 ] [96,     1] val_loss: 9.833 val_acc: 0.000
+[ Sat Aug 27 05:11:33 2022 ] [97,  1200] train_loss: 0.084 train_acc: 0.983
+[ Sat Aug 27 05:11:33 2022 ] [97,     1] val_loss: 10.829 val_acc: 0.000
+[ Sat Aug 27 05:14:16 2022 ] [98,  1200] train_loss: 0.100 train_acc: 0.978
+[ Sat Aug 27 05:14:16 2022 ] [98,     1] val_loss: 11.282 val_acc: 0.000
+[ Sat Aug 27 05:17:00 2022 ] [99,  1200] train_loss: 0.076 train_acc: 0.988
+[ Sat Aug 27 05:17:00 2022 ] [99,     1] val_loss: 10.367 val_acc: 0.000
+[ Sat Aug 27 05:19:43 2022 ] [100,  1200] train_loss: 0.084 train_acc: 0.985
+[ Sat Aug 27 05:19:43 2022 ] [100,     1] val_loss: 10.893 val_acc: 0.000
+[ Sat Aug 27 14:45:07 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sat Aug 27 16:05:39 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 16:25:46 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 16:32:41 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 16:34:12 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 16:36:39 2022 ] [1,   150] train_loss: 688310557.800 train_acc: 0.013
+[ Sat Aug 27 16:36:39 2022 ] [1,     1] val_loss: 2012.743 val_acc: 0.000
+[ Sat Aug 27 16:37:33 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 16:39:45 2022 ] [1,   300] train_loss: 173111578.044 train_acc: 0.008
+[ Sat Aug 27 16:39:45 2022 ] [1,     1] val_loss: 4.706 val_acc: 0.000
+[ Sat Aug 27 16:41:56 2022 ] [2,   300] train_loss: 7.717 train_acc: 0.007
+[ Sat Aug 27 16:41:56 2022 ] [2,     1] val_loss: 4.713 val_acc: 0.000
+[ Sat Aug 27 16:44:07 2022 ] [3,   300] train_loss: 4.602 train_acc: 0.012
+[ Sat Aug 27 16:44:07 2022 ] [3,     1] val_loss: 4.767 val_acc: 0.000
+[ Sat Aug 27 16:46:18 2022 ] [4,   300] train_loss: 4.599 train_acc: 0.015
+[ Sat Aug 27 16:46:18 2022 ] [4,     1] val_loss: 4.795 val_acc: 0.000
+[ Sat Aug 27 16:48:29 2022 ] [5,   300] train_loss: 4.597 train_acc: 0.014
+[ Sat Aug 27 16:48:29 2022 ] [5,     1] val_loss: 4.820 val_acc: 0.000
+[ Sat Aug 27 16:50:40 2022 ] [6,   300] train_loss: 4.596 train_acc: 0.012
+[ Sat Aug 27 16:50:40 2022 ] [6,     1] val_loss: 4.839 val_acc: 0.000
+[ Sat Aug 27 16:52:50 2022 ] [7,   300] train_loss: 4.595 train_acc: 0.013
+[ Sat Aug 27 16:52:50 2022 ] [7,     1] val_loss: 4.848 val_acc: 0.000
+[ Sat Aug 27 16:55:01 2022 ] [8,   300] train_loss: 4.593 train_acc: 0.017
+[ Sat Aug 27 16:55:01 2022 ] [8,     1] val_loss: 4.860 val_acc: 0.000
+[ Sat Aug 27 16:57:11 2022 ] [9,   300] train_loss: 4.591 train_acc: 0.019
+[ Sat Aug 27 16:57:11 2022 ] [9,     1] val_loss: 4.876 val_acc: 0.000
+[ Sat Aug 27 16:59:23 2022 ] [10,   300] train_loss: 4.590 train_acc: 0.019
+[ Sat Aug 27 16:59:23 2022 ] [10,     1] val_loss: 4.902 val_acc: 0.000
+[ Sat Aug 27 17:01:33 2022 ] [11,   300] train_loss: 4.589 train_acc: 0.019
+[ Sat Aug 27 17:01:33 2022 ] [11,     1] val_loss: 4.938 val_acc: 0.000
+[ Sat Aug 27 17:03:44 2022 ] [12,   300] train_loss: 4.588 train_acc: 0.018
+[ Sat Aug 27 17:03:44 2022 ] [12,     1] val_loss: 4.963 val_acc: 0.000
+[ Sat Aug 27 17:05:55 2022 ] [13,   300] train_loss: 4.587 train_acc: 0.019
+[ Sat Aug 27 17:05:55 2022 ] [13,     1] val_loss: 4.983 val_acc: 0.000
+[ Sat Aug 27 17:08:06 2022 ] [14,   300] train_loss: 4.586 train_acc: 0.019
+[ Sat Aug 27 17:08:06 2022 ] [14,     1] val_loss: 5.000 val_acc: 0.000
+[ Sat Aug 27 17:10:17 2022 ] [15,   300] train_loss: 4.584 train_acc: 0.020
+[ Sat Aug 27 17:10:17 2022 ] [15,     1] val_loss: 5.019 val_acc: 0.000
+[ Sat Aug 27 17:12:28 2022 ] [16,   300] train_loss: 4.583 train_acc: 0.019
+[ Sat Aug 27 17:12:28 2022 ] [16,     1] val_loss: 5.049 val_acc: 0.000
+[ Sat Aug 27 17:14:39 2022 ] [17,   300] train_loss: 4.581 train_acc: 0.019
+[ Sat Aug 27 17:14:39 2022 ] [17,     1] val_loss: 5.092 val_acc: 0.000
+[ Sat Aug 27 17:16:50 2022 ] [18,   300] train_loss: 4.579 train_acc: 0.018
+[ Sat Aug 27 17:16:50 2022 ] [18,     1] val_loss: 5.125 val_acc: 0.000
+[ Sat Aug 27 17:19:01 2022 ] [19,   300] train_loss: 4.578 train_acc: 0.018
+[ Sat Aug 27 17:19:01 2022 ] [19,     1] val_loss: 5.157 val_acc: 0.000
+[ Sat Aug 27 17:21:12 2022 ] [20,   300] train_loss: 4.576 train_acc: 0.018
+[ Sat Aug 27 17:21:12 2022 ] [20,     1] val_loss: 5.189 val_acc: 0.000
+[ Sat Aug 27 17:23:22 2022 ] [21,   300] train_loss: 4.574 train_acc: 0.018
+[ Sat Aug 27 17:23:22 2022 ] [21,     1] val_loss: 5.226 val_acc: 0.000
+[ Sat Aug 27 17:25:33 2022 ] [22,   300] train_loss: 4.573 train_acc: 0.018
+[ Sat Aug 27 17:25:33 2022 ] [22,     1] val_loss: 5.269 val_acc: 0.000
+[ Sat Aug 27 17:27:44 2022 ] [23,   300] train_loss: 4.571 train_acc: 0.018
+[ Sat Aug 27 17:27:44 2022 ] [23,     1] val_loss: 5.333 val_acc: 0.000
+[ Sat Aug 27 17:29:55 2022 ] [24,   300] train_loss: 4.569 train_acc: 0.017
+[ Sat Aug 27 17:29:55 2022 ] [24,     1] val_loss: 5.412 val_acc: 0.000
+[ Sat Aug 27 17:32:05 2022 ] [25,   300] train_loss: 4.566 train_acc: 0.018
+[ Sat Aug 27 17:32:06 2022 ] [25,     1] val_loss: 5.521 val_acc: 0.000
+[ Sat Aug 27 17:34:16 2022 ] [26,   300] train_loss: 4.564 train_acc: 0.018
+[ Sat Aug 27 17:34:16 2022 ] [26,     1] val_loss: 5.618 val_acc: 0.000
+[ Sat Aug 27 17:36:27 2022 ] [27,   300] train_loss: 4.561 train_acc: 0.018
+[ Sat Aug 27 17:36:28 2022 ] [27,     1] val_loss: 5.698 val_acc: 0.000
+[ Sat Aug 27 17:38:38 2022 ] [28,   300] train_loss: 4.559 train_acc: 0.017
+[ Sat Aug 27 17:38:38 2022 ] [28,     1] val_loss: 5.778 val_acc: 0.000
+[ Sat Aug 27 17:40:49 2022 ] [29,   300] train_loss: 4.557 train_acc: 0.018
+[ Sat Aug 27 17:40:49 2022 ] [29,     1] val_loss: 5.862 val_acc: 0.000
+[ Sat Aug 27 17:42:59 2022 ] [30,   300] train_loss: 4.555 train_acc: 0.018
+[ Sat Aug 27 17:42:59 2022 ] [30,     1] val_loss: 5.950 val_acc: 0.000
+[ Sat Aug 27 17:45:11 2022 ] [31,   300] train_loss: 4.552 train_acc: 0.018
+[ Sat Aug 27 17:45:11 2022 ] [31,     1] val_loss: 6.043 val_acc: 0.000
+[ Sat Aug 27 17:47:22 2022 ] [32,   300] train_loss: 4.550 train_acc: 0.018
+[ Sat Aug 27 17:47:22 2022 ] [32,     1] val_loss: 6.140 val_acc: 0.000
+[ Sat Aug 27 17:49:33 2022 ] [33,   300] train_loss: 4.548 train_acc: 0.018
+[ Sat Aug 27 17:49:33 2022 ] [33,     1] val_loss: 6.241 val_acc: 0.000
+[ Sat Aug 27 17:51:44 2022 ] [34,   300] train_loss: 4.545 train_acc: 0.018
+[ Sat Aug 27 17:51:44 2022 ] [34,     1] val_loss: 6.346 val_acc: 0.000
+[ Sat Aug 27 17:53:55 2022 ] [35,   300] train_loss: 4.543 train_acc: 0.018
+[ Sat Aug 27 17:53:55 2022 ] [35,     1] val_loss: 6.455 val_acc: 0.000
+[ Sat Aug 27 17:56:06 2022 ] [36,   300] train_loss: 4.540 train_acc: 0.019
+[ Sat Aug 27 17:56:06 2022 ] [36,     1] val_loss: 6.572 val_acc: 0.000
+[ Sat Aug 27 17:58:17 2022 ] [37,   300] train_loss: 4.538 train_acc: 0.019
+[ Sat Aug 27 17:58:17 2022 ] [37,     1] val_loss: 6.690 val_acc: 0.000
+[ Sat Aug 27 18:00:28 2022 ] [38,   300] train_loss: 4.535 train_acc: 0.018
+[ Sat Aug 27 18:00:28 2022 ] [38,     1] val_loss: 6.811 val_acc: 0.000
+[ Sat Aug 27 18:02:39 2022 ] [39,   300] train_loss: 4.533 train_acc: 0.018
+[ Sat Aug 27 18:02:39 2022 ] [39,     1] val_loss: 6.940 val_acc: 0.000
+[ Sat Aug 27 18:04:50 2022 ] [40,   300] train_loss: 4.531 train_acc: 0.018
+[ Sat Aug 27 18:04:50 2022 ] [40,     1] val_loss: 7.066 val_acc: 0.000
+[ Sat Aug 27 18:07:01 2022 ] [41,   300] train_loss: 4.528 train_acc: 0.018
+[ Sat Aug 27 18:07:01 2022 ] [41,     1] val_loss: 7.198 val_acc: 0.000
+[ Sat Aug 27 18:09:12 2022 ] [42,   300] train_loss: 4.526 train_acc: 0.018
+[ Sat Aug 27 18:09:12 2022 ] [42,     1] val_loss: 7.333 val_acc: 0.000
+[ Sat Aug 27 18:11:23 2022 ] [43,   300] train_loss: 4.523 train_acc: 0.018
+[ Sat Aug 27 18:11:23 2022 ] [43,     1] val_loss: 7.468 val_acc: 0.000
+[ Sat Aug 27 18:13:34 2022 ] [44,   300] train_loss: 4.521 train_acc: 0.019
+[ Sat Aug 27 18:13:34 2022 ] [44,     1] val_loss: 7.600 val_acc: 0.000
+[ Sat Aug 27 18:15:44 2022 ] [45,   300] train_loss: 4.519 train_acc: 0.019
+[ Sat Aug 27 18:15:44 2022 ] [45,     1] val_loss: 7.737 val_acc: 0.000
+[ Sat Aug 27 18:17:55 2022 ] [46,   300] train_loss: 4.517 train_acc: 0.020
+[ Sat Aug 27 18:17:55 2022 ] [46,     1] val_loss: 7.868 val_acc: 0.000
+[ Sat Aug 27 18:20:06 2022 ] [47,   300] train_loss: 4.515 train_acc: 0.021
+[ Sat Aug 27 18:20:06 2022 ] [47,     1] val_loss: 8.005 val_acc: 0.000
+[ Sat Aug 27 18:22:17 2022 ] [48,   300] train_loss: 4.512 train_acc: 0.021
+[ Sat Aug 27 18:22:17 2022 ] [48,     1] val_loss: 8.139 val_acc: 0.000
+[ Sat Aug 27 18:24:28 2022 ] [49,   300] train_loss: 4.510 train_acc: 0.021
+[ Sat Aug 27 18:24:28 2022 ] [49,     1] val_loss: 8.270 val_acc: 0.000
+[ Sat Aug 27 18:26:39 2022 ] [50,   300] train_loss: 4.508 train_acc: 0.022
+[ Sat Aug 27 18:26:39 2022 ] [50,     1] val_loss: 8.392 val_acc: 0.000
+[ Sat Aug 27 18:28:50 2022 ] [51,   300] train_loss: 4.506 train_acc: 0.022
+[ Sat Aug 27 18:28:50 2022 ] [51,     1] val_loss: 8.509 val_acc: 0.000
+[ Sat Aug 27 18:35:39 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sat Aug 27 18:37:52 2022 ] [1,   300] train_loss: 44997552.029 train_acc: 0.009
+[ Sat Aug 27 18:37:52 2022 ] [1,     1] val_loss: 4.671 val_acc: 0.000
+[ Sun Aug 28 01:27:24 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sun Aug 28 01:29:01 2022 ] 
+ Training TGCN_v2_trainer
+
+TGCN_v2(
+  (gtcn0): Conv2d(3, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+  (data_bn): BatchNorm1d(411, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+)
+[ Sun Aug 28 01:31:15 2022 ] [1,   300] train_loss: 83442575.761 train_acc: 0.012
+[ Sun Aug 28 01:31:15 2022 ] [1,     1] val_loss: 4.566 val_acc: 0.000
+[ Sun Aug 28 01:33:28 2022 ] [2,   300] train_loss: 4.604 train_acc: 0.015
+[ Sun Aug 28 01:33:28 2022 ] [2,     1] val_loss: 4.589 val_acc: 0.000
+[ Sun Aug 28 01:35:40 2022 ] [3,   300] train_loss: 4.601 train_acc: 0.015
+[ Sun Aug 28 01:35:40 2022 ] [3,     1] val_loss: 4.616 val_acc: 0.000
+[ Sun Aug 28 01:37:53 2022 ] [4,   300] train_loss: 4.598 train_acc: 0.015
+[ Sun Aug 28 01:37:53 2022 ] [4,     1] val_loss: 4.638 val_acc: 0.000
+[ Sun Aug 28 01:40:05 2022 ] [5,   300] train_loss: 4.597 train_acc: 0.015
+[ Sun Aug 28 01:40:06 2022 ] [5,     1] val_loss: 4.653 val_acc: 0.000
+[ Sun Aug 28 01:42:18 2022 ] [6,   300] train_loss: 4.596 train_acc: 0.015
+[ Sun Aug 28 01:42:18 2022 ] [6,     1] val_loss: 4.662 val_acc: 0.000
+[ Sun Aug 28 01:44:31 2022 ] [7,   300] train_loss: 4.595 train_acc: 0.015
+[ Sun Aug 28 01:44:31 2022 ] [7,     1] val_loss: 4.666 val_acc: 0.000
+[ Sun Aug 28 01:46:55 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 01:56:21 2022 ] [1,  1200] train_loss: 4.603 train_acc: 0.024
+[ Sun Aug 28 01:56:21 2022 ] [1,     1] val_loss: 4.474 val_acc: 0.000
+[ Sun Aug 28 01:59:16 2022 ] [2,  1200] train_loss: 4.428 train_acc: 0.022
+[ Sun Aug 28 01:59:16 2022 ] [2,     1] val_loss: 4.500 val_acc: 0.000
+[ Sun Aug 28 02:02:09 2022 ] [3,  1200] train_loss: 4.351 train_acc: 0.029
+[ Sun Aug 28 02:02:09 2022 ] [3,     1] val_loss: 4.565 val_acc: 0.000
+[ Sun Aug 28 02:04:42 2022 ] [4,  1200] train_loss: 4.292 train_acc: 0.028
+[ Sun Aug 28 02:04:42 2022 ] [4,     1] val_loss: 4.733 val_acc: 0.000
+[ Sun Aug 28 02:06:50 2022 ] [5,  1200] train_loss: 4.242 train_acc: 0.033
+[ Sun Aug 28 02:06:50 2022 ] [5,     1] val_loss: 4.943 val_acc: 0.000
+[ Sun Aug 28 02:09:37 2022 ] [6,  1200] train_loss: 4.196 train_acc: 0.037
+[ Sun Aug 28 02:09:37 2022 ] [6,     1] val_loss: 5.167 val_acc: 0.000
+[ Sun Aug 28 02:11:55 2022 ] [7,  1200] train_loss: 4.144 train_acc: 0.043
+[ Sun Aug 28 02:11:55 2022 ] [7,     1] val_loss: 5.365 val_acc: 0.000
+[ Sun Aug 28 02:13:54 2022 ] [8,  1200] train_loss: 4.080 train_acc: 0.054
+[ Sun Aug 28 02:13:54 2022 ] [8,     1] val_loss: 5.512 val_acc: 0.000
+[ Sun Aug 28 02:16:22 2022 ] [9,  1200] train_loss: 3.996 train_acc: 0.065
+[ Sun Aug 28 02:16:22 2022 ] [9,     1] val_loss: 5.626 val_acc: 0.000
+[ Sun Aug 28 02:18:47 2022 ] [10,  1200] train_loss: 3.897 train_acc: 0.075
+[ Sun Aug 28 02:18:47 2022 ] [10,     1] val_loss: 5.684 val_acc: 0.000
+[ Sun Aug 28 02:20:46 2022 ] [11,  1200] train_loss: 3.758 train_acc: 0.090
+[ Sun Aug 28 02:20:46 2022 ] [11,     1] val_loss: 5.461 val_acc: 0.000
+[ Sun Aug 28 02:23:16 2022 ] [12,  1200] train_loss: 3.610 train_acc: 0.103
+[ Sun Aug 28 02:23:16 2022 ] [12,     1] val_loss: 5.381 val_acc: 0.000
+[ Sun Aug 28 02:25:51 2022 ] 
+ Training TGCN_trainer
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 02:32:51 2022 ] [1,  1200] train_loss: 4.597 train_acc: 0.015
+[ Sun Aug 28 02:32:51 2022 ] [1,     1] val_loss: 4.640 val_acc: 0.000
+[ Sun Aug 28 02:35:37 2022 ] [2,  1200] train_loss: 4.413 train_acc: 0.021
+[ Sun Aug 28 02:35:38 2022 ] [2,     1] val_loss: 5.000 val_acc: 0.000
+[ Sun Aug 28 02:37:49 2022 ] [3,  1200] train_loss: 4.328 train_acc: 0.026
+[ Sun Aug 28 02:37:50 2022 ] [3,     1] val_loss: 5.276 val_acc: 0.000
+[ Sun Aug 28 02:40:17 2022 ] [4,  1200] train_loss: 4.253 train_acc: 0.030
+[ Sun Aug 28 02:40:17 2022 ] [4,     1] val_loss: 5.493 val_acc: 0.000
+[ Sun Aug 28 02:42:43 2022 ] [5,  1200] train_loss: 4.153 train_acc: 0.036
+[ Sun Aug 28 02:42:43 2022 ] [5,     1] val_loss: 5.606 val_acc: 0.000
+[ Sun Aug 28 02:44:53 2022 ] [6,  1200] train_loss: 4.049 train_acc: 0.052
+[ Sun Aug 28 02:44:53 2022 ] [6,     1] val_loss: 5.708 val_acc: 0.000
+[ Sun Aug 28 02:46:55 2022 ] [7,  1200] train_loss: 3.944 train_acc: 0.065
+[ Sun Aug 28 02:46:55 2022 ] [7,     1] val_loss: 5.710 val_acc: 0.000
+[ Sun Aug 28 02:49:11 2022 ] [8,  1200] train_loss: 3.805 train_acc: 0.079
+[ Sun Aug 28 02:49:11 2022 ] [8,     1] val_loss: 5.695 val_acc: 0.000
+[ Sun Aug 28 02:51:26 2022 ] [9,  1200] train_loss: 3.639 train_acc: 0.097
+[ Sun Aug 28 02:51:26 2022 ] [9,     1] val_loss: 5.595 val_acc: 0.000
+[ Sun Aug 28 02:53:34 2022 ] [10,  1200] train_loss: 3.501 train_acc: 0.112
+[ Sun Aug 28 02:53:34 2022 ] [10,     1] val_loss: 5.840 val_acc: 0.000
+[ Sun Aug 28 02:55:41 2022 ] [11,  1200] train_loss: 3.382 train_acc: 0.124
+[ Sun Aug 28 02:55:41 2022 ] [11,     1] val_loss: 6.075 val_acc: 0.000
+[ Sun Aug 28 16:06:15 2022 ] 
+ Training TGCN_trainer_add_relu
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 17:00:07 2022 ] 
+ Training TGCN_trainer_add_relu
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 17:43:38 2022 ] 
+ Training TGCN_trainer_add_relu
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 17:44:15 2022 ] 
+ Training TGCN_trainer_add_relu
+
+TGCN(
+  (gtcn0): Conv2d(137, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  (gtcn_layers): ModuleList(
+    (0): Conv2d(128, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (1): Conv2d(128, 128, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (2): Conv2d(128, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (3): Conv2d(256, 256, kernel_size=(9, 1), stride=(2, 1), padding=(4, 0))
+    (4): Conv2d(256, 256, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+    (5): Conv2d(256, 128, kernel_size=(9, 1), stride=(1, 1), padding=(4, 0))
+  )
+  (relu): ReLU()
+  (dropout): Dropout(p=0.3, inplace=False)
+  (fcl): ModuleList(
+    (0): Linear(in_features=128, out_features=100, bias=True)
+  )
+  (fcn): Conv1d(128, 100, kernel_size=(1,), stride=(1,))
+)
+[ Sun Aug 28 20:00:17 2022 ] [1,  2800] loss: 4.631 acc: 0.014
+[ Sun Aug 28 20:09:36 2022 ] val_loss: 4.6785535796483355, val_accuracy: 0.011666666666666667
+[ Sun Aug 28 20:25:30 2022 ] [2,  2800] loss: 4.548 acc: 0.020
+[ Sun Aug 28 20:32:13 2022 ] val_loss: 4.612006718913714, val_accuracy: 0.01125
+[ Sun Aug 28 20:48:03 2022 ] [3,  2800] loss: 4.428 acc: 0.030
+[ Sun Aug 28 20:54:41 2022 ] val_loss: 4.458719671169916, val_accuracy: 0.035
+[ Sun Aug 28 21:12:24 2022 ] [4,  2800] loss: 4.200 acc: 0.045
+[ Sun Aug 28 21:19:57 2022 ] val_loss: 4.370191334088643, val_accuracy: 0.04416666666666667
+[ Sun Aug 28 21:35:37 2022 ] [5,  2800] loss: 3.882 acc: 0.077
+[ Sun Aug 28 21:42:08 2022 ] val_loss: 4.146734621723493, val_accuracy: 0.06125
+[ Sun Aug 28 21:58:08 2022 ] [6,  2800] loss: 3.620 acc: 0.104
+[ Sun Aug 28 22:04:49 2022 ] val_loss: 4.09160781989495, val_accuracy: 0.07416666666666667
+[ Sun Aug 28 22:22:34 2022 ] [7,  2800] loss: 3.453 acc: 0.123
+[ Sun Aug 28 22:30:15 2022 ] val_loss: 4.086897344589233, val_accuracy: 0.08041666666666666
+[ Sun Aug 28 22:46:02 2022 ] [8,  2800] loss: 3.322 acc: 0.145
+[ Sun Aug 28 22:52:54 2022 ] val_loss: 4.07187708546718, val_accuracy: 0.09416666666666666
+[ Sun Aug 28 23:08:53 2022 ] [9,  2800] loss: 3.188 acc: 0.174
+[ Sun Aug 28 23:15:40 2022 ] val_loss: 4.013123792012532, val_accuracy: 0.11166666666666666
+[ Sun Aug 28 23:33:32 2022 ] [10,  2800] loss: 3.041 acc: 0.208
+[ Sun Aug 28 23:40:55 2022 ] val_loss: 3.943441065251827, val_accuracy: 0.12625
+[ Sun Aug 28 23:57:06 2022 ] [11,  2800] loss: 2.885 acc: 0.246
+[ Mon Aug 29 00:03:54 2022 ] val_loss: 3.861026916404565, val_accuracy: 0.14208333333333334
+[ Mon Aug 29 00:19:50 2022 ] [12,  2800] loss: 2.728 acc: 0.286
+[ Mon Aug 29 00:26:28 2022 ] val_loss: 3.7757115857303143, val_accuracy: 0.16875
+[ Mon Aug 29 00:44:16 2022 ] [13,  2800] loss: 2.569 acc: 0.331
+[ Mon Aug 29 00:51:37 2022 ] val_loss: 3.7069993662834166, val_accuracy: 0.19458333333333333
+[ Mon Aug 29 01:07:44 2022 ] [14,  2800] loss: 2.407 acc: 0.371
+[ Mon Aug 29 01:14:33 2022 ] val_loss: 3.61464813609918, val_accuracy: 0.21875
+[ Mon Aug 29 01:30:30 2022 ] [15,  2800] loss: 2.243 acc: 0.420
+[ Mon Aug 29 01:37:08 2022 ] val_loss: 3.534317068780462, val_accuracy: 0.24
+[ Mon Aug 29 01:54:44 2022 ] [16,  2800] loss: 2.082 acc: 0.468
+[ Mon Aug 29 02:02:22 2022 ] val_loss: 3.4960861487189927, val_accuracy: 0.25916666666666666
+[ Mon Aug 29 02:18:36 2022 ] [17,  2800] loss: 1.923 acc: 0.512
+[ Mon Aug 29 02:25:25 2022 ] val_loss: 3.434404758550227, val_accuracy: 0.275
+[ Mon Aug 29 02:41:23 2022 ] [18,  2800] loss: 1.768 acc: 0.550
+[ Mon Aug 29 02:48:00 2022 ] val_loss: 3.4146903448924424, val_accuracy: 0.28375
+[ Mon Aug 29 03:05:27 2022 ] [19,  2800] loss: 1.623 acc: 0.590
+[ Mon Aug 29 03:12:49 2022 ] val_loss: 3.3483668098474544, val_accuracy: 0.30916666666666665
+[ Mon Aug 29 03:48:01 2022 ] [1,   700] loss: 4.468 acc: 0.026
+[ Mon Aug 29 03:55:01 2022 ] val_loss: 4.403336064815521, val_accuracy: 0.02375
+[ Mon Aug 29 04:10:44 2022 ] [2,   700] loss: 3.869 acc: 0.075
+[ Mon Aug 29 04:17:17 2022 ] val_loss: 4.014977876345316, val_accuracy: 0.085
+[ Mon Aug 29 04:31:30 2022 ] [3,   700] loss: 3.397 acc: 0.140
+[ Mon Aug 29 04:37:28 2022 ] val_loss: 3.798604582150777, val_accuracy: 0.11375
+[ Mon Aug 29 05:02:43 2022 ] [1,   700] loss: 4.465 acc: 0.027
+[ Mon Aug 29 05:08:42 2022 ] val_loss: 4.3705035559336345, val_accuracy: 0.04
+[ Mon Aug 29 05:23:39 2022 ] [2,   700] loss: 3.884 acc: 0.077
+[ Mon Aug 29 05:30:24 2022 ] val_loss: 4.1633010443051655, val_accuracy: 0.07041666666666667
+[ Mon Aug 29 05:44:15 2022 ] [3,   700] loss: 3.480 acc: 0.122
+[ Mon Aug 29 05:50:15 2022 ] val_loss: 4.05442919810613, val_accuracy: 0.08916666666666667
