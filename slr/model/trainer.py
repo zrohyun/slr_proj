@@ -1,6 +1,7 @@
 from functools import partial
 import torch
 import torch.nn as nn
+from torch import Tensor
 import numpy as np
 
 from pathlib import Path
@@ -13,6 +14,8 @@ import time
 class TorchTrainer:
     """
     Torch model trainer class
+
+    optimizer input like 'optim = optim.Adam'
     """
 
     def __init__(
@@ -27,11 +30,11 @@ class TorchTrainer:
         name: str = "torch_trainer",
         log: bool = True,
         log_file: Path = Path("./log.txt"),
-        dev: torch.device = torch.device("cpu"),
+        device: torch.device = torch.device("cpu"),
         save_history: bool = True,
     ):
 
-        self.model = model.to(dev)
+        self.model = model.to(device)
 
         self.epochs = epochs
 
@@ -39,9 +42,9 @@ class TorchTrainer:
         self.test_loader = test_loader
 
         self.optim = optim(self.model.parameters())
-        self.criterion = criterion.to(dev)
+        self.criterion = criterion.to(device)
 
-        self.dev = dev
+        self.device = device
         self.cfg = cfg
         self.name = name
 
@@ -52,45 +55,60 @@ class TorchTrainer:
             self._print_log(f"\n Training {self.name}\n")
             self._print_log(f"{self.model}", print_time=False)
 
-    def _cvt_tensor(self, d):
+    def _cvt_tensor(self, d) -> Tuple[Tensor, Tensor]:
+        """convert x,y data to tensor and allocate to device"""
         x, y = d
-        x = torch.from_numpy(x).float().to(self.dev)
-        y = torch.from_numpy(y).type(torch.LongTensor).to(self.dev)
+        if isinstance(x, Tensor):
+            x = x.clone().detach().float().to(self.device)
+            y = y.clone().detach().type(torch.LongTensor).to(self.device)
+        else:
+            x = torch.from_numpy(np.array(x)).float().to(self.device)
+            y = torch.from_numpy(np.array(y)).type(torch.LongTensor).to(self.device)
+
         return x, y
 
-    def train(self) -> dict:
+    def run(self, val_interval=10, validation=True) -> dict:
         """
-        training step
+        Trainer Sequence
         1. run training step
-        2. run validation step
+        2. run validation step( run at validation interval )
         3. repeat for epochs
         return training_history
         """
         training_acc, training_loss = [], []
         val_acc, val_loss = [], []
 
+        run_time = time.time()
         for epoch in tqdm(range(self.epochs)):
-
-            train_loader, test_loader = self._copy_iter()
+            t_time = time.time()
 
             # train step
+            train_loader, test_loader = self._copy_iter()
             acc, loss, iteration = self.train_step(train_loader)
 
             training_acc.append(acc)
             training_loss.append(loss)
 
             self._print_log(
-                f"[{epoch + 1}, {iteration :5d}] train_loss: {loss:.3f} train_acc: {acc:.3f}"
+                f"[{epoch + 1}, {iteration :5d}] train_loss: {loss:.3f} train_acc: {acc:.3f} "
+                + f"train_time: {time.time()-t_time:.1f}"
             )
 
             # validation step
-            acc, loss, iteration = self.validate(test_loader)
-            val_acc.append(acc)
-            val_loss.append(loss)
+            if validation:
+                # run At val_interval
+                if (epoch % val_interval == val_interval - 1) or (
+                    epoch == self.epochs - 1
+                ):
+                    v_time = time.time()
+                    acc, loss, iteration = self.validate(test_loader)
+                    val_acc.append(acc)
+                    val_loss.append(loss)
 
-            self._print_log(
-                f"[{epoch + 1}, {iteration :5d}] val_loss: {loss:.3f} val_acc: {acc:.3f}"
-            )
+                    self._print_log(
+                        f"[{epoch + 1}, {iteration :5d}] val_loss: {loss:.3f} val_acc: {acc:.3f} "
+                        + f"val_time: {time.time()-v_time:.1f}"
+                    )
 
         history = {
             "training_acc": training_acc,
@@ -98,12 +116,15 @@ class TorchTrainer:
             "val_acc": val_acc,
             "val_loss": val_loss,
         }
+
         if self.save_history:
             self._save_history(history)
 
+        self._print_log(f"TOTAL TRAINING TIME: {time.time() - run_time:.1f}\n")
+
         return history
 
-    def train_step(self, train_loader) -> Tuple[int, int, int]:
+    def train_step(self, train_loader) -> Tuple[float, float, float]:
         """validation step
         return (acc,loss,iter_size)
         """
@@ -125,7 +146,7 @@ class TorchTrainer:
 
         return t_acc, t_loss, iteration
 
-    def validate(self, test_loader) -> Tuple[int, int, int]:
+    def validate(self, test_loader) -> Tuple[float, float, float]:
         """validation step
         return (acc,loss,iter_size)
         """
@@ -159,8 +180,8 @@ class TorchTrainer:
             # 변화도(Gradient) 매개변수를 0으로 만들고
             self.optim.zero_grad()
 
-        outputs = self.model(x)
-        step_loss = self.criterion(outputs, y)
+        outputs = self.model(x.clone().detach())
+        step_loss = self.criterion(outputs, y.clone().detach())
 
         if train:
             step_loss.backward()
@@ -173,7 +194,7 @@ class TorchTrainer:
 
         return acc, loss
 
-    def _print_log(self, message, print_time=True):
+    def _print_log(self, message, print_time=True) -> None:
         """class print_func for logging"""
         if print_time:
             localtime = time.asctime(time.localtime(time.time()))
@@ -182,7 +203,7 @@ class TorchTrainer:
         with open(self.log_file, "a") as f:
             print(message, file=f)
 
-    def _save_history(self, history):
+    def _save_history(self, history) -> None:
         """save acc, loss history"""
         localtime = str(time.asctime(time.localtime(time.time()))).replace(" ", "_")
         if sys.platform == "win32":
