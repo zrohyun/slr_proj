@@ -2,7 +2,8 @@ import torch
 import torch.nn as nn
 from torchsummary import summary
 
-from scipy.spatial.distance import cdist
+# from scipy.spatial.distance import cdist
+from torch import cdist
 
 
 default_in_out_channels = [
@@ -196,7 +197,8 @@ class TGCN_v2(TGCN):
         def _gaussian_kernel(X, delta=delta):
             """exp( dist(x,y) / 2 * (delta^2) )"""
             return torch.exp(
-                torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2))
+                # torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2))
+                torch.tensor(-cdist(X, X) / (2.0 * delta**2))
             )
 
         for b in range(batch_size):

@@ -8,7 +8,9 @@ import torch.nn as nn
 from typing import Tuple, List
 
 from slr.utils.utils import get_device
-from scipy.spatial.distance import cdist
+
+# from scipy.spatial.distance import cdist
+from torch import cdist
 
 
 class ConvLSTMCell(nn.Module):
@@ -143,9 +145,7 @@ class GraphLSTM(nn.Module):
 
         def _gaussian_kernel(X, delta=delta):
             """exp( dist(x,y) / 2 * (delta^2) )"""
-            return torch.exp(
-                torch.tensor(-cdist(X.cpu(), X.cpu()) / (2.0 * delta**2))
-            )
+            return torch.exp(torch.tensor(-cdist(X, X) / (2.0 * delta**2)))
 
         for b in range(batch_size):
             A = []
